@@ -1,0 +1,82 @@
+[
+  {
+    "entity_id": "academic_002",
+    "title": "Foundation Model Transparency Index",
+    "url": "https://crfm.stanford.edu/fmti/",
+    "content": "Stanford CRFM evaluates foundation-model developers across 100 transparency indicators and reports multi-year changes in model, data, capability, risk, and governance disclosure.",
+    "published_date": "2025-12-01",
+    "discovery_method": "ChatGPT/Codex built-in web search"
+  },
+  {
+    "entity_id": "academic_002",
+    "title": "Reliable and Efficient Amortized Model-Based Evaluation",
+    "url": "https://crfm.stanford.edu/2025/06/04/reliable-and-efficient-evaluation.html",
+    "content": "CRFM integrated IRT-based adaptive testing into HELM to reduce the number of test instances while preserving evaluation reliability.",
+    "published_date": "2025-06-04",
+    "discovery_method": "ChatGPT/Codex built-in web search"
+  },
+  {
+    "entity_id": "academic_004",
+    "title": "Agentic AI systems: from scruffy to neat",
+    "url": "https://www.csail.mit.edu/event/agentic-ai-systems-scruffy-neat",
+    "content": "A June 2026 MIT CSAIL talk compares reactive prompting, chain-of-thought and tool use with more formal symbolic and probabilistic approaches to LLM-powered agents.",
+    "published_date": "2026-06-10",
+    "discovery_method": "ChatGPT/Codex built-in web search"
+  },
+  {
+    "entity_id": "academic_004",
+    "title": "Teaching AI agents to ask better questions by playing Battleship",
+    "url": "https://www.csail.mit.edu/news/teaching-ai-agents-ask-better-questions-playing-battleship",
+    "content": "MIT CSAIL reports an uncertainty-aware agent approach that outperformed a frontier model while operating at around one percent of its cost in the studied setting.",
+    "published_date": "2026-05-06",
+    "discovery_method": "ChatGPT/Codex built-in web search"
+  },
+  {
+    "entity_id": "academic_008",
+    "title": "Latest research",
+    "url": "https://allenai.org/research",
+    "content": "Ai2's 2026 research stream includes benchmark auditing, tutor-agent evaluation, deterministic tool and guardrail design for reliable agents, hybrid-model token analysis, multimodal motion forecasting, and an evaluation workbench for model development.",
+    "published_date": "2026-09-01",
+    "discovery_method": "ChatGPT/Codex built-in web search"
+  },
+  {
+    "entity_id": "academic_008",
+    "title": "Open models - Language models",
+    "url": "https://allenai.org/language-models",
+    "content": "Ai2 publishes open model families including Olmo 3, Olmo 2, Tulu 3 and OLMoE together with data, code, recipes, checkpoints and evaluation assets.",
+    "published_date": "2026-09-22",
+    "discovery_method": "ChatGPT/Codex built-in web search"
+  },
+  {
+    "entity_id": "academic_008",
+    "title": "How researchers adapted Dolma for better Thai language models",
+    "url": "https://allenai.org/blog/thai-llm-dolma",
+    "content": "Ai2 describes use of Dolma to create a 47-billion-token Thai pretraining corpus, illustrating localization of open data-curation pipelines.",
+    "published_date": "2026-08-26",
+    "discovery_method": "ChatGPT/Codex built-in web search"
+  },
+  {
+    "entity_id": "academic_041",
+    "title": "从AI Coding到世界模型：大模型如何重构世界丨2026智源大会回顾",
+    "url": "https://hub.baai.ac.cn/view/55595",
+    "content": "2026智源大会讨论 AI Coding、自主智能体、模型自进化、世界模型与具身智能，并强调清晰数据闭环对能力提升的重要性。",
+    "published_date": "2026-06-17",
+    "discovery_method": "ChatGPT/Codex built-in web search"
+  },
+  {
+    "entity_id": "academic_044",
+    "title": "CompassArena 大语言模型榜单",
+    "url": "https://arena.opencompass.org.cn/",
+    "content": "OpenCompass uses cleaned anonymous pairwise user votes and a Bradley-Terry model to estimate arena ratings, and publishes confidence intervals and vote counts.",
+    "published_date": "2026-06-11",
+    "discovery_method": "ChatGPT/Codex built-in web search"
+  },
+  {
+    "entity_id": "academic_044",
+    "title": "CNFinBench 评测榜单",
+    "url": "https://cnfinbench.opencompass.org.cn/evaluation-list",
+    "content": "CNFinBench publishes quantitative rankings for large-language-model and agent performance in financial scenarios, including model scores by track.",
+    "published_date": "2026-09-01",
+    "discovery_method": "ChatGPT/Codex built-in web search"
+  }
+]

@@ -1,0 +1,1275 @@
+sources:
+  academic_001:
+    - id: academic_001_official
+      name: "Stanford HAI Official Research"
+      type: official_research
+      tier: A
+      url: "https://hai.stanford.edu/"
+      official: true
+      single_page: true
+  academic_002:
+    - id: academic_002_official
+      name: "Stanford CRFM Official Research"
+      type: official_research
+      tier: A
+      url: "https://crfm.stanford.edu/"
+      official: true
+      single_page: true
+    - id: academic_002_github
+      name: "Stanford CRFM Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/stanford-crfm"
+      official: true
+      single_page: true
+
+  academic_003:
+    - id: academic_003_official
+      name: "Stanford AI Lab (SAIL) Official Research"
+      type: official_research
+      tier: A
+      url: "https://ai.stanford.edu/"
+      official: true
+      single_page: true
+
+  academic_004:
+    - id: academic_004_official
+      name: "MIT CSAIL Official Research"
+      type: official_research
+      tier: A
+      url: "https://www.csail.mit.edu/"
+      official: true
+      single_page: true
+
+  academic_005:
+    - id: academic_005_official
+      name: "CMU Language Technologies Institute (LTI) Official Research"
+      type: official_research
+      tier: A
+      url: "https://lti.cs.cmu.edu/"
+      official: true
+      single_page: true
+
+  academic_006:
+    - id: academic_006_official
+      name: "Berkeley Artificial Intelligence Research (BAIR) Official Research"
+      type: official_research
+      tier: A
+      url: "https://bair.berkeley.edu/"
+      official: true
+      single_page: true
+    - id: academic_006_github
+      name: "Berkeley Artificial Intelligence Research (BAIR) Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/UCBAIR"
+      official: true
+      single_page: true
+
+  academic_007:
+    - id: academic_007_official
+      name: "LMSYS Org Official Research"
+      type: official_research
+      tier: A
+      url: "https://lmsys.org/"
+      official: true
+      single_page: true
+    - id: academic_007_github
+      name: "LMSYS Org Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/lm-sys"
+      official: true
+      single_page: true
+
+  academic_008:
+    - id: academic_008_official
+      name: "Allen Institute for AI (Ai2) Official Research"
+      type: official_research
+      tier: A
+      url: "https://allenai.org/"
+      official: true
+      single_page: true
+    - id: academic_008_github
+      name: "Allen Institute for AI (Ai2) Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/allenai"
+      official: true
+      single_page: true
+
+  academic_009:
+    - id: academic_009_official
+      name: "EleutherAI Official Research"
+      type: official_research
+      tier: A
+      url: "https://www.eleuther.ai/"
+      official: true
+      single_page: true
+    - id: academic_009_github
+      name: "EleutherAI Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/EleutherAI"
+      official: true
+      single_page: true
+
+  academic_010:
+    - id: academic_010_official
+      name: "LAION Official Research"
+      type: official_research
+      tier: A
+      url: "https://laion.ai/"
+      official: true
+      single_page: true
+    - id: academic_010_github
+      name: "LAION Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/LAION-AI"
+      official: true
+      single_page: true
+
+  academic_011:
+    - id: academic_011_official
+      name: "ML Foundations Official Research"
+      type: official_research
+      tier: A
+      url: "https://mlfoundations.org/"
+      official: true
+      single_page: true
+    - id: academic_011_github
+      name: "ML Foundations Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/mlfoundations"
+      official: true
+      single_page: true
+
+  academic_012:
+    - id: academic_012_official
+      name: "Harvard Kempner Institute Official Research"
+      type: official_research
+      tier: A
+      url: "https://kempnerinstitute.harvard.edu/"
+      official: true
+      single_page: true
+
+  academic_013:
+    - id: academic_013_official
+      name: "Princeton Language and Intelligence (PLI) Official Research"
+      type: official_research
+      tier: A
+      url: "https://pli.princeton.edu/"
+      official: true
+      single_page: true
+
+  academic_014:
+    - id: academic_014_official
+      name: "University of Washington NLP Official Research"
+      type: official_research
+      tier: A
+      url: "https://nlp.washington.edu/"
+      official: true
+      single_page: true
+    - id: academic_014_github
+      name: "University of Washington NLP Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/uw-nlp"
+      official: true
+      single_page: true
+
+  academic_015:
+    - id: academic_015_official
+      name: "Mila – Quebec AI Institute Official Research"
+      type: official_research
+      tier: A
+      url: "https://mila.quebec/en"
+      official: true
+      single_page: true
+    - id: academic_015_github
+      name: "Mila – Quebec AI Institute Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/mila-iqia"
+      official: true
+      single_page: true
+
+  academic_016:
+    - id: academic_016_official
+      name: "Vector Institute Official Research"
+      type: official_research
+      tier: A
+      url: "https://vectorinstitute.ai/"
+      official: true
+      single_page: true
+    - id: academic_016_github
+      name: "Vector Institute Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/VectorInstitute"
+      official: true
+      single_page: true
+
+  academic_017:
+    - id: academic_017_official
+      name: "Amii Official Research"
+      type: official_research
+      tier: A
+      url: "https://www.amii.ca/"
+      official: true
+      single_page: true
+    - id: academic_017_github
+      name: "Amii Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/AmiiThinks"
+      official: true
+      single_page: true
+
+  academic_018:
+    - id: academic_018_official
+      name: "ELLIS Official Research"
+      type: official_research
+      tier: A
+      url: "https://ellis.eu/"
+      official: true
+      single_page: true
+
+  academic_019:
+    - id: academic_019_official
+      name: "ETH AI Center Official Research"
+      type: official_research
+      tier: A
+      url: "https://ai.ethz.ch/"
+      official: true
+      single_page: true
+
+  academic_020:
+    - id: academic_020_official
+      name: "EPFL AI Center Official Research"
+      type: official_research
+      tier: A
+      url: "https://ai.epfl.ch/"
+      official: true
+      single_page: true
+
+  academic_021:
+    - id: academic_021_official
+      name: "Oxford Applied and Theoretical ML (OATML) Official Research"
+      type: official_research
+      tier: A
+      url: "https://www.oatml.cs.ox.ac.uk/"
+      official: true
+      single_page: true
+    - id: academic_021_github
+      name: "Oxford Applied and Theoretical ML (OATML) Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/OATML"
+      official: true
+      single_page: true
+
+  academic_022:
+    - id: academic_022_official
+      name: "UCL Centre for Artificial Intelligence Official Research"
+      type: official_research
+      tier: A
+      url: "https://www.ucl.ac.uk/ai-centre/"
+      official: true
+      single_page: true
+
+  academic_023:
+    - id: academic_023_official
+      name: "University of Edinburgh AI Official Research"
+      type: official_research
+      tier: A
+      url: "https://artificial-intelligence.ed.ac.uk/"
+      official: true
+      single_page: true
+
+  academic_024:
+    - id: academic_024_official
+      name: "RIKEN Center for Advanced Intelligence Project Official Research"
+      type: official_research
+      tier: A
+      url: "https://aip.riken.jp/"
+      official: true
+      single_page: true
+
+  academic_025:
+    - id: academic_025_official
+      name: "NUS Artificial Intelligence Institute Official Research"
+      type: official_research
+      tier: A
+      url: "https://ai.nus.edu.sg/"
+      official: true
+      single_page: true
+
+  academic_026:
+    - id: academic_026_official
+      name: "AI Singapore Official Research"
+      type: official_research
+      tier: A
+      url: "https://aisingapore.org/"
+      official: true
+      single_page: true
+    - id: academic_026_github
+      name: "AI Singapore Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/aisingapore"
+      official: true
+      single_page: true
+
+  academic_027:
+    - id: academic_027_official
+      name: "Mohamed bin Zayed University of AI (MBZUAI) Official Research"
+      type: official_research
+      tier: A
+      url: "https://mbzuai.ac.ae/research/"
+      official: true
+      single_page: true
+
+  academic_028:
+    - id: academic_028_official
+      name: "清华大学知识工程实验室（THUKEG / THUDM） Official Research"
+      type: official_research
+      tier: A
+      url: "https://keg.cs.tsinghua.edu.cn/"
+      official: true
+      single_page: true
+    - id: academic_028_github
+      name: "清华大学知识工程实验室（THUKEG / THUDM） Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/THUDM"
+      official: true
+      single_page: true
+
+  academic_029:
+    - id: academic_029_official
+      name: "清华大学自然语言处理实验室（THUNLP） Official Research"
+      type: official_research
+      tier: A
+      url: "https://nlp.csai.tsinghua.edu.cn/"
+      official: true
+      single_page: true
+    - id: academic_029_github
+      name: "清华大学自然语言处理实验室（THUNLP） Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/thunlp"
+      official: true
+      single_page: true
+
+  academic_030:
+    - id: academic_030_official
+      name: "OpenBMB Official Research"
+      type: official_research
+      tier: A
+      url: "https://www.openbmb.cn/"
+      official: true
+      single_page: true
+    - id: academic_030_github
+      name: "OpenBMB Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/OpenBMB"
+      official: true
+      single_page: true
+
+  academic_031:
+    - id: academic_031_official
+      name: "清华大学智能产业研究院（AIR） Official Research"
+      type: official_research
+      tier: A
+      url: "https://air.tsinghua.edu.cn/"
+      official: true
+      single_page: true
+
+  academic_032:
+    - id: academic_032_official
+      name: "北京大学计算机学院 Official Research"
+      type: official_research
+      tier: A
+      url: "https://cs.pku.edu.cn/"
+      official: true
+      single_page: true
+
+  academic_033:
+    - id: academic_033_official
+      name: "PKU-Alignment Official Research"
+      type: official_research
+      tier: A
+      url: "https://ai-alignment.group/"
+      official: true
+      single_page: true
+    - id: academic_033_github
+      name: "PKU-Alignment Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/PKU-Alignment"
+      official: true
+      single_page: true
+
+  academic_034:
+    - id: academic_034_official
+      name: "复旦大学 NLP 与大模型团队 Official Research"
+      type: official_research
+      tier: A
+      url: "https://nlp.fudan.edu.cn/"
+      official: true
+      single_page: true
+    - id: academic_034_github
+      name: "复旦大学 NLP 与大模型团队 Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/FudanNLP"
+      official: true
+      single_page: true
+
+  academic_035:
+    - id: academic_035_official
+      name: "OpenMOSS Official Research"
+      type: official_research
+      tier: A
+      url: "https://openmoss.ai/"
+      official: true
+      single_page: true
+    - id: academic_035_github
+      name: "OpenMOSS Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/OpenMOSS"
+      official: true
+      single_page: true
+
+  academic_036:
+    - id: academic_036_official
+      name: "GAIR 生成式人工智能研究实验室 Official Research"
+      type: official_research
+      tier: A
+      url: "https://plms.ai/"
+      official: true
+      single_page: true
+    - id: academic_036_github
+      name: "GAIR 生成式人工智能研究实验室 Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/GAIR-NLP"
+      official: true
+      single_page: true
+
+  academic_037:
+    - id: academic_037_official
+      name: "南京大学 LAMDA Official Research"
+      type: official_research
+      tier: A
+      url: "https://www.lamda.nju.edu.cn/"
+      official: true
+      single_page: true
+
+  academic_038:
+    - id: academic_038_official
+      name: "哈尔滨工业大学 SCIR Official Research"
+      type: official_research
+      tier: A
+      url: "https://ir.hit.edu.cn/"
+      official: true
+      single_page: true
+    - id: academic_038_github
+      name: "哈尔滨工业大学 SCIR Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/HIT-SCIR"
+      official: true
+      single_page: true
+
+  academic_039:
+    - id: academic_039_official
+      name: "中国科学院自动化研究所 Official Research"
+      type: official_research
+      tier: A
+      url: "http://www.ia.cas.cn/"
+      official: true
+      single_page: true
+
+  academic_040:
+    - id: academic_040_official
+      name: "中科院计算所自然语言处理组 Official Research"
+      type: official_research
+      tier: A
+      url: "https://nlp.ict.ac.cn/"
+      official: true
+      single_page: true
+    - id: academic_040_github
+      name: "中科院计算所自然语言处理组 Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/ictnlp"
+      official: true
+      single_page: true
+
+  academic_041:
+    - id: academic_041_official
+      name: "北京智源人工智能研究院（BAAI） Official Research"
+      type: official_research
+      tier: A
+      url: "https://www.baai.ac.cn/"
+      official: true
+      single_page: true
+    - id: academic_041_github
+      name: "北京智源人工智能研究院（BAAI） Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/BAAI"
+      official: true
+      single_page: true
+
+  academic_042:
+    - id: academic_042_official
+      name: "上海人工智能实验室 Official Research"
+      type: official_research
+      tier: A
+      url: "https://www.shlab.org.cn/"
+      official: true
+      single_page: true
+    - id: academic_042_github
+      name: "上海人工智能实验室 Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/InternLM"
+      official: true
+      single_page: true
+
+  academic_043:
+    - id: academic_043_official
+      name: "OpenMMLab Official Research"
+      type: official_research
+      tier: A
+      url: "https://openmmlab.com/"
+      official: true
+      single_page: true
+    - id: academic_043_github
+      name: "OpenMMLab Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/open-mmlab"
+      official: true
+      single_page: true
+
+  academic_044:
+    - id: academic_044_official
+      name: "OpenCompass Official Research"
+      type: official_research
+      tier: A
+      url: "https://opencompass.org.cn/"
+      official: true
+      single_page: true
+    - id: academic_044_github
+      name: "OpenCompass Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/open-compass"
+      official: true
+      single_page: true
+
+  academic_045:
+    - id: academic_045_official
+      name: "鹏城实验室 Official Research"
+      type: official_research
+      tier: A
+      url: "https://pcl.ac.cn/"
+      official: true
+      single_page: true
+
+  academic_046:
+    - id: academic_046_official
+      name: "粤港澳大湾区数字经济研究院（IDEA） Official Research"
+      type: official_research
+      tier: A
+      url: "https://www.idea.edu.cn/"
+      official: true
+      single_page: true
+    - id: academic_046_github
+      name: "粤港澳大湾区数字经济研究院（IDEA） Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/IDEA-Research"
+      official: true
+      single_page: true
+
+  academic_047:
+    - id: academic_047_official
+      name: "深圳市大数据研究院（SRIBD） Official Research"
+      type: official_research
+      tier: A
+      url: "https://sribd.cn/"
+      official: true
+      single_page: true
+
+  academic_048:
+    - id: academic_048_official
+      name: "浙江大学人工智能学院 Official Research"
+      type: official_research
+      tier: A
+      url: "https://ai.zju.edu.cn/"
+      official: true
+      single_page: true
+
+  academic_049:
+    - id: academic_049_official
+      name: "中国科学技术大学人工智能研究平台 Official Research"
+      type: official_research
+      tier: A
+      url: "https://ai.ustc.edu.cn/"
+      official: true
+      single_page: true
+
+  academic_050:
+    - id: academic_050_official
+      name: "香港中文大学 MMLab Official Research"
+      type: official_research
+      tier: A
+      url: "https://mmlab.ie.cuhk.edu.hk/"
+      official: true
+      single_page: true
+    - id: academic_050_github
+      name: "香港中文大学 MMLab Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/MMLab-CU"
+      official: true
+      single_page: true
+
+  academic_051:
+    - id: academic_051_official
+      name: "香港科技大学 MMLab Official Research"
+      type: official_research
+      tier: A
+      url: "https://mmlab-hkust.github.io/"
+      official: true
+      single_page: true
+    - id: academic_051_github
+      name: "香港科技大学 MMLab Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/mmlab-hkust"
+      official: true
+      single_page: true
+
+  academic_052:
+    - id: academic_052_official
+      name: "Andrej Karpathy Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://karpathy.ai/"
+      official: true
+      single_page: true
+    - id: academic_052_github
+      name: "Andrej Karpathy Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/karpathy"
+      official: true
+      single_page: true
+
+  academic_053:
+    - id: academic_053_official
+      name: "Yann LeCun Official Profile"
+      type: official_personal
+      tier: B
+      url: "http://yann.lecun.com/"
+      official: true
+      single_page: true
+
+  academic_054:
+    - id: academic_054_official
+      name: "François Chollet Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://fchollet.com/"
+      official: true
+      single_page: true
+    - id: academic_054_github
+      name: "François Chollet Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/fchollet"
+      official: true
+      single_page: true
+
+  academic_055:
+    - id: academic_055_official
+      name: "Ilya Sutskever Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://x.com/ilyasut"
+      official: true
+      single_page: true
+
+  academic_056:
+    - id: academic_056_official
+      name: "Demis Hassabis Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://x.com/demishassabis"
+      official: true
+      single_page: true
+
+  academic_057:
+    - id: academic_057_official
+      name: "Sam Altman Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://blog.samaltman.com/"
+      official: true
+      single_page: true
+    - id: academic_057_github
+      name: "Sam Altman Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/sama"
+      official: true
+      single_page: true
+
+  academic_058:
+    - id: academic_058_official
+      name: "Dario Amodei Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://darioamodei.com/"
+      official: true
+      single_page: true
+
+  academic_059:
+    - id: academic_059_official
+      name: "Jimmy Ba Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://jimmylba.github.io/"
+      official: true
+      single_page: true
+
+  academic_060:
+    - id: academic_060_official
+      name: "Fei-Fei Li Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://profiles.stanford.edu/fei-fei-li"
+      official: true
+      single_page: true
+
+  academic_061:
+    - id: academic_061_official
+      name: "Soumith Chintala Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://soumith.ch/"
+      official: true
+      single_page: true
+    - id: academic_061_github
+      name: "Soumith Chintala Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/soumith"
+      official: true
+      single_page: true
+
+  academic_062:
+    - id: academic_062_official
+      name: "Andrew Ng Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://www.andrewng.org/"
+      official: true
+      single_page: true
+
+  academic_063:
+    - id: academic_063_official
+      name: "Geoffrey Hinton Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://www.cs.toronto.edu/~hinton/"
+      official: true
+      single_page: true
+
+  academic_064:
+    - id: academic_064_official
+      name: "Yoshua Bengio Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://yoshuabengio.org/"
+      official: true
+      single_page: true
+
+  academic_065:
+    - id: academic_065_official
+      name: "Christopher Manning Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://nlp.stanford.edu/~manning/"
+      official: true
+      single_page: true
+
+  academic_066:
+    - id: academic_066_official
+      name: "Percy Liang Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://cs.stanford.edu/~pliang/"
+      official: true
+      single_page: true
+    - id: academic_066_github
+      name: "Percy Liang Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/percyliang"
+      official: true
+      single_page: true
+
+  academic_067:
+    - id: academic_067_official
+      name: "Dan Jurafsky Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://web.stanford.edu/~jurafsky/"
+      official: true
+      single_page: true
+
+  academic_068:
+    - id: academic_068_official
+      name: "Kaiming He（何恺明） Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://people.csail.mit.edu/kaiming/"
+      official: true
+      single_page: true
+    - id: academic_068_github
+      name: "Kaiming He（何恺明） Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/KaimingHe"
+      official: true
+      single_page: true
+
+  academic_069:
+    - id: academic_069_official
+      name: "Yejin Choi Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://homes.cs.washington.edu/~yejin/"
+      official: true
+      single_page: true
+
+  academic_070:
+    - id: academic_070_official
+      name: "Hanna Hajishirzi Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://homes.cs.washington.edu/~hannaneh/"
+      official: true
+      single_page: true
+
+  academic_071:
+    - id: academic_071_official
+      name: "Dawn Song Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://people.eecs.berkeley.edu/~dawnsong/"
+      official: true
+      single_page: true
+
+  academic_072:
+    - id: academic_072_official
+      name: "Pieter Abbeel Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://people.eecs.berkeley.edu/~pabbeel/"
+      official: true
+      single_page: true
+    - id: academic_072_github
+      name: "Pieter Abbeel Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/pabbeel"
+      official: true
+      single_page: true
+
+  academic_073:
+    - id: academic_073_official
+      name: "Chelsea Finn Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://ai.stanford.edu/~cbfinn/"
+      official: true
+      single_page: true
+    - id: academic_073_github
+      name: "Chelsea Finn Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/cbfinn"
+      official: true
+      single_page: true
+
+  academic_074:
+    - id: academic_074_official
+      name: "Lilian Weng Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://lilianweng.github.io/"
+      official: true
+      single_page: true
+    - id: academic_074_github
+      name: "Lilian Weng Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/lilianweng"
+      official: true
+      single_page: true
+
+  academic_075:
+    - id: academic_075_official
+      name: "Chip Huyen Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://huyenchip.com/"
+      official: true
+      single_page: true
+    - id: academic_075_github
+      name: "Chip Huyen Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/chiphuyen"
+      official: true
+      single_page: true
+
+  academic_076:
+    - id: academic_076_official
+      name: "Jay Alammar Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://jalammar.github.io/"
+      official: true
+      single_page: true
+    - id: academic_076_github
+      name: "Jay Alammar Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/jalammar"
+      official: true
+      single_page: true
+
+  academic_077:
+    - id: academic_077_official
+      name: "Sebastian Raschka Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://sebastianraschka.com/"
+      official: true
+      single_page: true
+    - id: academic_077_github
+      name: "Sebastian Raschka Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/rasbt"
+      official: true
+      single_page: true
+
+  academic_078:
+    - id: academic_078_official
+      name: "Simon Willison Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://simonwillison.net/"
+      official: true
+      single_page: true
+    - id: academic_078_github
+      name: "Simon Willison Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/simonw"
+      official: true
+      single_page: true
+
+  academic_079:
+    - id: academic_079_official
+      name: "Nathan Lambert Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://www.interconnects.ai/"
+      official: true
+      single_page: true
+    - id: academic_079_github
+      name: "Nathan Lambert Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/natolambert"
+      official: true
+      single_page: true
+
+  academic_080:
+    - id: academic_080_official
+      name: "Eugene Yan Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://eugeneyan.com/"
+      official: true
+      single_page: true
+    - id: academic_080_github
+      name: "Eugene Yan Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/eugeneyan"
+      official: true
+      single_page: true
+
+  academic_081:
+    - id: academic_081_official
+      name: "Hamel Husain Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://hamel.dev/"
+      official: true
+      single_page: true
+    - id: academic_081_github
+      name: "Hamel Husain Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/hamelsmu"
+      official: true
+      single_page: true
+
+  academic_082:
+    - id: academic_082_official
+      name: "Arvind Narayanan Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://www.cs.princeton.edu/~arvindn/"
+      official: true
+      single_page: true
+
+  academic_083:
+    - id: academic_083_official
+      name: "Sayash Kapoor Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://www.sayashkapoor.com/"
+      official: true
+      single_page: true
+    - id: academic_083_github
+      name: "Sayash Kapoor Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/sayashk"
+      official: true
+      single_page: true
+
+  academic_084:
+    - id: academic_084_official
+      name: "Ethan Mollick Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://www.oneusefulthing.org/"
+      official: true
+      single_page: true
+
+  academic_085:
+    - id: academic_085_official
+      name: "Chris Olah Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://colah.github.io/"
+      official: true
+      single_page: true
+    - id: academic_085_github
+      name: "Chris Olah Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/colah"
+      official: true
+      single_page: true
+
+  academic_086:
+    - id: academic_086_official
+      name: "Jeremy Howard Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://www.fast.ai/about/#jeremy"
+      official: true
+      single_page: true
+    - id: academic_086_github
+      name: "Jeremy Howard Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/jph00"
+      official: true
+      single_page: true
+
+  academic_087:
+    - id: academic_087_official
+      name: "唐杰 Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://keg.cs.tsinghua.edu.cn/jietang/"
+      official: true
+      single_page: true
+
+  academic_088:
+    - id: academic_088_official
+      name: "刘知远 Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://nlp.csai.tsinghua.edu.cn/~lzy/"
+      official: true
+      single_page: true
+    - id: academic_088_github
+      name: "刘知远 Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/thunlp"
+      official: true
+      single_page: true
+
+  academic_089:
+    - id: academic_089_official
+      name: "黄民烈 Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://coai.cs.tsinghua.edu.cn/hml"
+      official: true
+      single_page: true
+    - id: academic_089_github
+      name: "黄民烈 Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/thu-coai"
+      official: true
+      single_page: true
+
+  academic_090:
+    - id: academic_090_official
+      name: "朱军 Official Profile"
+      type: official_personal
+      tier: B
+      url: "http://ml.cs.tsinghua.edu.cn/~jun/"
+      official: true
+      single_page: true
+
+  academic_091:
+    - id: academic_091_official
+      name: "周志华 Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://cs.nju.edu.cn/zhouzh/"
+      official: true
+      single_page: true
+
+  academic_092:
+    - id: academic_092_official
+      name: "邱锡鹏 Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://xpqiu.github.io/"
+      official: true
+      single_page: true
+    - id: academic_092_github
+      name: "邱锡鹏 Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/xpqiu"
+      official: true
+      single_page: true
+
+  academic_093:
+    - id: academic_093_official
+      name: "李沐 Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://mu-li.com/"
+      official: true
+      single_page: true
+    - id: academic_093_github
+      name: "李沐 Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/mli"
+      official: true
+      single_page: true
+
+  academic_094:
+    - id: academic_094_official
+      name: "李宏毅 Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://speech.ee.ntu.edu.tw/~tlkagk/"
+      official: true
+      single_page: true
+
+  academic_095:
+    - id: academic_095_official
+      name: "王树森 Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://wangshusen.github.io/"
+      official: true
+      single_page: true
+    - id: academic_095_github
+      name: "王树森 Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/wangshusen"
+      official: true
+      single_page: true
+
+  academic_096:
+    - id: academic_096_official
+      name: "谭旭 Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://tan-xu.github.io/"
+      official: true
+      single_page: true
+    - id: academic_096_github
+      name: "谭旭 Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/tan-xu"
+      official: true
+      single_page: true
+
+  academic_097:
+    - id: academic_097_official
+      name: "杨强 Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://cse.hkust.edu.hk/~qyang/"
+      official: true
+      single_page: true
+
+  academic_098:
+    - id: academic_098_official
+      name: "李开复 Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://x.com/kaifulee"
+      official: true
+      single_page: true
+
+  academic_099:
+    - id: academic_099_official
+      name: "宝玉（Baoyu / dotey） Official Profile"
+      type: official_personal
+      tier: B
+      url: "https://baoyu.io/"
+      official: true
+      single_page: true
+    - id: academic_099_github
+      name: "宝玉（Baoyu / dotey） Official GitHub"
+      type: official_code
+      tier: B
+      url: "https://github.com/dotey"
+      official: true
+      single_page: true

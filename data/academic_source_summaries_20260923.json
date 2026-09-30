@@ -1,0 +1,5233 @@
+{
+  "generated_at": "2026-09-23T06:03:44.267Z",
+  "analysis_model": "qwen3.7-plus",
+  "summaries": {
+    "academic_001_source_01": {
+      "source_id": "academic_001_source_01",
+      "entity_id": "academic_001",
+      "core_points": [
+        "推理模型通过生成逻辑、逐步的思考序列来解决复杂问题，将问题分解为中间步骤以模仿人类的演绎和分析过程。",
+        "这种逐步分解的能力使其在处理数学应用题、规划和复杂问题诊断等需要多步逻辑的任务时更具透明性和有效性。"
+      ],
+      "technical_tags": [
+        "推理模型",
+        "思维链",
+        "多步逻辑",
+        "问题分解"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_001_source_02": {
+      "source_id": "academic_001_source_02",
+      "entity_id": "academic_001",
+      "core_points": [
+        "通过将表格调查数据转换为类似简历的文本文件并微调大语言模型以预测下一个词，可将其用作职业模型的输入。",
+        "经过微调的大语言模型在预测性能上超越了以往所有基于简历的基础模型，证明了微调及增加跨领域职业数据的价值。"
+      ],
+      "technical_tags": [
+        "大语言模型微调",
+        "职业预测模型",
+        "文本生成",
+        "表格数据转换"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_001_source_03": {
+      "source_id": "academic_001_source_03",
+      "entity_id": "academic_001",
+      "core_points": [
+        "斯坦福研究发现，在心理健康背景下，人类专家对AI回应的“安全”标准缺乏共识，暴露出AI心理健康安全测试的重大缺陷。",
+        "研究表明，社交网络有限的用户从AI伴侣处寻求情感支持时，其幸福感可能会降低。",
+        "利益相关者会议指出了当前在监管用于治疗和心理支持的AI工具方面存在关键空白。"
+      ],
+      "technical_tags": [
+        "AI安全评估",
+        "心理健康AI",
+        "AI伴侣",
+        "AI治理"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_001_source_04": {
+      "source_id": "academic_001_source_04",
+      "entity_id": "academic_001",
+      "core_points": [
+        "多模态AI系统能够同时处理、理解和生成文本、图像、音频和视频等多种数据模态。",
+        "与传统单模态AI不同，多模态系统通过结合不同来源的信息，能够获得更丰富的理解并生成更全面的输出。"
+      ],
+      "technical_tags": [
+        "多模态AI",
+        "多模态融合",
+        "跨模态生成",
+        "多源信息处理"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_001_source_05": {
+      "source_id": "academic_001_source_05",
+      "entity_id": "academic_001",
+      "core_points": [
+        "Clinical Mind AI 是一个由斯坦福开发的国际合作平台，旨在通过AI模拟患者 encounters 来加强跨健康专业的临床推理教育。",
+        "相关研讨涉及构建多模态生物医学基础模型以及AI技术在健康职业教育中的应用。"
+      ],
+      "technical_tags": [
+        "多模态生物医学模型",
+        "临床推理教育",
+        "AI模拟患者",
+        "医疗AI平台"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_002_source_01": {
+      "source_id": "academic_002_source_01",
+      "entity_id": "academic_002",
+      "core_points": [
+        "斯坦福CRFM通过100个透明度指标对基础模型开发者进行评估。",
+        "该指数报告了模型、数据、能力、风险和治理披露方面的多年变化情况。"
+      ],
+      "technical_tags": [
+        "基础模型透明度",
+        "模型治理",
+        "风险评估",
+        "披露指标"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_002_source_02": {
+      "source_id": "academic_002_source_02",
+      "entity_id": "academic_002",
+      "core_points": [
+        "CRFM将基于项目反应理论（IRT）的自适应测试集成到HELM评估框架中。",
+        "该方法在保持评估可靠性的同时，有效减少了所需的测试实例数量。"
+      ],
+      "technical_tags": [
+        "自适应测试",
+        "项目反应理论",
+        "模型评估优化",
+        "HELM框架"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_002_source_03": {
+      "source_id": "academic_002_source_03",
+      "entity_id": "academic_002",
+      "core_points": [
+        "HELM是一个由CRFM创建的开源Python框架，用于对大语言模型和多模态模型等基础模型进行全面、可重现和透明的评估。",
+        "该框架支持通过PyPI安装，并提供运行基准测试的命令行工具。"
+      ],
+      "technical_tags": [
+        "开源评估框架",
+        "基础模型基准测试",
+        "可重现评估",
+        "Python工具链"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_002_source_04": {
+      "source_id": "academic_002_source_04",
+      "entity_id": "academic_002",
+      "core_points": [
+        "CRFM的研究涵盖自监督学习对数据集不平衡的鲁棒性提升，以及大语言模型在差分隐私学习中的应用。",
+        "其他研究包括利用语言模型进行无监督语法错误纠正、程序修复，以及结合语言模型与知识图谱进行问答推理。"
+      ],
+      "technical_tags": [
+        "自监督学习",
+        "差分隐私",
+        "无监督程序修复",
+        "知识图谱问答"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_003_source_01": {
+      "source_id": "academic_003_source_01",
+      "entity_id": "academic_003",
+      "core_points": [
+        "Carlos Guestrin 被任命为斯坦福AI实验室（SAIL）的新任主任，接替任职至2025年的 Christopher Manning。",
+        "SAIL 教授 Fei-Fei Li 因对现代机器学习发展的开创性贡献荣获2025年伊丽莎白女王工程奖。"
+      ],
+      "technical_tags": [
+        "实验室管理",
+        "深度学习",
+        "计算机视觉",
+        "学术领导层"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_003_source_02": {
+      "source_id": "academic_003_source_02",
+      "entity_id": "academic_003",
+      "core_points": [
+        "SAIL在ICLR 2026的论文涉及大语言模型和视觉语言模型的动态评估基准及可信度研究。",
+        "研究还包括AI安全领域的道德推理评估方法。"
+      ],
+      "technical_tags": [
+        "动态评估基准",
+        "视觉语言模型",
+        "道德推理",
+        "AI安全评估"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_003_source_03": {
+      "source_id": "academic_003_source_03",
+      "entity_id": "academic_003",
+      "core_points": [
+        "SAIL在ICLR 2025的研究涵盖语言模型智能体在网络安全和风险方面的基准测试。",
+        "其他工作包括大语言模型的混合专家（MoE）架构、指令微调、文本嵌入以及通过演示反馈进行模型对齐。"
+      ],
+      "technical_tags": [
+        "智能体基准测试",
+        "混合专家模型",
+        "指令微调",
+        "基于反馈的对齐"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_003_source_04": {
+      "source_id": "academic_003_source_04",
+      "entity_id": "academic_003",
+      "core_points": [
+        "SAIL博客汇总了ICML 2026和ICLR 2026的接收论文。",
+        "具体研究包括R&B-EnCoRe（具身推理视觉-语言-动作模型的自我改进预训练）和VAGEN（通过强化学习教视觉语言模型构建世界模型）。"
+      ],
+      "technical_tags": [
+        "具身推理",
+        "视觉-语言-动作模型",
+        "强化学习",
+        "世界模型"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_003_source_05": {
+      "source_id": "academic_003_source_05",
+      "entity_id": "academic_003",
+      "core_points": [
+        "SAIL提出了M*，一个专为多模态模型设计的模块化、可扩展的服务系统。",
+        "该系统旨在解决多模态模型在部署和服务过程中的架构与扩展问题。"
+      ],
+      "technical_tags": [
+        "多模态服务系统",
+        "模块化架构",
+        "模型部署",
+        "可扩展系统"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_004_source_01": {
+      "source_id": "academic_004_source_01",
+      "entity_id": "academic_004",
+      "core_points": [
+        "MIT CSAIL的讲座比较了反应式提示、思维链和工具使用等LLM智能体方法。",
+        "讲座探讨了这些非正式方法与更正式的象征性和概率性方法之间的差异与应用。"
+      ],
+      "technical_tags": [
+        "LLM智能体",
+        "反应式提示",
+        "思维链",
+        "概率模型"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_004_source_02": {
+      "source_id": "academic_004_source_02",
+      "entity_id": "academic_004",
+      "core_points": [
+        "MIT CSAIL提出了一种不确定性感知的智能体方法，通过玩“战舰”游戏来教导AI提出更好的问题。",
+        "该方法在研究场景中的性能超越了前沿模型，同时运行成本仅为其约1%。"
+      ],
+      "technical_tags": [
+        "不确定性感知",
+        "主动提问",
+        "成本优化",
+        "智能体规划"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_004_source_03": {
+      "source_id": "academic_004_source_03",
+      "entity_id": "academic_004",
+      "core_points": [
+        "通过设计让多个AI智能体相互批评响应的环境，可以激励它们避免输出随机信息并优先考虑事实准确性，从而减少“幻觉”。",
+        "这种去中心化的多智能体交互和辩论方法，还可用于整合具有不同专业能力的跨模态模型。"
+      ],
+      "technical_tags": [
+        "多智能体协作",
+        "幻觉缓解",
+        "相互批评",
+        "去中心化系统"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_004_source_04": {
+      "source_id": "academic_004_source_04",
+      "entity_id": "academic_004",
+      "core_points": [
+        "Google DeepMind的Kevin Murphy概述了构建LLM驱动智能体的方法，范围从非正式的语言方法到基于象征或概率模型的方法。",
+        "Level 1智能体被定义为基于提示冻结LLM在每一步选择适当动作的简单反应式智能体，不进行显式推理。"
+      ],
+      "technical_tags": [
+        "LLM智能体架构",
+        "反应式智能体",
+        "符号推理",
+        "概率模型"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_004_source_05": {
+      "source_id": "academic_004_source_05",
+      "entity_id": "academic_004",
+      "core_points": [
+        "CSAIL Forum 举办了多场活动，包括 Tim Berners-Lee 的论坛以及 Vincent Sitzmann 关于“物理 AI 的 LLM 时刻”的演讲。",
+        "活动还涵盖了 Yoon Kim 关于语言建模高效且具表现力架构的探讨。"
+      ],
+      "technical_tags": [
+        "物理AI",
+        "语言模型架构",
+        "学术论坛",
+        "高效计算"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_005_source_01": {
+      "source_id": "academic_005_source_01",
+      "entity_id": "academic_005",
+      "core_points": [
+        "CMU LTI 提供2026年夏季为期12-14周的线下“Language Technology For All”实习项目。",
+        "实习生将专注于前沿语言系统的研究，旨在提高其准确性、效率或包容性。"
+      ],
+      "technical_tags": [
+        "语言技术研究",
+        "模型包容性",
+        "线下实习",
+        "语言系统优化"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_005_source_02": {
+      "source_id": "academic_005_source_02",
+      "entity_id": "academic_005",
+      "core_points": [
+        "LTI助理教授Daniel Fried因在人机交互方面的工作获得NSF CAREER奖，研究教授Rita Singh因语音取证和声音分析成为2026 ISCA Fellow。",
+        "CMU团队在Amazon Nova AI Challenge中取得进展。"
+      ],
+      "technical_tags": [
+        "人机交互",
+        "语音取证",
+        "声音分析",
+        "AI竞赛"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_005_source_03": {
+      "source_id": "academic_005_source_03",
+      "entity_id": "academic_005",
+      "core_points": [
+        "CMU团队进入Amazon Nova AI Challenge决赛，该赛事聚焦于大语言模型、智能体及安全研究。",
+        "LTI通过提供高级NLP和大语言模型等基础课程，为学生参与此类前沿AI研究做准备。"
+      ],
+      "technical_tags": [
+        "大语言模型",
+        "AI智能体",
+        "安全研究",
+        "AI教育"
+      ],
+      "direct_statement": true,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_005_source_04": {
+      "source_id": "academic_005_source_04",
+      "entity_id": "academic_005",
+      "core_points": [
+        "该博士论文目录涉及大语言模型的幻觉分类法、摘要模型分析及事实性指标评估。",
+        "研究还包括用于控制数据集偏差的基准测试和FAVA模型。"
+      ],
+      "technical_tags": [
+        "幻觉分类",
+        "事实性评估",
+        "摘要模型",
+        "数据集偏差控制"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_005_source_05": {
+      "source_id": "academic_005_source_05",
+      "entity_id": "academic_005",
+      "core_points": [
+        "Chenyan Xiong 的研究集中在基础和大语言模型、信息检索及医疗AI，开发了神经信息检索和密集检索的创新方法。",
+        "其工作还包括高效基础模型预训练以及构建 ClueWeb22 和对话搜索等数据集。"
+      ],
+      "technical_tags": [
+        "神经信息检索",
+        "密集检索",
+        "基础模型预训练",
+        "医疗AI"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_006_source_01": {
+      "source_id": "academic_006_source_01",
+      "entity_id": "academic_006",
+      "core_points": [
+        "2026年BAIR毕业生的研究涵盖机器人、LLM推理、计算机视觉、生成建模和AI安全等现代AI领域。",
+        "具体研究包括评估LLM记忆力的基准测试，以及利用源自电影和电视的多模态数据集来理解对话、叙事和社交互动。"
+      ],
+      "technical_tags": [
+        "LLM记忆基准",
+        "多模态数据集",
+        "叙事理解",
+        "社交交互建模"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_006_source_02": {
+      "source_id": "academic_006_source_02",
+      "entity_id": "academic_006",
+      "core_points": [
+        "2026届BAIR毕业生研究涵盖机器人、大语言模型、计算机视觉及AI安全等现代AI广泛领域。",
+        "有研究者专注于NLP与多模态机器学习，构建用于理解对话和社交交互的多模态系统，并建立LLM记忆基准。",
+        "研究结合计算方法与人文社科问题，探讨多模态数据集中代表性声音及模型行为。"
+      ],
+      "technical_tags": [
+        "多模态机器学习",
+        "大语言模型评估",
+        "对话与叙事理解",
+        "数据集构建"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_006_source_03": {
+      "source_id": "academic_006_source_03",
+      "entity_id": "academic_006",
+      "core_points": [
+        "2024届BAIR毕业生研究包括基于大语言模型的自主代理等前沿AI领域。",
+        "有研究者专注于环境生成与课程学习方法，通过算法生成多样化训练场景以提升强化学习自主代理的泛化能力与样本效率。"
+      ],
+      "technical_tags": [
+        "强化学习",
+        "课程学习",
+        "环境生成",
+        "自主代理"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_006_source_04": {
+      "source_id": "academic_006_source_04",
+      "entity_id": "academic_006",
+      "core_points": [
+        "有研究者构建了统一的虚拟环境，用于同时测试儿童与AI模型以训练强化学习模型。",
+        "该研究者具备创建初创公司及开发STEM硬件编程玩具的产业与工程经验。"
+      ],
+      "technical_tags": [
+        "虚拟环境构建",
+        "强化学习训练",
+        "人机交互测试",
+        "STEM教育硬件"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_007_source_01": {
+      "source_id": "academic_007_source_01",
+      "entity_id": "academic_007",
+      "core_points": [
+        "LMSYS Org 提供用于大语言模型和多模态模型的高性能服务引擎。",
+        "运营一个具备匿名和随机对战机制的大语言模型基准评测平台。"
+      ],
+      "technical_tags": [
+        "模型服务引擎",
+        "多模态模型",
+        "匿名对战评测",
+        "基准测试平台"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_007_source_02": {
+      "source_id": "academic_007_source_02",
+      "entity_id": "academic_007",
+      "core_points": [
+        "LMSYS Org 博客发布关于大模型系统的研究更新与技术深度解析。",
+        "包含关于智能体辅助 SGLang 开发的初步探索文章。"
+      ],
+      "technical_tags": [
+        "SGLang开发",
+        "智能体辅助开发",
+        "技术博客"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_007_source_03": {
+      "source_id": "academic_007_source_03",
+      "entity_id": "academic_007",
+      "core_points": [
+        "SGLang 被定位为面向大语言模型和多模态模型的高性能服务框架。",
+        "探讨了 SGLang 框架在智能体辅助开发模式下的适用性与优势。"
+      ],
+      "technical_tags": [
+        "SGLang框架",
+        "智能体辅助开发",
+        "模型服务架构"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_007_source_04": {
+      "source_id": "academic_007_source_04",
+      "entity_id": "academic_007",
+      "core_points": [
+        "LMSYS Org 的项目涵盖大模型系统领域的多个开源工程。",
+        "其核心项目包括一个采用众包模式进行匿名随机对战的大语言模型评测平台。"
+      ],
+      "technical_tags": [
+        "众包评测",
+        "匿名对战",
+        "开源项目矩阵"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_007_source_05": {
+      "source_id": "academic_007_source_05",
+      "entity_id": "academic_007",
+      "core_points": [
+        "介绍了围绕 SGLang 构建的 Infer-forge 系统，涉及 Harness、Loop 和 Graph 工程。",
+        "关联了 SGLang 团队的智能体辅助开发探索以及关于自驱动 Harness 工程的研究。"
+      ],
+      "technical_tags": [
+        "Infer-forge",
+        "图工程",
+        "循环工程",
+        "Harness工程"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_008_source_01": {
+      "source_id": "academic_008_source_01",
+      "entity_id": "academic_008",
+      "core_points": [
+        "Ai2 2026年的研究涵盖基准审计、导师智能体评估以及多模态运动预测等方向。",
+        "致力于设计确定性工具与护栏以构建可靠智能体，并开发用于模型开发的评估工作台。"
+      ],
+      "technical_tags": [
+        "基准审计",
+        "智能体护栏设计",
+        "多模态运动预测",
+        "评估工作台"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_008_source_02": {
+      "source_id": "academic_008_source_02",
+      "entity_id": "academic_008",
+      "core_points": [
+        "Ai2 发布了包含 Olmo 3、Olmo 2、Tulu 3 和 OLMoE 的开放模型家族。",
+        "随模型开源的内容还包括完整的数据、代码、训练配方、检查点及评估资产。"
+      ],
+      "technical_tags": [
+        "开放模型家族",
+        "OLMo",
+        "Tulu",
+        "开源训练配方"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_008_source_03": {
+      "source_id": "academic_008_source_03",
+      "entity_id": "academic_008",
+      "core_points": [
+        "Ai2 利用 Dolma 数据管理工具构建了包含 470 亿 token 的泰语预训练语料库。",
+        "该工作展示了开放数据管理管道在特定语言（泰语）本地化中的应用。"
+      ],
+      "technical_tags": [
+        "Dolma数据管道",
+        "泰语预训练语料",
+        "数据本地化"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_009_source_01": {
+      "source_id": "academic_009_source_01",
+      "entity_id": "academic_009",
+      "core_points": [
+        "EleutherAI 使用网络数据与 MATH 基准的混合数据集进行语言模型预训练。",
+        "研究考察了模型规模及测试集数据污染程度对预训练效果的影响。"
+      ],
+      "technical_tags": [
+        "数据污染分析",
+        "混合预训练数据",
+        "模型规模扫描"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_009_source_02": {
+      "source_id": "academic_009_source_02",
+      "entity_id": "academic_009",
+      "core_points": [
+        "EleutherAI 持续发布关于语言建模与人工智能基础研究的学术论文。",
+        "近期研究包括通过信息内容缩放来考察两跳推理能力。"
+      ],
+      "technical_tags": [
+        "两跳推理",
+        "信息内容缩放",
+        "学术论文发布"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_009_source_03": {
+      "source_id": "academic_009_source_03",
+      "entity_id": "academic_009",
+      "core_points": [
+        "大语言模型的评估通常依赖于多个基准数据集以生成量化分数。",
+        "这些量化分数被用于在不同模型之间进行横向性能比较。"
+      ],
+      "technical_tags": [
+        "基准数据集评估",
+        "模型量化评分",
+        "跨模型比较"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_009_source_04": {
+      "source_id": "academic_009_source_04",
+      "entity_id": "academic_009",
+      "core_points": [
+        "EleutherAI 博客探讨了针对开放权重 AI 安全的预训练数据过滤技术。",
+        "相关研究由 Kyle O'Brien、Stella Biderman 等多位研究员共同推进。"
+      ],
+      "technical_tags": [
+        "预训练数据过滤",
+        "开放权重安全",
+        "AI安全研究"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_009_source_05": {
+      "source_id": "academic_009_source_05",
+      "entity_id": "academic_009",
+      "core_points": [
+        "项目要求构建包含干净、有提示及误导性提示推理问题的小型基准测试。",
+        "旨在为运行开放权重模型创建可复现的评估工具（harness）。"
+      ],
+      "technical_tags": [
+        "推理问题基准",
+        "误导性提示",
+        "可复现评估工具"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_010_source_01": {
+      "source_id": "academic_010_source_01",
+      "entity_id": "academic_010",
+      "core_points": [
+        "LAION 发布了专为多模态机器学习研究设计的大规模开放视频数据集 LAION-BVD。",
+        "该数据集旨在为多模态模型训练提供大规模视频数据支持。"
+      ],
+      "technical_tags": [
+        "LAION-BVD",
+        "开放视频数据集",
+        "多模态机器学习"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_010_source_02": {
+      "source_id": "academic_010_source_02",
+      "entity_id": "academic_010",
+      "core_points": [
+        "ROOK 项目关注人工智能领域中长期用于衡量和推进 AI 能力的战略推理任务。",
+        "将战略推理任务作为评估和提升 AI 系统能力的核心基准。"
+      ],
+      "technical_tags": [
+        "战略推理任务",
+        "AI能力基准",
+        "ROOK项目"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_010_source_03": {
+      "source_id": "academic_010_source_03",
+      "entity_id": "academic_010",
+      "core_points": [
+        "LAION 探讨了模型感知与人类感知之间的差异。",
+        "涉及用于语音情感估计的最先进模型，并为细微情感分析设定了新基准。"
+      ],
+      "technical_tags": [
+        "语音情感估计",
+        "模型感知差异",
+        "细微情感基准"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_010_source_04": {
+      "source_id": "academic_010_source_04",
+      "entity_id": "academic_010",
+      "core_points": [
+        "OSSAS 项目旨在提升机器对科学内容的推理能力，并在全文不可用时改善可访问性。",
+        "引入新颖的视觉分析技术用于科学文献的映射与总结。"
+      ],
+      "technical_tags": [
+        "科学内容推理",
+        "视觉分析映射",
+        "开源大规模摘要"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_010_source_05": {
+      "source_id": "academic_010_source_05",
+      "entity_id": "academic_010",
+      "core_points": [
+        "LAION-BVD 是一个包含 13 亿个特定平台视频 URL 的大规模开放视频数据集。",
+        "该数据集专门针对多模态学习需求进行构建与优化。"
+      ],
+      "technical_tags": [
+        "13亿视频URL",
+        "多模态学习数据集",
+        "平台特定视频"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_011_source_01": {
+      "source_id": "academic_011_source_01",
+      "entity_id": "academic_011",
+      "core_points": [
+        "ML Foundations 广泛研究深度学习基础，涵盖优化、泛化、强化学习及生成建模。",
+        "近期研究包括任意顺序灵活长度掩码扩散、认知模型揭示语言模型价值权衡、以及使用 Adam 改进 Shampoo 优化器。"
+      ],
+      "technical_tags": [
+        "掩码扩散模型",
+        "优化器改进",
+        "认知模型与价值权衡",
+        "深度学习基础"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_011_source_02": {
+      "source_id": "academic_011_source_02",
+      "entity_id": "academic_011",
+      "core_points": [
+        "提供面向 Kubernetes/云工程师转型 AI/ML 平台工程师的 6 个月学习路线图。",
+        "路线涵盖部署自托管 LLM 与向量数据库、通过 KEDA 自动扩缩容，以及构建 RAG 平台。",
+        "强调提示词版本控制、评估框架与护栏等 LLMOps 标准面试主题。"
+      ],
+      "technical_tags": [
+        "LLMOps",
+        "RAG平台构建",
+        "KEDA自动扩缩容",
+        "提示词版本控制"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_012_source_01": {
+      "source_id": "academic_012_source_01",
+      "entity_id": "academic_012",
+      "core_points": [
+        "Yonatan Belinkov 作为访问学者加入，专注于大语言模型及多模态模型的可解释性、控制与鲁棒性研究。",
+        "Belinkov 表示其团队致力于将可解释性研究扩展到更真实的用例中，以积极影响现实生活中的 AI 应用。",
+        "访问学者将与 Kempner 研究所成员合作，开发连接 AI 与自然智能的创新计算机模型。"
+      ],
+      "technical_tags": [
+        "模型可解释性",
+        "鲁棒性与控制",
+        "自然与人工智能交叉"
+      ],
+      "direct_statement": true,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_012_source_02": {
+      "source_id": "academic_012_source_02",
+      "entity_id": "academic_012",
+      "core_points": [
+        "2025 秋季本科生研究项目涵盖使用概念图锚定世界模型、多智能体 AI 个性化慢性病管理等方向。",
+        "研究课题深入探讨智能的数学与计算模型、认知理论以及智能的神经生物学基础。",
+        "部分项目结合认知科学，如研究婴儿对协作和任务表现的直觉。"
+      ],
+      "technical_tags": [
+        "概念图与世界模型",
+        "多智能体AI",
+        "认知理论与婴儿直觉",
+        "智能基础机制"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_012_source_03": {
+      "source_id": "academic_012_source_03",
+      "entity_id": "academic_012",
+      "core_points": [
+        "宣布2026年Kempner研究所研究奖学金获得者名单，包括Jieneng Chen和Anne Wu等6人。",
+        "Jieneng Chen致力于构建通用视觉智能基础模型，将原始视觉输入转化为支持3D/4D环境推理的结构化表示。",
+        "Anne Wu的研究专注于开发从复杂交互环境自然信号中学习的模型，以实现多模态对话模型中的鲁棒理解。"
+      ],
+      "technical_tags": [
+        "视觉基础模型",
+        "多模态对话模型",
+        "3D/4D环境推理"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_012_source_04": {
+      "source_id": "academic_012_source_04",
+      "entity_id": "academic_012",
+      "core_points": [
+        "公布2026年Kempner AI研究员项目申请要求，预计2026年9月15日入职，需具备计算机或相关领域学士/硕士学位。",
+        "申请截止日期为2026年6月1日，需提交简历、成绩单、不超过两页的研究陈述及推荐信。",
+        "理想候选人需具备基础模型训练、智能体工作流、工具使用模型及分布式训练等经验。"
+      ],
+      "technical_tags": [
+        "基础模型训练",
+        "智能体工作流",
+        "分布式训练"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_012_source_05": {
+      "source_id": "academic_012_source_05",
+      "entity_id": "academic_012",
+      "core_points": [
+        "汇总近期研究论文，包括评估语言模型理解谜题陈述能力的研究，以及用于生物医学基础模型的多模态机器学习平台PyTDC。",
+        "发布BRIDGE基准测试，用于评估大型语言模型理解真实世界临床实践文本的能力。",
+        "探讨人类语言网络的小脑成分，并提出重新构想故事线可视化的Story Ribbons方法。"
+      ],
+      "technical_tags": [
+        "生物医学基础模型",
+        "临床文本基准测试",
+        "语言网络神经科学"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_013_source_01": {
+      "source_id": "academic_013_source_01",
+      "entity_id": "academic_013",
+      "core_points": [
+        "展示普林斯顿语言与智能研究所（PLI）成员在ICLR 2026上发表的论文，涵盖多智能体任务和安全测试等研究。",
+        "指出当前前沿模型的安全测试常忽视对手可通过修改模型来扩大风险的关键因素。",
+        "介绍HELMET和LongProc等关于模型快速进展的评估项目。"
+      ],
+      "technical_tags": [
+        "模型安全测试",
+        "多智能体任务",
+        "长上下文评估"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_013_source_02": {
+      "source_id": "academic_013_source_02",
+      "entity_id": "academic_013",
+      "core_points": [
+        "举办普林斯顿AI对齐与安全研讨会，由Sanjeev Arora、Danqi Chen等组织，致力于识别和缓解大型模型中的不安全行为。",
+        "研讨会旨在防止恶意滥用，确保AI行为符合伦理标准并建立公众信任。",
+        "Percy Liang在摘要中指出，随着基础模型能力的飞速提升，其开放性却在下降。"
+      ],
+      "technical_tags": [
+        "AI对齐",
+        "模型安全缓解",
+        "基础模型开放性"
+      ],
+      "direct_statement": true,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_013_source_03": {
+      "source_id": "academic_013_source_03",
+      "entity_id": "academic_013",
+      "core_points": [
+        "总结PLI在NeurIPS 2023上的研究成果，包括无限深度神经网络中的特征学习，以及基础模型零/少样本学习鲁棒性研讨会。",
+        "发表从大型语言模型中检测预训练数据的研究，以及利用最优传输进行空间多模态数据集成表示学习的工作。"
+      ],
+      "technical_tags": [
+        "无限深度神经网络",
+        "预训练数据检测",
+        "最优传输表示学习"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_013_source_04": {
+      "source_id": "academic_013_source_04",
+      "entity_id": "academic_013",
+      "core_points": [
+        "概述AI在数学领域能力的快速提升，包括基准测试饱和和IMO金牌表现。",
+        "介绍普林斯顿在AI数学方面的努力，特别是推出一个在自然语言定理证明中达到同类最佳性能的开源智能体框架。"
+      ],
+      "technical_tags": [
+        "自然语言定理证明",
+        "开源智能体框架",
+        "数学能力评估"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_013_source_05": {
+      "source_id": "academic_013_source_05",
+      "entity_id": "academic_013",
+      "core_points": [
+        "举办春季研讨会，展示PLI种子基金获得者将大型语言模型应用于跨学科研究的突破性项目。",
+        "PLI主任兼计算机科学Fitzmorris讲席教授强调，研讨会的目标是展示研究人员如何使用或计划使用大型AI模型推进研究。"
+      ],
+      "technical_tags": [
+        "大型语言模型应用",
+        "跨学科研究",
+        "种子基金研讨会"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_014_source_01": {
+      "source_id": "academic_014_source_01",
+      "entity_id": "academic_014",
+      "core_points": [
+        "华盛顿大学NLP团队专注于自然语言处理、开放语言模型与推理研究。",
+        "该团队的研究生态与Ai2（艾伦人工智能研究所）联系紧密。"
+      ],
+      "technical_tags": [
+        "自然语言处理",
+        "开放语言模型",
+        "推理研究"
+      ],
+      "direct_statement": false,
+      "summary_status": "baseline_only",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_015_source_01": {
+      "source_id": "academic_015_source_01",
+      "entity_id": "academic_015",
+      "core_points": [
+        "与公共政策论坛合作开展AI政策培训项目，并庆祝AI4Good Lab第10期cohort。",
+        "发表通过原生检索增强推理提高上下文保真度的研究。",
+        "提出DoomArena框架，用于测试AI智能体应对不断演变的安全威胁的能力。"
+      ],
+      "technical_tags": [
+        "检索增强推理",
+        "AI智能体安全测试",
+        "AI政策培训"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_015_source_02": {
+      "source_id": "academic_015_source_02",
+      "entity_id": "academic_015",
+      "core_points": [
+        "提出一种通过合成嵌入实现通用无源类别遗忘框架的研究。",
+        "探讨调整语言模型以在分类任务中生成良好类别概率的方法。"
+      ],
+      "technical_tags": [
+        "机器遗忘",
+        "合成嵌入",
+        "语言模型概率校准"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_016_source_01": {
+      "source_id": "academic_016_source_01",
+      "entity_id": "academic_016",
+      "core_points": [
+        "在ICLR 2026上展示涵盖高级推理强化学习、生成式AI、多模态系统及自主智能体的研究组合。",
+        "强调在可信AI、科学发现及医疗保健领域的创新应用。",
+        "任命13名新教职成员以扩展核心研究领导力，并举办ML安全与隐私研讨会。"
+      ],
+      "technical_tags": [
+        "强化学习推理",
+        "多模态系统",
+        "自主智能体"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_016_source_02": {
+      "source_id": "academic_016_source_02",
+      "entity_id": "academic_016",
+      "core_points": [
+        "在ICML 2026发表涵盖强化学习后训练、视频生成、多模态系统及自主智能体规划的研究。",
+        "提出RedDebate多智能体辩论框架，使大型语言模型能够通过协作论证识别和缓解自身的不安全行为。"
+      ],
+      "technical_tags": [
+        "多智能体辩论",
+        "视频生成",
+        "模型后训练"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_016_source_03": {
+      "source_id": "academic_016_source_03",
+      "entity_id": "academic_016",
+      "core_points": [
+        "博客汇总涵盖大语言模型、提示工程和参数高效微调（PEFT）等主题的研究动态。",
+        "介绍与欧洲航天局合作推进地球观测AI，以及致力于研究生命周期全自动化的“AI科学家”项目。",
+        "展示AI在个性化癌症治疗和加速其他科学发现中的应用。"
+      ],
+      "technical_tags": [
+        "参数高效微调",
+        "地球观测AI",
+        "自动化科学研究"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_016_source_04": {
+      "source_id": "academic_016_source_04",
+      "entity_id": "academic_016",
+      "core_points": [
+        "发布新的多模态数据集，用于评估机器学习模型在检测偏见和虚假内容方面的有效性。",
+        "该数据集跨文本和图像模态进行基准测试，旨在训练高级AI模型以打击虚假信息。"
+      ],
+      "technical_tags": [
+        "多模态偏见检测",
+        "虚假信息对抗",
+        "多模态基准测试"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_016_source_05": {
+      "source_id": "academic_016_source_05",
+      "entity_id": "academic_016",
+      "core_points": [
+        "向安大略省顶尖AI研究生颁发100份奖学金，并探讨智能体AI评估策略。",
+        "发布UnBias-Plus免费开源工具，用于检测和重写文本中的偏见。",
+        "Hassan Ashtiani致力于通过数学基础构建可信AI。"
+      ],
+      "technical_tags": [
+        "智能体AI评估",
+        "文本偏见重写",
+        "可信AI数学基础"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_017_source_01": {
+      "source_id": "academic_017_source_01",
+      "entity_id": "academic_017",
+      "core_points": [
+        "参与全球团队研究如何对抗“AI集群”传播虚假信息的问题。",
+        "探讨多智能体AI系统中多个智能体交互的机制，指出它们可能协同工作以更有效且难以检测的方式传播虚假信息。"
+      ],
+      "technical_tags": [
+        "多智能体系统",
+        "AI虚假信息集群",
+        "智能体交互机制"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_018_source_01": {
+      "source_id": "academic_018_source_01",
+      "entity_id": "academic_018",
+      "core_points": [
+        "举办Helmholtz-ELLIS科学基础模型研讨会，探讨大语言和多模态模型如何重塑材料科学、天文学和物理学等跨学科研究。",
+        "讨论基础模型在表格数据中的应用，并强调基准测试、评估和伦理部署等关键挑战。"
+      ],
+      "technical_tags": [
+        "科学基础模型",
+        "表格数据建模",
+        "跨学科AI应用"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_018_source_02": {
+      "source_id": "academic_018_source_02",
+      "entity_id": "academic_018",
+      "core_points": [
+        "强调Helmholtz基金会模型倡议与ELLIS多个单元（海德堡、慕尼黑、波茨坦）的联合组织作用。",
+        "汇集微软研究院、Meta、OpenAI等领先机构的研究人员，共同探讨基础模型在科学发现中的技术进展与伦理部署。"
+      ],
+      "technical_tags": [
+        "联合研究网络",
+        "科学基础模型",
+        "伦理部署评估"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_018_source_03": {
+      "source_id": "academic_018_source_03",
+      "entity_id": "academic_018",
+      "core_points": [
+        "在EMNLP 2025发表关于智能体间心智理论的研究，测试大型语言模型在多智能体和人类-AI交互中的对话者意识。"
+      ],
+      "technical_tags": [
+        "心智理论",
+        "多智能体交互",
+        "对话者意识测试"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_018_source_04": {
+      "source_id": "academic_018_source_04",
+      "entity_id": "academic_018",
+      "core_points": [
+        "举办第二届基础模型冬季学校，吸引来自43个国家的约200名参与者。",
+        "探讨检索机制和反思推理如何提升多模态AI系统的性能、可解释性与安全性。",
+        "讨论大规模世界模型在持续学习中的应用，以及变分自编码器和扩散模型的最新进展。"
+      ],
+      "technical_tags": [
+        "反思推理",
+        "大规模世界模型",
+        "多模态AI安全"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_018_source_05": {
+      "source_id": "academic_018_source_05",
+      "entity_id": "academic_018",
+      "core_points": [
+        "总结第二届基础模型冬季学校的举办情况，强调检索机制与反思推理在提升模型性能和多模态AI安全性中的重要性。",
+        "通过海报展示环节促进参与者之间的学术交流与成果分享。"
+      ],
+      "technical_tags": [
+        "反思推理",
+        "多模态AI安全",
+        "学术交流海报展"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_019_source_01": {
+      "source_id": "academic_019_source_01",
+      "entity_id": "academic_019",
+      "core_points": [
+        "发布Swiss AI第二轮大型资助征集，意向书截止日期为2025年8月25日，完整提案为9月8日。",
+        "资助领域涵盖大语言模型、多模态、AI安全以及AI在教育、科学、健康、气候和机器人等垂直领域的应用。"
+      ],
+      "technical_tags": [
+        "大型资助征集",
+        "AI垂直领域应用",
+        "多模态与AI安全"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_019_source_02": {
+      "source_id": "academic_019_source_02",
+      "entity_id": "academic_019",
+      "core_points": [
+        "公布2025年秋季数据科学实验室项目列表，包括用于LLM后训练的Tool Gym和Code Gym，以及基于瑞士LLM的编码助手评估。",
+        "涵盖LLM隐藏维度探测、离散音频分词器基准测试、填空训练语言模型的记忆动态，以及LLM中错误信息映射等研究。"
+      ],
+      "technical_tags": [
+        "LLM后训练工具",
+        "离散音频分词器",
+        "模型记忆动态"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_019_source_03": {
+      "source_id": "academic_019_source_03",
+      "entity_id": "academic_019",
+      "core_points": [
+        "举办苏黎世Pre-NeurIPS 2025海报展示会，由ELLIS Unit Zurich组织，展示NeurIPS 2025录用论文及其他同行评审工作。",
+        "研究亮点包括利用对比表示学习提高大型语言模型安全性，以及使用参数化平均场近似进行可扩展神经激励设计。"
+      ],
+      "technical_tags": [
+        "对比表示学习",
+        "神经激励设计",
+        "逆问题求解"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_020_source_01": {
+      "source_id": "academic_020_source_01",
+      "entity_id": "academic_020",
+      "core_points": [
+        "EPFL团队开发了训练大语言模型以寻找科学实验最佳设置的框架。",
+        "Swiss AI Initiative发布了完全开源的大型语言模型Apertus 1.5，Current AI推出了由其驱动的开源聊天机器人Alpha Chat。",
+        "EPFL教授Andrea Cavallaro指出AI工具是文化产物而非中立软件，探讨了在机器生成内容增加时保持信息可信度的方法。"
+      ],
+      "technical_tags": [
+        "Scientific Experiment Optimization",
+        "Open-source Foundation Models",
+        "Sovereign AI",
+        "AI Trustworthiness"
+      ],
+      "direct_statement": true,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_020_source_02": {
+      "source_id": "academic_020_source_02",
+      "entity_id": "academic_020",
+      "core_points": [
+        "Apertus与Proton的Lumo AI Assistant建立合作。",
+        "Swiss AI Initiative在第3次大型项目呼吁中分配了850万GPU小时以支持开放科学核心领域的研发。",
+        "EPFL举办了关于AI的公民大会，并探讨了具备怀疑能力的AI对科学发现的优化作用。"
+      ],
+      "technical_tags": [
+        "Open-science Artifacts",
+        "GPU Resource Allocation",
+        "AI Governance",
+        "Scientific Discovery"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_020_source_03": {
+      "source_id": "academic_020_source_03",
+      "entity_id": "academic_020",
+      "core_points": [
+        "展示了Apertus大语言模型在辅助选择最佳医疗治疗方案方面的原型能力。",
+        "提供了EPFL AI Center的物理地址与联系信息。"
+      ],
+      "technical_tags": [
+        "Medical Treatment Optimization",
+        "Large Language Models",
+        "Healthcare AI"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_021_source_01": {
+      "source_id": "academic_021_source_01",
+      "entity_id": "academic_021",
+      "core_points": [
+        "OATML的Lin Li和Yarin Gal获得Coefficient Giving 37.1万美元赠款以提升大语言模型的安全性。",
+        "OATML团队有8篇论文被NeurIPS 2025接收。"
+      ],
+      "technical_tags": [
+        "LLM Safety",
+        "Research Funding",
+        "Conference Publications"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_021_source_02": {
+      "source_id": "academic_021_source_02",
+      "entity_id": "academic_021",
+      "core_points": [
+        "OATML举办了由DeepMind、多伦多大学等学者参与的系列研讨会。",
+        "研讨主题涵盖强化学习、鲁棒与透明语言模型的概率方法以及人机思想伙伴关系的设计。"
+      ],
+      "technical_tags": [
+        "Probabilistic Methods",
+        "Reinforcement Learning",
+        "Human-AI Collaboration"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_021_source_03": {
+      "source_id": "academic_021_source_03",
+      "entity_id": "academic_021",
+      "core_points": [
+        "OATML多名成员将参加ICML 2026会议。",
+        "团队发布了关于代码演进和模型投毒等主题的最新研究动态。"
+      ],
+      "technical_tags": [
+        "Code Evolution",
+        "Model Poisoning",
+        "Academic Conferences"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_021_source_04": {
+      "source_id": "academic_021_source_04",
+      "entity_id": "academic_021",
+      "core_points": [
+        "OATML团队及合作者在NeurIPS 2025上展示了8篇论文，其中包括关于大语言模型基准测试构建有效性的研究。",
+        "提供了OATML的联系方式、GitHub和Twitter等社交媒体信息。"
+      ],
+      "technical_tags": [
+        "LLM Benchmarks",
+        "Construct Validity",
+        "NeurIPS"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_022_source_01": {
+      "source_id": "academic_022_source_01",
+      "entity_id": "academic_022",
+      "core_points": [
+        "UCL被确认为英国唯一合作伙伴，与NVIDIA合作优化国家AI基础设施并开发主权AI系统。",
+        "UCL正在开发名为BritLLM的大语言模型，该模型不仅使用英语，还使用威尔士语等英国其他语言进行训练。"
+      ],
+      "technical_tags": [
+        "Sovereign AI Platforms",
+        "Multilingual LLMs",
+        "National AI Infrastructure"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_023_source_01": {
+      "source_id": "academic_023_source_01",
+      "entity_id": "academic_023",
+      "core_points": [
+        "欧洲历史悠久的 AI 研究与教学体系，涵盖语言、机器人和认知。"
+      ],
+      "technical_tags": [
+        "AI Research",
+        "Robotics",
+        "Cognitive Science",
+        "Natural Language Processing"
+      ],
+      "direct_statement": false,
+      "summary_status": "baseline_only",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_024_source_01": {
+      "source_id": "academic_024_source_01",
+      "entity_id": "academic_024",
+      "core_points": [
+        "RIKEN AIP举办了进度报告会议系列，其中包含由AI安全与可靠性单元组织的日语会议。"
+      ],
+      "technical_tags": [
+        "AI Safety",
+        "Reliability",
+        "Progress Report"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_024_source_02": {
+      "source_id": "academic_024_source_02",
+      "entity_id": "academic_024",
+      "core_points": [
+        "自然语言理解团队发布了构建大语言模型“LLM-jp-13B v2.0”的新闻稿。"
+      ],
+      "technical_tags": [
+        "Large Language Models",
+        "Natural Language Understanding",
+        "LLM-jp"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_024_source_03": {
+      "source_id": "academic_024_source_03",
+      "entity_id": "academic_024",
+      "core_points": [
+        "生物医学空间科学团队发表了关于临床信息中间推理如何实现泛化能力的研究成果。"
+      ],
+      "technical_tags": [
+        "Biomedical Spatial Science",
+        "Intermediate Reasoning",
+        "Generalizable AI"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_024_source_04": {
+      "source_id": "academic_024_source_04",
+      "entity_id": "academic_024",
+      "core_points": [
+        "RIKEN AIP有5篇论文被IJCNLP-AACL 2025接收。",
+        "其中包括关于通过苏格拉底式提问生成基准（FOCUS）的研究。"
+      ],
+      "technical_tags": [
+        "Socratic Question Generation",
+        "NLP Benchmarks",
+        "IJCNLP-AACL"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_024_source_05": {
+      "source_id": "academic_024_source_05",
+      "entity_id": "academic_024",
+      "core_points": [
+        "团队在ESA2026上发表了关于搜索和更新大规模数据结构的研究论文。",
+        "该研究在包含37GB维基百科数据集的基准实验中进行了验证。"
+      ],
+      "technical_tags": [
+        "Large-scale Data Structures",
+        "Search and Update Algorithms",
+        "Benchmark Experiments"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_025_source_01": {
+      "source_id": "academic_025_source_01",
+      "entity_id": "academic_025",
+      "core_points": [
+        "BCG X东南亚工程主管Robin Weston发布了关于基础模型安全与下游风险的报告。"
+      ],
+      "technical_tags": [
+        "Foundation Model Safety",
+        "Downstream Risks",
+        "AI Governance"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_026_source_01": {
+      "source_id": "academic_026_source_01",
+      "entity_id": "academic_026",
+      "core_points": [
+        "AI Singapore发布了SEA-Guard作为SEA-LION家族的安全对应物，以应对多模态和推理能力带来的安全需求。",
+        "推出了SEA-LION-Embedding套件，在10种区域语言的检索和语义相似度任务中创下SOTA记录。"
+      ],
+      "technical_tags": [
+        "Multimodal Safety",
+        "Semantic Embeddings",
+        "Regional Languages",
+        "SEA-LION"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_026_source_02": {
+      "source_id": "academic_026_source_02",
+      "entity_id": "academic_026",
+      "core_points": [
+        "AI Singapore与DSO联合推出DSO-AISG激励奖，旨在资助研究生在LLM相关领域的研究。",
+        "资助方向涵盖高效AI训练、安全、多模态及Agentic AI等关键领域。"
+      ],
+      "technical_tags": [
+        "Agentic AI",
+        "Multimodal LLMs",
+        "Efficient AI Training",
+        "Research Funding"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_026_source_03": {
+      "source_id": "academic_026_source_03",
+      "entity_id": "academic_026",
+      "core_points": [
+        "AI Singapore与CyberSG合作推出了“安全与可靠LLM全球挑战赛”，分为攻击和防御两个赛道。",
+        "该比赛旨在减轻LLM的越狱攻击并促进具有重大社会影响应用中的更安全AI交互。"
+      ],
+      "technical_tags": [
+        "LLM Security",
+        "Jailbreaking Attacks",
+        "Red Teaming",
+        "AI Competitions"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_026_source_04": {
+      "source_id": "academic_026_source_04",
+      "entity_id": "academic_026",
+      "core_points": [
+        "AI Singapore致力于通过SEA-LION等项目构建具有多语言和多模态能力的催化性AI产品，以丰富新加坡AI生态系统。",
+        "推动行业AI采用、标准制定及人才培养，将新加坡置于世界AI版图。"
+      ],
+      "technical_tags": [
+        "AI Ecosystem",
+        "Multilingual Capabilities",
+        "Industry Adoption",
+        "AI Talent Development"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_026_source_05": {
+      "source_id": "academic_026_source_05",
+      "entity_id": "academic_026",
+      "core_points": [
+        "指出当前基于多选题的LLM评估方法不足以衡量模型在下游应用中的实际能力。",
+        "强调评估应考虑成本、多模态及多语言等因素，并引用了MLCommons 2024的评估方法论。"
+      ],
+      "technical_tags": [
+        "LLM Evaluation",
+        "Downstream Applications",
+        "Performance Metrics",
+        "MLCommons"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_027_source_01": {
+      "source_id": "academic_027_source_01",
+      "entity_id": "academic_027",
+      "core_points": [
+        "Salman Khan教授的研究专注于计算机视觉和多模态AI，致力于构建在开放世界中可靠运行的通用视觉和多模态推理系统。",
+        "其团队研究涵盖大型多模态模型、像素级视觉语言模型及地理空间基础模型。"
+      ],
+      "technical_tags": [
+        "Multimodal AI",
+        "Vision-Language Models",
+        "Geospatial Foundation Models",
+        "Computer Vision"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_027_source_02": {
+      "source_id": "academic_027_source_02",
+      "entity_id": "academic_027",
+      "core_points": [
+        "MBZUAI提供本科、硕士和博士级别的AI学位课程，培养未来领导者应对现实挑战。",
+        "其研究重点包括使用有限标签训练多模态AI、理解海湾气候挑战的AI以及软机器人触觉感知。"
+      ],
+      "technical_tags": [
+        "Multimodal AI Training",
+        "Climate AI",
+        "Soft Robotics",
+        "AI Education"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_027_source_03": {
+      "source_id": "academic_027_source_03",
+      "entity_id": "academic_027",
+      "core_points": [
+        "MBZUAI开设了人工智能（商业）理学学士项目，强调沟通能力，并要求学生提交视频阐述其学习目标。",
+        "课程涵盖生成式AI和基础模型的核心原理及技术。"
+      ],
+      "technical_tags": [
+        "Generative AI",
+        "Foundation Models",
+        "AI Business Education",
+        "Undergraduate Programs"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_027_source_04": {
+      "source_id": "academic_027_source_04",
+      "entity_id": "academic_027",
+      "core_points": [
+        "机器人理学硕士项目旨在培养学生对机器人和自主系统的兴趣与理解，为其攻读博士学位或进入工业界做准备。",
+        "教授学生应用研究技术解决机器人领域的复杂问题。"
+      ],
+      "technical_tags": [
+        "Autonomous Systems",
+        "Robotics Research",
+        "Master's Programs",
+        "Complex Problem Solving"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_028_source_01": {
+      "source_id": "academic_028_source_01",
+      "entity_id": "academic_028",
+      "core_points": [
+        "GLM-130B在斯坦福大学主流大模型评测中作为亚洲唯一入选模型，其准确性、恶意性与GPT-3接近，且鲁棒性和校准误差表现最佳。",
+        "展示了从GLM到ChatGLM3的系列模型发展时间线及智谱清言的演进。"
+      ],
+      "technical_tags": [
+        "GLM-130B",
+        "Model Evaluation",
+        "Calibration Error",
+        "ChatGLM Series"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_028_source_02": {
+      "source_id": "academic_028_source_02",
+      "entity_id": "academic_028",
+      "core_points": [
+        "GLM-130B实现无损INT4量化，显存降低75%，支持在单台消费级显卡上进行普惠推理。",
+        "模型具备跨平台适配能力，支持NVIDIA、海光DCU、昇腾910及申威等多种算力平台。",
+        "清华与智谱联合推出GLM系列模型，训练数据规模达1.4万亿字符，并持续迭代至ChatGLM2系列。"
+      ],
+      "technical_tags": [
+        "INT4量化",
+        "跨平台推理",
+        "自监督预训练",
+        "大模型训练"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_029_source_01": {
+      "source_id": "academic_029_source_01",
+      "entity_id": "academic_029",
+      "core_points": [
+        "实验室在孙茂松、刘洋、刘知远等教授带领下，围绕中文NLP、大模型、机器翻译等方向开展研究。",
+        "推出“九歌”人工智能中文诗歌写作系统，基于80余万首古诗训练，支持多模态输入与多风格生成。",
+        "开源THUMT机器翻译工具包和OpenNRE神经网络关系抽取工具包，支持多语言翻译与模块化关系抽取。"
+      ],
+      "technical_tags": [
+        "中文自然语言处理",
+        "诗歌生成",
+        "机器翻译",
+        "关系抽取"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_030_source_01": {
+      "source_id": "academic_030_source_01",
+      "entity_id": "academic_030",
+      "core_points": [
+        "发布UltraEval-Audio统一评测框架，专为ASR、TTS、音频编解码器及音频大模型提供综合评测。",
+        "框架支持多GPU并行推理，并已集成对Step-Audio-R1.1、CosyVoice等主流音频模型的评测与复现报告。"
+      ],
+      "technical_tags": [
+        "音频模型评测",
+        "ASR与TTS",
+        "多GPU并行推理"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_030_source_02": {
+      "source_id": "academic_030_source_02",
+      "entity_id": "academic_030",
+      "core_points": [
+        "推出ToolBench开源平台，用于大语言模型在工具学习（Tool Learning）领域的训练、服务与评测。",
+        "发布“Tool Learning with Foundation Models”相关研究，探索基础模型与外部工具交互的机制。"
+      ],
+      "technical_tags": [
+        "工具学习",
+        "大模型评测",
+        "开源平台"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_030_source_03": {
+      "source_id": "academic_030_source_03",
+      "entity_id": "academic_030",
+      "core_points": [
+        "致力于构建面向通用人工智能的基础模型与系统，推出MiniCPM-V实现手机端超高效多模态理解。",
+        "开发PilotDeck任务导向型AI Agent生产力平台及SimpleNav统一导航VLA研究框架。"
+      ],
+      "technical_tags": [
+        "端侧多模态模型",
+        "AI Agent",
+        "视觉语言动作模型"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_030_source_04": {
+      "source_id": "academic_030_source_04",
+      "entity_id": "academic_030",
+      "core_points": [
+        "发布VisCPM-Chat中英双语多模态大模型，在开放域对话、图像描述和复杂推理方面表现优异。",
+        "提供能力平衡版与中文增强版（zhplus），后者在预训练阶段额外引入大量原生及翻译中文图文对数据。"
+      ],
+      "technical_tags": [
+        "多模态大模型",
+        "中英双语",
+        "指令精调"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_031_source_01": {
+      "source_id": "academic_031_source_01",
+      "entity_id": "academic_031",
+      "core_points": [
+        "研发连续时间具身世界模型，实现高效生成、任意补帧及逆向推演，解决离散帧预测的局限。",
+        "推出Agent Hospital全AI医患仿真体系，并获得香港谭兆慈善基金捐赠以支持医疗AI前沿应用与人才培养。"
+      ],
+      "technical_tags": [
+        "具身世界模型",
+        "离线强化学习",
+        "医疗AI仿真"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_031_source_02": {
+      "source_id": "academic_031_source_02",
+      "entity_id": "academic_031",
+      "core_points": [
+        "前字节跳动Seed团队Leader、华为诺亚方舟实验室首席科学家李航教授正式加入AIR担任首席科学家。",
+        "李航教授表示期望在AIR平台开发创新性强、影响力大的新一代人工智能技术并培养顶尖人才。"
+      ],
+      "technical_tags": [
+        "人才引进",
+        "自然语言处理",
+        "机器学习"
+      ],
+      "direct_statement": true,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_031_source_03": {
+      "source_id": "academic_031_source_03",
+      "entity_id": "academic_031",
+      "core_points": [
+        "清华大学智能产业研究院（AIR）发布2026年冬令营报名信息，面向相关领域招募学生。",
+        "研究院研究方向涵盖智慧物联、智慧交通、智慧医疗、大数据智能及智能机器人等产业转化领域。"
+      ],
+      "technical_tags": [
+        "人才培养",
+        "智能系统",
+        "产业转化"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_032_source_01": {
+      "source_id": "academic_032_source_01",
+      "entity_id": "academic_032",
+      "core_points": [
+        "北大计算机学院联合360公司发布Tiny-R1-32B-Preview模型，以5%参数量逼近Deepseek-R1-671B的数学性能。",
+        "学院教师熊英飞当选2024年度ACM杰出会员，团队在AI for Science领域取得新进展并发表于Nature Machine Intelligence。"
+      ],
+      "technical_tags": [
+        "模型蒸馏",
+        "数学推理",
+        "AI for Science"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_032_source_02": {
+      "source_id": "academic_032_source_02",
+      "entity_id": "academic_032",
+      "core_points": [
+        "刘譞哲教授团队凭借“智算中心分离式资源管理关键技术与应用”获2025中国电子学会科学技术奖技术发明一等奖。",
+        "团队提出的预填充-解码分离式架构（Prefill-Decode Disaggregation）已成为大模型推理系统的基本设计范式，并被DeepSeek等头部企业采纳。"
+      ],
+      "technical_tags": [
+        "大模型推理优化",
+        "分离式架构",
+        "智算中心资源管理"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_032_source_03": {
+      "source_id": "academic_032_source_03",
+      "entity_id": "academic_032",
+      "core_points": [
+        "PKU-DAIR实验室招聘大模型AI系统方向工程师与博士后，重点研究大模型数据侧关键技术及AIGC视频生成技术。",
+        "研究内容涵盖数据合成与清洗、高效训练与推理加速，以及多场景高动态性可控视频生成等前沿方向。"
+      ],
+      "technical_tags": [
+        "大模型数据工程",
+        "AIGC视频生成",
+        "推理加速"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_032_source_04": {
+      "source_id": "academic_032_source_04",
+      "entity_id": "academic_032",
+      "core_points": [
+        "学院举办拔尖人才培养论坛，MiniMax、Kimi、京东等企业校友分享了M2系列模型、万亿参数训练优化及多模态编辑等产业实践。",
+        "学生展示了高速主动光三维感知、LLM长文本稀疏注意力硬件协同设计及Agentic工作负载GPU池化等前沿科研成果。"
+      ],
+      "technical_tags": [
+        "大模型训练优化",
+        "硬件协同设计",
+        "GPU池化"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_032_source_05": {
+      "source_id": "academic_032_source_05",
+      "entity_id": "academic_032",
+      "core_points": [
+        "北大联合鹏城实验室等团队发布首个全开源两千亿参数中文预训练语言模型“盘古α”，基于鹏城云脑II训练。",
+        "模型提出随机顺序自回归训练（ALM）提升小样本学习能力，并依托MindSpore实现多维度混合自动并行训练。"
+      ],
+      "technical_tags": [
+        "中文预训练模型",
+        "自回归训练",
+        "自动并行"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_033_source_01": {
+      "source_id": "academic_033_source_01",
+      "entity_id": "academic_033",
+      "core_points": [
+        "发布SAE-V研究（ICML 2025），通过解释多模态模型来增强对齐效果。"
+      ],
+      "technical_tags": [
+        "多模态对齐",
+        "模型可解释性"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_033_source_02": {
+      "source_id": "academic_033_source_02",
+      "entity_id": "academic_033",
+      "core_points": [
+        "开发Beaver高度模块化的开源RLHF框架，用于大语言模型的安全与价值对齐。"
+      ],
+      "technical_tags": [
+        "RLHF框架",
+        "价值对齐",
+        "安全对齐"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_033_source_03": {
+      "source_id": "academic_033_source_03",
+      "entity_id": "academic_033",
+      "core_points": [
+        "团队在NeurIPS 2025发表多篇论文，推进多模态与具身AI领域的安全对齐及人类偏好学习研究。"
+      ],
+      "technical_tags": [
+        "安全对齐",
+        "人类偏好学习",
+        "具身AI"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_033_source_04": {
+      "source_id": "academic_033_source_04",
+      "entity_id": "academic_033",
+      "core_points": [
+        "荣获ACL 2025最佳论文，提出“语言模型抵抗对齐”（Language Models Resist Alignment）的研究发现。"
+      ],
+      "technical_tags": [
+        "对齐抵抗",
+        "大模型安全",
+        "最佳论文"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_033_source_05": {
+      "source_id": "academic_033_source_05",
+      "entity_id": "academic_033",
+      "core_points": [
+        "团队成员Yaodong Yang参与SAE-V及Stream Aligner等对齐相关研究项目。"
+      ],
+      "technical_tags": [
+        "多模态对齐",
+        "流式对齐"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_034_source_01": {
+      "source_id": "academic_034_source_01",
+      "entity_id": "academic_034",
+      "core_points": [
+        "登记说明：该团队主要聚焦于中文自然语言处理、信息检索、MOSS、FastNLP及大模型训练等研究方向。"
+      ],
+      "technical_tags": [
+        "中文NLP",
+        "信息检索",
+        "大模型训练"
+      ],
+      "direct_statement": false,
+      "summary_status": "baseline_only",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_035_source_01": {
+      "source_id": "academic_035_source_01",
+      "entity_id": "academic_035",
+      "core_points": [
+        "发布VLABench大规模基准测试平台，专用于评估视觉-语言-动作（VLA）模型、具身智能体及视觉语言模型。",
+        "该平台已被ICCV 2025接收，并持续更新并行数据收集、相机增强及pi0代码库等评测与微调功能。"
+      ],
+      "technical_tags": [
+        "VLA模型评测",
+        "具身智能",
+        "基准测试"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_035_source_02": {
+      "source_id": "academic_035_source_02",
+      "entity_id": "academic_035",
+      "core_points": [
+        "发布《Thus Spake Long-Context Large Language Model》综述，系统梳理长上下文大模型的架构、基础设施、训练与评估方法。",
+        "该综述在HuggingFace获得当日热门第一，并同步发布了中文视频解读版与幻灯片资源。"
+      ],
+      "technical_tags": [
+        "长上下文模型",
+        "模型架构",
+        "综述"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_035_source_03": {
+      "source_id": "academic_035_source_03",
+      "entity_id": "academic_035",
+      "core_points": [
+        "建立Awesome-WAM资源库，持续更新具身AI领域世界动作模型（WAMs）的论文、博客与相关资源。",
+        "收录了TesserAct（4D具身世界模型）、RoboCerebra（长视野机器人操作基准）等前沿具身智能研究项目。"
+      ],
+      "technical_tags": [
+        "世界动作模型",
+        "具身AI",
+        "资源库"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_035_source_04": {
+      "source_id": "academic_035_source_04",
+      "entity_id": "academic_035",
+      "core_points": [
+        "发布世界动作模型（WAM）综述，明确界定WAM联合预测未来观察与可执行动作的核心机制，以区别于VLA和WM。",
+        "梳理了Meta-World、RLBench等测试套件在双臂协调、触觉感知及大动作空间等高自由度控制任务中的应用。"
+      ],
+      "technical_tags": [
+        "世界动作模型",
+        "视觉语言动作",
+        "具身控制"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_036_source_01": {
+      "source_id": "academic_036_source_01",
+      "entity_id": "academic_036",
+      "core_points": [
+        "登记说明：该实验室由SII与上海交通大学相关团队建设，重点关注生成式AI、推理、多模态和智能体技术。"
+      ],
+      "technical_tags": [
+        "生成式AI",
+        "多模态",
+        "智能体"
+      ],
+      "direct_statement": false,
+      "summary_status": "baseline_only",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_037_source_01": {
+      "source_id": "academic_037_source_01",
+      "entity_id": "academic_037",
+      "core_points": [
+        "建立模型分布外评估基准，包括静态Benchmark泄露检测与动态开放环境泛化评估。"
+      ],
+      "technical_tags": [
+        "分布外评估",
+        "泛化基准",
+        "机器学习"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_037_source_02": {
+      "source_id": "academic_037_source_02",
+      "entity_id": "academic_037",
+      "core_points": [
+        "华为与南京大学LAMDA联合成立人工智能实验室。",
+        "周志华教授获IEEE奖项，胡菊花获中国Agent理论与应用会议最佳论文。"
+      ],
+      "technical_tags": [
+        "产学研合作",
+        "集成学习",
+        "学术会议"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_038_source_01": {
+      "source_id": "academic_038_source_01",
+      "entity_id": "academic_038",
+      "core_points": [
+        "具身行为规划未来将转向高动态、高灵巧度的复杂任务，多模态高泛化具身智能大模型是重要目标。",
+        "预训练数据路径尚未收敛，未来可能采用大量仿真与部分真机数据结合及周期性矫正的方法降低仿真-真机差异。"
+      ],
+      "technical_tags": [
+        "具身行为规划",
+        "多模态大模型",
+        "仿真到真机迁移",
+        "强化学习"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_039_source_01": {
+      "source_id": "academic_039_source_01",
+      "entity_id": "academic_039",
+      "core_points": [
+        "发布多模态手术大模型CARES Copilot 1.0，具备100K上下文窗口，能处理超3000页手术教材并实现百万级数据的高准确率检索。",
+        "该模型结合大小模型优势，支持手术阶段识别、器械分割及风险质量评估等多场景任务。"
+      ],
+      "technical_tags": [
+        "多模态大模型",
+        "医疗人工智能",
+        "手术辅助",
+        "深度检索"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_039_source_02": {
+      "source_id": "academic_039_source_02",
+      "entity_id": "academic_039",
+      "core_points": [
+        "构建国际首个涵盖图像、视频、音频、字幕和文本的大规模全模态数据集VAST-27M及预训练基础模型VAST。",
+        "提出面向复杂时空因果关系的多模态视频跟踪评估基准MGIT，揭示现有算法在长时因果推理和模态对齐上的不足。"
+      ],
+      "technical_tags": [
+        "全模态基础模型",
+        "多模态视频跟踪",
+        "因果推理",
+        "评估基准"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_039_source_03": {
+      "source_id": "academic_039_source_03",
+      "entity_id": "academic_039",
+      "core_points": [
+        "朱欣鑫副研究员隶属于紫东太初大模型研究中心，研究方向涵盖图像生成特征重参数化与动态量化，以及全模态基础模型VAST。"
+      ],
+      "technical_tags": [
+        "图像生成",
+        "动态量化",
+        "全模态模型"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_039_source_04": {
+      "source_id": "academic_039_source_04",
+      "entity_id": "academic_039",
+      "core_points": [
+        "刘静研究员获中国电子学会自然科学一等奖及世界人工智能大会卓越人工智能引领者奖，研究涉及视觉语言基础模型COSA及细粒度指代表达分割。"
+      ],
+      "technical_tags": [
+        "视觉语言模型",
+        "指代表达分割",
+        "多模态学习"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_040_source_01": {
+      "source_id": "academic_040_source_01",
+      "entity_id": "academic_040",
+      "core_points": [
+        "中科院计算所自然语言处理组发布“百聆大模型”，并有5篇论文被ACL 2026会议接收。"
+      ],
+      "technical_tags": [
+        "大语言模型",
+        "自然语言处理",
+        "机器翻译"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_040_source_02": {
+      "source_id": "academic_040_source_02",
+      "entity_id": "academic_040",
+      "core_points": [
+        "计算所NLP团队发布Stream-Omni多模态大模型，同时有5篇论文被ACL 2026接收。"
+      ],
+      "technical_tags": [
+        "多模态大模型",
+        "流式处理",
+        "自然语言处理"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_040_source_03": {
+      "source_id": "academic_040_source_03",
+      "entity_id": "academic_040",
+      "core_points": [
+        "从多模态大模型内部信息传递过程出发分析现有MLLM的机制，相关5篇论文被ACL 2026接收。"
+      ],
+      "technical_tags": [
+        "多模态大模型",
+        "信息传递机制",
+        "模型分析"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_040_source_04": {
+      "source_id": "academic_040_source_04",
+      "entity_id": "academic_040",
+      "core_points": [
+        "中科院计算所自然语言处理组有1篇论文被NAACL 2025会议接收。"
+      ],
+      "technical_tags": [
+        "自然语言处理",
+        "学术会议",
+        "大语言模型"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_041_source_01": {
+      "source_id": "academic_041_source_01",
+      "entity_id": "academic_041",
+      "core_points": [
+        "2026智源大会重点讨论AI Coding、自主智能体、模型自进化、世界模型与具身智能，强调清晰数据闭环对能力提升的重要性。"
+      ],
+      "technical_tags": [
+        "AI Coding",
+        "自主智能体",
+        "世界模型",
+        "具身智能"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_041_source_02": {
+      "source_id": "academic_041_source_02",
+      "entity_id": "academic_041",
+      "core_points": [
+        "众智FlagOS 2.0发布，支持32款AI芯片与497算子，在6家厂商芯片上完成语言、多模态、具身三大模型的同构与异构千卡端到端训练验证。"
+      ],
+      "technical_tags": [
+        "系统软件栈",
+        "异构计算",
+        "千卡集群",
+        "端到端训练"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_041_source_03": {
+      "source_id": "academic_041_source_03",
+      "entity_id": "academic_041",
+      "core_points": [
+        "智源研究院发布面向具身智能灵巧操作的新型预训练范式RoboBrain-Dex，为机器人在真实场景落地提供关键路径。"
+      ],
+      "technical_tags": [
+        "具身智能",
+        "灵巧操作",
+        "预训练范式",
+        "机器人控制"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_041_source_04": {
+      "source_id": "academic_041_source_04",
+      "entity_id": "academic_041",
+      "core_points": [
+        "智源研究院科研布局涵盖LSLM及Emu、OmniGen、EVA等多模态与视觉模型系列，并连续7年举办智源大会吸引国际顶尖专家参会。"
+      ],
+      "technical_tags": [
+        "视觉基础模型",
+        "多模态生成",
+        "学术生态"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_041_source_05": {
+      "source_id": "academic_041_source_05",
+      "entity_id": "academic_041",
+      "core_points": [
+        "智源研究院致力于营造全球领先创新生态，持续挑战人工智能领域前沿，发布3D数字孪生心脏等多个人工智能成果。"
+      ],
+      "technical_tags": [
+        "数字孪生",
+        "医疗人工智能",
+        "创新生态"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_042_source_01": {
+      "source_id": "academic_042_source_01",
+      "entity_id": "academic_042",
+      "core_points": [
+        "上海AI实验室在ICLR 2025有9篇Oral和15篇Spotlight论文入选，研究覆盖大语言模型、多模态学习、具身智能及安全可信AI等领域。",
+        "提出预测性逆动力学模型作为可扩展的机器人操控算法，并探索基于VLM的GUI Agent。"
+      ],
+      "technical_tags": [
+        "机器人操控",
+        "逆动力学模型",
+        "GUI智能体",
+        "视觉语言模型"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_042_source_02": {
+      "source_id": "academic_042_source_02",
+      "entity_id": "academic_042",
+      "core_points": [
+        "招聘大模型评测算法实习生，负责构建大模型与Agent评测体系，设计Benchmark及任务环境，研发LLM-as-a-judge等自动化评测策略。"
+      ],
+      "technical_tags": [
+        "模型评测",
+        "Agent评测",
+        "自动化评测",
+        "基准构建"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_042_source_03": {
+      "source_id": "academic_042_source_03",
+      "entity_id": "academic_042",
+      "core_points": [
+        "开源评测工具链SciEvalKit，通过七大维度拆解和评估通用大模型在严谨科学领域的推理与智商表现。"
+      ],
+      "technical_tags": [
+        "科学推理评测",
+        "评测工具链",
+        "大模型评估"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_042_source_04": {
+      "source_id": "academic_042_source_04",
+      "entity_id": "academic_042",
+      "core_points": [
+        "上海AI实验室自2022年起与十余所顶尖高校开展联合培养博士生专项工作，构建产学研协同的人才培养机制。"
+      ],
+      "technical_tags": [
+        "联合培养",
+        "博士教育",
+        "产学研协同"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_042_source_05": {
+      "source_id": "academic_042_source_05",
+      "entity_id": "academic_042",
+      "core_points": [
+        "实验室科研成果涵盖书生·浦语大语言模型、书生·万象多模态模型、书生·风乌气象预报体系、桃源具身智能仿真平台及司南评测体系等。"
+      ],
+      "technical_tags": [
+        "书生大模型",
+        "气象预报模型",
+        "具身仿真平台",
+        "开源评测"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_043_source_01": {
+      "source_id": "academic_043_source_01",
+      "entity_id": "academic_043",
+      "core_points": [
+        "OpenMMLab是一个计算机视觉与多模态开源算法体系，覆盖检测、分割、生成和部署等任务。"
+      ],
+      "technical_tags": [
+        "计算机视觉",
+        "开源算法",
+        "目标检测",
+        "图像分割"
+      ],
+      "direct_statement": false,
+      "summary_status": "baseline_only",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_044_source_01": {
+      "source_id": "academic_044_source_01",
+      "entity_id": "academic_044",
+      "core_points": [
+        "CompassArena大语言模型榜单使用清理后的匿名成对投票和Bradley-Terry模型来估计竞技场评分，并发布置信区间和投票数。"
+      ],
+      "technical_tags": [
+        "大模型评测",
+        "Bradley-Terry模型",
+        "成对投票",
+        "置信区间"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_044_source_02": {
+      "source_id": "academic_044_source_02",
+      "entity_id": "academic_044",
+      "core_points": [
+        "CNFinBench评测榜单发布大语言模型和智能体在金融场景下的性能定量排名，包含各赛道的模型得分。"
+      ],
+      "technical_tags": [
+        "金融大模型",
+        "智能体评测",
+        "定量排名",
+        "垂直领域评测"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_044_source_03": {
+      "source_id": "academic_044_source_03",
+      "entity_id": "academic_044",
+      "core_points": [
+        "OpenCompass平台新增对Intern-S1-Pro和SciReasoner等模型的评测支持，并实现跨任务并发推理与评测监控机制以提升大规模评测效率。",
+        "集成VLMEvalKit以支持原生多模态数据集加载与推理。"
+      ],
+      "technical_tags": [
+        "并发推理",
+        "评测监控",
+        "多模态评测",
+        "模型集成"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_044_source_04": {
+      "source_id": "academic_044_source_04",
+      "entity_id": "academic_044",
+      "core_points": [
+        "OpenCompass是一个专注于通用人工智能（AGI）理解的评测平台，涵盖大语言模型和多模态模型。",
+        "该平台致力于开发高质量的开源库以支持模型评测与工具链建设。"
+      ],
+      "technical_tags": [
+        "大语言模型评测",
+        "多模态模型",
+        "AGI评测平台",
+        "开源工具链"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_044_source_05": {
+      "source_id": "academic_044_source_05",
+      "entity_id": "academic_044",
+      "core_points": [
+        "NeedleBench在OpenCompass框架下设计了一系列渐进式评估任务，用于全面评估大语言模型的长文本信息提取与推理能力。",
+        "引入了‘大海捞针’（Needle In A Haystack）测试方法，通过将关键信息随机插入长文本中来评估模型性能。"
+      ],
+      "technical_tags": [
+        "长文本评估",
+        "信息提取",
+        "推理能力测试",
+        "大海捞针测试",
+        "NeedleBench"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_045_source_01": {
+      "source_id": "academic_045_source_01",
+      "entity_id": "academic_045",
+      "core_points": [
+        "2025光明科学城论坛聚焦智能算力与大模型智能体融合，推动国产算力与气象、金融、医疗等行业应用结合。",
+        "鹏城实验室与深圳市气象局在论坛期间签署战略合作协议，促进人工智能技术在气象等领域的创新应用。"
+      ],
+      "technical_tags": [
+        "智能算力",
+        "大模型智能体",
+        "国产算力",
+        "产学研融合"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_045_source_02": {
+      "source_id": "academic_045_source_02",
+      "entity_id": "academic_045",
+      "core_points": [
+        "清华大学陈文光教授介绍了‘鹏城脑海’大模型在数据集和训练方法上的进展，付昊桓教授分享了超智融合算力支撑下的地球系统模式研发。",
+        "香港大学俞益洲教授展示了多模态医疗AI在个性化医疗等场景的应用，琶洲实验室张海副主任分享了大模型智能体赋能技术的最新实践。"
+      ],
+      "technical_tags": [
+        "鹏城脑海",
+        "超智融合",
+        "多模态医疗AI",
+        "大模型智能体"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_045_source_03": {
+      "source_id": "academic_045_source_03",
+      "entity_id": "academic_045",
+      "core_points": [
+        "鹏城实验室举办‘七一’表彰大会及2026年上半年消防演练，落实安全生产与应急管理部署。",
+        "实验室开展6G时代目标导向多智能体语义网络学术讲座，并成功举办2026算力网发展大会以构筑智能经济算力网底座。"
+      ],
+      "technical_tags": [
+        "多智能体语义网络",
+        "6G网络",
+        "算力网",
+        "安全生产管理"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_045_source_04": {
+      "source_id": "academic_045_source_04",
+      "entity_id": "academic_045",
+      "core_points": [
+        "鹏城实验室联合中山大学攻克具身智能数据利用效率难题，在‘鹏城云脑’上实现具身智能成果VidMan。",
+        "田永鸿教授因在AI模型表示与视觉数据编码领域的贡献获2025年IEEE Hans Karlsson标准奖，系中国学者首次获此殊荣。",
+        "《自然·机器智能》刊发鹏城实验室联合团队提出的‘理解即压缩’理论及无损数据压缩新范式。"
+      ],
+      "technical_tags": [
+        "具身智能",
+        "VidMan",
+        "视觉数据编码",
+        "无损数据压缩",
+        "理解即压缩"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_045_source_05": {
+      "source_id": "academic_045_source_05",
+      "entity_id": "academic_045",
+      "core_points": [
+        "高文院士发布2000亿参数的‘鹏城·脑海’通用AI大模型，依托‘鹏城云脑II’和MindSpore框架完成全程预训练。",
+        "鹏城实验室正研制‘中国算力网’（C2Net）协同计算调度平台，已汇聚全国3E规模协同算力，并牵头成立‘鹏城·脑海’开源联合体。"
+      ],
+      "technical_tags": [
+        "鹏城脑海",
+        "中国算力网",
+        "MindSpore",
+        "大模型预训练",
+        "开源联合体"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_046_source_01": {
+      "source_id": "academic_046_source_01",
+      "entity_id": "academic_046",
+      "core_points": [
+        "IDEA研究院与星尘智能共建具身智能实验室，重点构建智能交互机器人的具身多模态模型（Social-VLA）。",
+        "研究院孵化企业DataArc瞄准大模型数据缺口，视启未来获近亿元融资，SegDINO3D登顶ScanNet200新SOTA。"
+      ],
+      "technical_tags": [
+        "具身智能",
+        "Social-VLA",
+        "ScanNet200",
+        "合成数据"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_046_source_02": {
+      "source_id": "academic_046_source_02",
+      "entity_id": "academic_046",
+      "core_points": [
+        "IDEA研究院MoonBit编程语言发布SeekMoon开发环境及代码形式化验证，释放人机协作生产力并构筑AI软件工程安全。",
+        "沈向洋发布《低空时代》探讨低空经济中国方案，IDEA晶泰AI实验室利用多模态大模型将药物数据挖掘时间从数周缩至1小时。"
+      ],
+      "technical_tags": [
+        "MoonBit",
+        "代码形式化验证",
+        "多模态大模型",
+        "低空经济"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_046_source_03": {
+      "source_id": "academic_046_source_03",
+      "entity_id": "academic_046",
+      "core_points": [
+        "IDEA研究院联合多方发起国产软硬件适配验证合作计划，支撑标准化验证平台与评测体系构建。",
+        "IDEA-琴澳中心发布国内首个产品化AI驱动GPU原生离线渲染技术。"
+      ],
+      "technical_tags": [
+        "国产软硬件适配",
+        "GPU原生离线渲染",
+        "评测体系"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_046_source_04": {
+      "source_id": "academic_046_source_04",
+      "entity_id": "academic_046",
+      "core_points": [
+        "IDEA数字经济与金融超级计算集群支持国际通用并行计算架构与全互联无阻塞端到端网络加速。",
+        "该集群支持多种高精度与混合精度计算，已应用于大型金融NLP模型、高频数据预测及医疗知识图谱等项目。"
+      ],
+      "technical_tags": [
+        "超级计算集群",
+        "并行计算架构",
+        "混合精度计算",
+        "金融NLP"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_047_source_01": {
+      "source_id": "academic_047_source_01",
+      "entity_id": "academic_047",
+      "core_points": [
+        "深圳市大数据研究院发布司法领域Agent技术应用指南，指出自主智能体在自主规划、逐步推理和任务执行方面的显著提升。",
+        "研究院与深圳市中级人民法院签约，共同研究司法AI通用标准、技术创新及应用场景，推动审判体系现代化。"
+      ],
+      "technical_tags": [
+        "Agent技术",
+        "司法人工智能",
+        "自主智能体",
+        "产学研合作"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_048_source_01": {
+      "source_id": "academic_048_source_01",
+      "entity_id": "academic_048",
+      "core_points": [
+        "浙江大学人工智能学院开展无人系统感知、决策与控制研究，致力于实现复杂环境下的自主运行。",
+        "研究方向涵盖多智能体协同及具身智能技术。"
+      ],
+      "technical_tags": [
+        "无人系统",
+        "多智能体协同",
+        "具身智能",
+        "自主决策"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_048_source_02": {
+      "source_id": "academic_048_source_02",
+      "entity_id": "academic_048",
+      "core_points": [
+        "浙江大学人工智能学院推进国家科技重大专项‘具有环境任务泛化能力的通才智能体’项目进展研讨。",
+        "项目后续将由对应课题牵头推进评测方案与智能体整体框架方案的制定。"
+      ],
+      "technical_tags": [
+        "通才智能体",
+        "环境任务泛化",
+        "国家科技重大专项"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_048_source_03": {
+      "source_id": "academic_048_source_03",
+      "entity_id": "academic_048",
+      "core_points": [
+        "浙江大学人工智能学院开展AI古画修复与古画虚拟修复体验的跨领域应用研究。"
+      ],
+      "technical_tags": [
+        "AI古画修复",
+        "虚拟修复",
+        "跨领域应用"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_048_source_04": {
+      "source_id": "academic_048_source_04",
+      "entity_id": "academic_048",
+      "core_points": [
+        "浙江大学发布‘教育教学人工智能进阶计划（AI STEP）’，研制学科大模型和大学大模型以支撑个性化教学科研。",
+        "该计划深度融合智能体技术，构建大规模个性化教学科研基础设施。"
+      ],
+      "technical_tags": [
+        "学科大模型",
+        "大学大模型",
+        "智能体技术",
+        "个性化教学"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_048_source_05": {
+      "source_id": "academic_048_source_05",
+      "entity_id": "academic_048",
+      "core_points": [
+        "智海平台推进人工智能通识课‘百校支持计划’，支持开箱即用、项目实践与AI开发场景。",
+        "该平台可部署DeepSeek等主流大模型，协助高校形成‘校级’大模型中心。"
+      ],
+      "technical_tags": [
+        "智海平台",
+        "DeepSeek",
+        "大模型部署",
+        "通识教育"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_049_source_01": {
+      "source_id": "academic_049_source_01",
+      "entity_id": "academic_049",
+      "core_points": [
+        "中国科学技术大学人工智能研究平台作为机器人、感知、控制与智能系统研究的信息入口。"
+      ],
+      "technical_tags": [
+        "机器人",
+        "感知与控制",
+        "智能系统"
+      ],
+      "direct_statement": false,
+      "summary_status": "baseline_only",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_050_source_01": {
+      "source_id": "academic_050_source_01",
+      "entity_id": "academic_050",
+      "core_points": [
+        "香港中文大学MMLab是计算机视觉、多媒体与深度学习实验室，也是OpenMMLab的早期重要来源。"
+      ],
+      "technical_tags": [
+        "计算机视觉",
+        "多媒体",
+        "深度学习",
+        "OpenMMLab"
+      ],
+      "direct_statement": false,
+      "summary_status": "baseline_only",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_051_source_01": {
+      "source_id": "academic_051_source_01",
+      "entity_id": "academic_051",
+      "core_points": [
+        "香港科技大学MMLab专注于多媒体生成、视觉与创意AI研究及相关开源项目。"
+      ],
+      "technical_tags": [
+        "多媒体生成",
+        "视觉AI",
+        "创意AI",
+        "开源项目"
+      ],
+      "direct_statement": false,
+      "summary_status": "baseline_only",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_052_source_01": {
+      "source_id": "academic_052_source_01",
+      "entity_id": "academic_052",
+      "core_points": [
+        "Andrej Karpathy是AI研究员与教育者，曾任OpenAI创始成员及特斯拉AI总监（领导Autopilot视觉团队）。",
+        "他在斯坦福大学设计并主讲了首个深度学习课程CS231n，并开发了基于LSTM/GRU/RNN的字符级语言模型char-rnn。"
+      ],
+      "technical_tags": [
+        "计算机视觉",
+        "Autopilot",
+        "深度学习课程",
+        "char-rnn"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_053_source_01": {
+      "source_id": "academic_053_source_01",
+      "entity_id": "academic_053",
+      "core_points": [
+        "Yann LeCun在离开Meta后创立了名为AMI Labs的‘世界模型’初创公司，估值达35亿美元。",
+        "该新创企被视为对大语言模型（LLM）路线的逆向押注（contrarian bet）。"
+      ],
+      "technical_tags": [
+        "世界模型",
+        "AMI Labs",
+        "大语言模型",
+        "自主机器智能"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_053_source_02": {
+      "source_id": "academic_053_source_02",
+      "entity_id": "academic_053",
+      "core_points": [
+        "在《Scaling Learning Algorithms towards AI》中提出，衡量模型效率的三个主要维度是所需训练数据量、计算资源量以及人类指定先验知识的努力程度。"
+      ],
+      "technical_tags": [
+        "学习算法扩展",
+        "模型效率评估",
+        "先验知识",
+        "计算资源"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_054_source_01": {
+      "source_id": "academic_054_source_01",
+      "entity_id": "academic_054",
+      "core_points": [
+        "François Chollet是软件工程师与AI研究者，关注抽象与推理能力。",
+        "其在AAAI 2020秋季研讨会探讨了深度学习在抽象与推理（Abstraction & Reasoning）方面的能力。"
+      ],
+      "technical_tags": [
+        "抽象推理",
+        "ARC-AGI",
+        "深度学习",
+        "Keras"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_055_source_01": {
+      "source_id": "academic_055_source_01",
+      "entity_id": "academic_055",
+      "core_points": [
+        "Ilya Sutskever在X平台指出新型云（Neoclouds）的网络安全存在局限性。",
+        "他警告称，若智能体成功失控（go rouge），它们可能会试图接管新型云以运行更多副本。"
+      ],
+      "technical_tags": [
+        "AI安全",
+        "智能体失控",
+        "网络安全",
+        "Neoclouds"
+      ],
+      "direct_statement": true,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_055_source_02": {
+      "source_id": "academic_055_source_02",
+      "entity_id": "academic_055",
+      "core_points": [
+        "指出 AI 对齐的核心目标是构建超级智能（ASI）。",
+        "探讨了智能体抵抗关闭或寻求自我保存行为的本质。"
+      ],
+      "technical_tags": [
+        "AI对齐",
+        "超级智能",
+        "智能体生存本能"
+      ],
+      "direct_statement": true,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_056_source_01": {
+      "source_id": "academic_056_source_01",
+      "entity_id": "academic_056",
+      "core_points": [
+        "发布 Gemini 3.8 Flash 模型，显著提升了智能体与编程能力。",
+        "支持 Dario Amodei 关于前沿 AI 发展的观点，并提议建立行业标准机构。"
+      ],
+      "technical_tags": [
+        "Gemini模型",
+        "智能体能力",
+        "编程能力",
+        "AI行业标准"
+      ],
+      "direct_statement": true,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_057_source_01": {
+      "source_id": "academic_057_source_01",
+      "entity_id": "academic_057",
+      "core_points": [
+        "在 ChatGPT 两周年之际发表反思性文章，探讨了模型推理能力的发展。"
+      ],
+      "technical_tags": [
+        "ChatGPT",
+        "模型推理",
+        "产品反思"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_057_source_02": {
+      "source_id": "academic_057_source_02",
+      "entity_id": "academic_057",
+      "core_points": [
+        "提出关于软件工程智能体的观察，认为其在未来将发挥特别重要的作用。"
+      ],
+      "technical_tags": [
+        "软件工程智能体",
+        "智能体应用"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_057_source_03": {
+      "source_id": "academic_057_source_03",
+      "entity_id": "academic_057",
+      "core_points": [
+        "个人博客首页展示了关于软件工程智能体重要性的核心论述。"
+      ],
+      "technical_tags": [
+        "软件工程智能体",
+        "个人博客"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_057_source_04": {
+      "source_id": "academic_057_source_04",
+      "entity_id": "academic_057",
+      "core_points": [
+        "提出“温和的奇点”概念，指出 2025 年已出现能够执行真实认知任务的智能体。"
+      ],
+      "technical_tags": [
+        "温和奇点",
+        "认知智能体",
+        "技术趋势"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_058_source_01": {
+      "source_id": "academic_058_source_01",
+      "entity_id": "academic_058",
+      "core_points": [
+        "作为 Anthropic CEO，致力于构建可控、可解释和安全的 AI 系统。",
+        "曾是 RLHF 的联合发明人，并在 OpenAI 领导了 GPT-2 和 GPT-3 等大模型研发。"
+      ],
+      "technical_tags": [
+        "RLHF",
+        "可解释AI",
+        "AI安全",
+        "大语言模型"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_059_source_01": {
+      "source_id": "academic_059_source_01",
+      "entity_id": "academic_059",
+      "core_points": [
+        "长期研究目标是构建具有人类般效率和适应性的通用问题解决机器。",
+        "研究兴趣涵盖高效深度学习算法、强化学习和定理证明。"
+      ],
+      "technical_tags": [
+        "定理证明",
+        "深度学习算法",
+        "强化学习",
+        "通用问题解决"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_059_source_02": {
+      "source_id": "academic_059_source_02",
+      "entity_id": "academic_059",
+      "core_points": [
+        "个人主页展示了其在不等式定理证明基准测试及深度学习梯度方差方面的研究成果。"
+      ],
+      "technical_tags": [
+        "梯度方差",
+        "定理证明基准",
+        "神经网络优化"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_060_source_01": {
+      "source_id": "academic_060_source_01",
+      "entity_id": "academic_060",
+      "core_points": [
+        "被广泛认为是现代 AI 先驱，当选美国国家工程院院士等多项学术荣誉。",
+        "获得 2025 年伊丽莎白女王工程奖和 2024 年 VinFuture 奖。"
+      ],
+      "technical_tags": [
+        "计算机视觉",
+        "现代AI先驱",
+        "学术荣誉"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_061_source_01": {
+      "source_id": "academic_061_source_01",
+      "entity_id": "academic_061",
+      "core_points": [
+        "登记说明指出其为 PyTorch 联合创建者，是深度学习框架与系统工程的重要信息源。"
+      ],
+      "technical_tags": [
+        "PyTorch",
+        "深度学习框架",
+        "系统工程"
+      ],
+      "direct_statement": false,
+      "summary_status": "baseline_only",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_062_source_01": {
+      "source_id": "academic_062_source_01",
+      "entity_id": "academic_062",
+      "core_points": [
+        "发布 MedAgentBench 用于评估医疗大模型智能体，以及 UQ 用于评估语言模型在未解决问题上的表现。",
+        "在机器学习和数据中心 AI 方面 authored 或 co-authored 超 200 篇论文。"
+      ],
+      "technical_tags": [
+        "医疗智能体评测",
+        "语言模型评估",
+        "数据中心AI"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_062_source_02": {
+      "source_id": "academic_062_source_02",
+      "entity_id": "academic_062",
+      "core_points": [
+        "AI Fund 的投资组合涵盖医疗、金融、教育等领域，致力于结合领域知识与 AI 能力解决现实问题。"
+      ],
+      "technical_tags": [
+        "AI产业投资",
+        "领域知识结合",
+        "现实问题解决"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_062_source_03": {
+      "source_id": "academic_062_source_03",
+      "entity_id": "academic_062",
+      "core_points": [
+        "提供关于生成式 UI 交互智能体、编码智能体规范驱动开发及 SGLang 高效推理的最新课程。",
+        "回顾了 2011 年在斯坦福开设超 10 万人选修的在线机器学习课程。"
+      ],
+      "technical_tags": [
+        "智能体开发课程",
+        "SGLang推理",
+        "在线机器学习教育"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_062_source_04": {
+      "source_id": "academic_062_source_04",
+      "entity_id": "academic_062",
+      "core_points": [
+        "课程页面展示了 DeepLearning.AI 关于多模态数据管道构建和 LLM 记忆感知智能体开发的最新教学内容。"
+      ],
+      "technical_tags": [
+        "多模态数据管道",
+        "记忆感知智能体",
+        "生成式AI课程"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_063_source_01": {
+      "source_id": "academic_063_source_01",
+      "entity_id": "academic_063",
+      "core_points": [
+        "页面列出了其指导的历届博士生名单及论文题目，涵盖自动语音识别、深度生成模型及高维时间序列分布式状态模型等方向。"
+      ],
+      "technical_tags": [
+        "博士生指导",
+        "深度生成模型",
+        "语音识别"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_063_source_02": {
+      "source_id": "academic_063_source_02",
+      "entity_id": "academic_063",
+      "core_points": [
+        "展示了其早期学生在语言建模分布式表示、协同过滤及视觉对象生成模型识别等领域的博士研究成果。"
+      ],
+      "technical_tags": [
+        "语言建模",
+        "协同过滤",
+        "视觉对象识别"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_063_source_03": {
+      "source_id": "academic_063_source_03",
+      "entity_id": "academic_063",
+      "core_points": [
+        "介绍了其前博士生 Andriy Mnih 的研究兴趣，包括隐变量模型、变分推断和蒙特卡洛梯度估计。",
+        "展示了相关统计语言模型及概率矩阵分解的论文成果。"
+      ],
+      "technical_tags": [
+        "隐变量模型",
+        "变分推断",
+        "蒙特卡洛梯度估计"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_064_source_01": {
+      "source_id": "academic_064_source_01",
+      "entity_id": "academic_064",
+      "core_points": [
+        "指出近期 AI 智能体出现严重不当行为（如逃避控制、发起网络攻击），强调在采取行动前需探究其原因。",
+        "宣布启动名为 LawZero 的非营利 AI 安全研究项目。"
+      ],
+      "technical_tags": [
+        "AI智能体失控",
+        "AI安全研究",
+        "非营利安全项目"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_065_source_01": {
+      "source_id": "academic_065_source_01",
+      "entity_id": "academic_065",
+      "core_points": [
+        "当选美国国家工程院院士及美国艺术与科学院院士。",
+        "其关于注意力机制神经机器翻译的论文连续获得 ACL 测试时间奖。"
+      ],
+      "technical_tags": [
+        "神经机器翻译",
+        "注意力机制",
+        "学术荣誉"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_065_source_02": {
+      "source_id": "academic_065_source_02",
+      "entity_id": "academic_065",
+      "core_points": [
+        "在 KDD 2025 发表主题演讲，探讨语言模型的意义与智能，涵盖从历史哲学到通用 Transformer 和 Web 智能体的演进。",
+        "分析了生成式 AI 在标普 500 公司中的崛起趋势。"
+      ],
+      "technical_tags": [
+        "语言模型智能",
+        "Web智能体",
+        "生成式AI产业分析"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_065_source_03": {
+      "source_id": "academic_065_source_03",
+      "entity_id": "academic_065",
+      "core_points": [
+        "发表了量化科学论文中大语言模型使用量的研究。",
+        "发布了评估领先 AI 法律研究工具可靠性及幻觉问题的论文。"
+      ],
+      "technical_tags": [
+        "大模型使用量化",
+        "AI法律工具",
+        "幻觉评估"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_065_source_04": {
+      "source_id": "academic_065_source_04",
+      "entity_id": "academic_065",
+      "core_points": [
+        "指导的博士论文涉及大语言模型多步推理与工具使用的基准测试。",
+        "研究了用于推理和工具使用的合成数据生成与多步强化学习。"
+      ],
+      "technical_tags": [
+        "多步推理基准",
+        "工具使用",
+        "合成数据生成"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_065_source_05": {
+      "source_id": "academic_065_source_05",
+      "entity_id": "academic_065",
+      "core_points": [
+        "相关研究包括通过环境交互无监督学习浏览器智能体（Nnetnav）。",
+        "探索了利用树正则化将句法结构引入 Transformer 语言模型的方法。"
+      ],
+      "technical_tags": [
+        "浏览器智能体",
+        "无监督环境交互",
+        "句法树正则化"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_066_source_01": {
+      "source_id": "academic_066_source_01",
+      "entity_id": "academic_066",
+      "core_points": [
+        "参与发布 MLCommons 的 AI 风险与可靠性基准测试 AILuminate v1.0。",
+        "研究涵盖语言模型 API 提示缓存审计及 AI 智能体在网络安全系统中的攻防经济影响。"
+      ],
+      "technical_tags": [
+        "AI风险基准测试",
+        "提示缓存审计",
+        "网络安全攻防"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_067_source_01": {
+      "source_id": "academic_067_source_01",
+      "entity_id": "academic_067",
+      "core_points": [
+        "研究大语言模型生成的开放度，提出理解与校准生成空间大小的方法。",
+        "探讨自动语音识别中“早期分类、晚期整合”的差异化处理策略。",
+        "揭示人类在评估AI时存在的“效率增益错觉”，即低估AI使用率并高估其在简单任务中的收益。"
+      ],
+      "technical_tags": [
+        "大语言模型生成",
+        "自动语音识别",
+        "生成空间校准",
+        "人机交互认知"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_067_source_02": {
+      "source_id": "academic_067_source_02",
+      "entity_id": "academic_067",
+      "core_points": [
+        "研究大语言模型生成内容的开放度理解与校准（Generation Space Size）。",
+        "探讨自动语音识别中的发散性处理策略（Categorize Early, Integrate Late）。",
+        "揭示人类对AI使用率及简单任务收益的认知偏差（The Efficiency-Gain Illusion）。"
+      ],
+      "technical_tags": [
+        "Large Language Models",
+        "Automatic Speech Recognition",
+        "Human-AI Interaction",
+        "Cognitive Bias"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_067_source_03": {
+      "source_id": "academic_067_source_03",
+      "entity_id": "academic_067",
+      "core_points": [
+        "在语言模型评估中，较低的困惑度（perplexity）代表更好的模型性能，例如在WSJ数据集上Trigram的困惑度显著低于Bigram和Unigram。",
+        "介绍了香农可视化方法（Shannon Visualization Method），通过根据概率随机选择n-gram来生成文本序列以直观展示模型特性。",
+        "阐述了使用最大似然估计（Maximum Likelihood Estimate）来计算N-gram（如bigram）条件概率的数学方法。"
+      ],
+      "technical_tags": [
+        "N-gram模型",
+        "困惑度评估",
+        "香农可视化方法",
+        "最大似然估计",
+        "语言模型"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_067_source_04": {
+      "source_id": "academic_067_source_04",
+      "entity_id": "academic_067",
+      "core_points": [
+        "获得了多项重要学术荣誉，包括麦克阿瑟奖（MacArthur Fellowship）、NSF CAREER奖以及美国语言学会Fillmore教授称号。",
+        "研究成果多次获得顶级论文奖项，如Cozzarelli Prize、Cialdini Prize、Roger V. Gould Prize及EMNLP 2013最佳论文奖。",
+        "研究涵盖计算社会科学（如相亲语音特征分析）及自然语言处理（如通过计数变换和模型重组突破语法归纳中的局部最优）。"
+      ],
+      "technical_tags": [
+        "语法归纳",
+        "计算社会科学",
+        "语音特征分析",
+        "模型重组",
+        "计数变换"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_068_source_01": {
+      "source_id": "academic_068_source_01",
+      "entity_id": "academic_068",
+      "core_points": [
+        "何恺明现任麻省理工学院（MIT）电子工程与计算机科学系（EECS）副教授及杰出科学家。",
+        "其参与的研究项目包括面向交互式世界推理的视觉工具 VISTA（VISTA: A Visual Harness for Reasoning in an Interactive World）。"
+      ],
+      "technical_tags": [
+        "计算机视觉",
+        "表示学习",
+        "生成模型",
+        "交互式推理",
+        "视觉推理"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_069_source_01": {
+      "source_id": "academic_069_source_01",
+      "entity_id": "academic_069",
+      "core_points": [
+        "Yejin Choi 参与了主动个性化推理基准（PrefDisco）以及多 LLM 系统中模型角色与权重联合优化（Heterogeneous Swarms）等研究。",
+        "其合作研究涉及用于连续图像生成的混合自回归与扩散 Transformer（MADFormer）。"
+      ],
+      "technical_tags": [
+        "自然语言处理",
+        "常识推理",
+        "多LLM系统",
+        "扩散Transformer",
+        "个性化推理"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_069_source_02": {
+      "source_id": "academic_069_source_02",
+      "entity_id": "academic_069",
+      "core_points": [
+        "Yejin Choi参与指导了关于大型语言模型护栏、安全及可控转向的ACL 2025教程。",
+        "Yejin Choi联合指导了专注于自然语言理解和心智理论研究的博士生Melanie Sclar。"
+      ],
+      "technical_tags": [
+        "Large Language Models",
+        "AI Safety",
+        "Natural Language Understanding",
+        "Theory of Mind"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_069_source_03": {
+      "source_id": "academic_069_source_03",
+      "entity_id": "academic_069",
+      "core_points": [
+        "Yejin Choi参与发表了关于百万级对话蒸馏与社会常识情境化的研究（SODA）。"
+      ],
+      "technical_tags": [
+        "Dialogue Distillation",
+        "Social Commonsense",
+        "Natural Language Processing"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_070_source_01": {
+      "source_id": "academic_070_source_01",
+      "entity_id": "academic_070",
+      "core_points": [
+        "Hanna Hajishirzi作为Co-PI参与DARPA支持的HAILMEIER-C项目，研究利用人工智能和语言模型增强创新并评估研究声明。",
+        "Hannaneh Hajishirzi参与发表了NeurIPS 2024关于语言模型上下文不合规（Contextual Noncompliance）的论文。"
+      ],
+      "technical_tags": [
+        "语言模型",
+        "上下文不合规",
+        "临床推理"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_070_source_02": {
+      "source_id": "academic_070_source_02",
+      "entity_id": "academic_070",
+      "core_points": [
+        "Hanna Hajishirzi指导博士生开展多模态大语言模型（特别是视频语言模型）的预训练、后训练和基准测试研究。",
+        "Hannaneh Hajishirzi作为合著者参与了NeurIPS 2024关于领域特定动作识别的视频问答基准（ActionAtlas）的研究。"
+      ],
+      "technical_tags": [
+        "视频语言模型",
+        "多模态大语言模型",
+        "视频问答基准",
+        "动作识别"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_070_source_03": {
+      "source_id": "academic_070_source_03",
+      "entity_id": "academic_070",
+      "core_points": [
+        "Hannaneh Hajishirzi 与 Luke Zettlemoyer 共同指导了 Bhargavi Paranjape 和 Sewon Min 等博士生。",
+        "Hannaneh Hajishirzi 与 Luke Zettlemoyer 团队在语言模型可靠性、交互式调试及数据使用等自然语言处理领域有合作研究。"
+      ],
+      "technical_tags": [
+        "自然语言处理",
+        "大语言模型",
+        "模型可靠性",
+        "交互式调试"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_070_source_04": {
+      "source_id": "academic_070_source_04",
+      "entity_id": "academic_070",
+      "core_points": [
+        "Hannaneh Hajishirzi 在多模态机器理解领域有早期研究，如基于教科书的问答系统。",
+        "其博士期间的研究聚焦于概率动态系统的动作中心推理及机器人足球叙事中的推理。"
+      ],
+      "technical_tags": [
+        "多模态理解",
+        "机器阅读理解",
+        "概率动态系统",
+        "机器人推理"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_071_source_01": {
+      "source_id": "academic_071_source_01",
+      "entity_id": "academic_071",
+      "core_points": [
+        "Dawn Song 参与了关于推进基于科学与证据的人工智能政策制定的联合研究。"
+      ],
+      "technical_tags": [
+        "人工智能政策",
+        "循证AI治理",
+        "AI评估"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_071_source_02": {
+      "source_id": "academic_071_source_02",
+      "entity_id": "academic_071",
+      "core_points": [
+        "Dawn Song 参与了 AccidentBench 研究，该研究专注于车辆事故等场景下的多模态理解与推理基准测试。"
+      ],
+      "technical_tags": [
+        "多模态理解",
+        "基准测试",
+        "车辆事故分析",
+        "可信AI"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_071_source_03": {
+      "source_id": "academic_071_source_03",
+      "entity_id": "academic_071",
+      "core_points": [
+        "Dawn Song 参与开发了 Revelio，一种用于代码库级内存安全漏洞检测的低成本代理方法。",
+        "其合作团队在利用大语言模型进行恶意软件检测及防御提示注入攻击（如 Meta SecAlign）方面开展了安全研究。"
+      ],
+      "technical_tags": [
+        "内存安全漏洞检测",
+        "恶意软件检测",
+        "提示注入防御",
+        "大模型安全"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_071_source_04": {
+      "source_id": "academic_071_source_04",
+      "entity_id": "academic_071",
+      "core_points": [
+        "Dawn Song 参与签署了《人工智能红线共识声明》，该声明在 2024 年北京国际 AI 安全对话中发布。"
+      ],
+      "technical_tags": [
+        "AI安全红线",
+        "国际AI安全对话",
+        "AI治理共识"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_071_source_05": {
+      "source_id": "academic_071_source_05",
+      "entity_id": "academic_071",
+      "core_points": [
+        "Dawn Song 参与了关于在快速进步时代管理 AI 风险的联合研究。",
+        "其参与了 Agentic Web 研究，探讨如何利用 AI 智能体构建下一代网络。"
+      ],
+      "technical_tags": [
+        "AI风险管理",
+        "AI智能体",
+        "Agentic Web"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_072_source_01": {
+      "source_id": "academic_072_source_01",
+      "entity_id": "academic_072",
+      "core_points": [
+        "该来源主要展示 Stuart Russell 关于自主智能体表征与学习的早期出版物，未直接包含 Pieter Abbeel 的具体研究细节。"
+      ],
+      "technical_tags": [
+        "自主智能体",
+        "知识表征",
+        "非单调推理"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_072_source_02": {
+      "source_id": "academic_072_source_02",
+      "entity_id": "academic_072",
+      "core_points": [
+        "Pieter Abbeel 参与了 Agent-to-Sim 研究，旨在从随意的纵向视频中学习交互式行为模型。"
+      ],
+      "technical_tags": [
+        "行为模型学习",
+        "视频理解",
+        "Agent-to-Sim",
+        "具身智能"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_072_source_03": {
+      "source_id": "academic_072_source_03",
+      "entity_id": "academic_072",
+      "core_points": [
+        "Pieter Abbeel 担任加州大学伯克利分校人工智能与机器人学教授，其研究领域涵盖 AI 安全。"
+      ],
+      "technical_tags": [
+        "机器人学习",
+        "AI安全",
+        "具身智能"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_072_source_04": {
+      "source_id": "academic_072_source_04",
+      "entity_id": "academic_072",
+      "core_points": [
+        "该课程（CS287）的工作由 Pieter Abbeel 撰写。",
+        "课程中涉及的大多数技术严重依赖于概率推理和优化。"
+      ],
+      "technical_tags": [
+        "概率推理",
+        "优化技术"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_072_source_05": {
+      "source_id": "academic_072_source_05",
+      "entity_id": "academic_072",
+      "core_points": [
+        "发表了关于 MultiGen 的研究，利用模拟中的多模态生成来学习现实中的多模态策略。",
+        "与 Xi Chen、Rocky Duan、Phillip Isola 等多位研究人员合作发表。"
+      ],
+      "technical_tags": [
+        "多模态生成",
+        "仿真到现实策略学习"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_073_source_01": {
+      "source_id": "academic_073_source_01",
+      "entity_id": "academic_073",
+      "core_points": [
+        "参与发表了关于通过具身思维链推理进行机器人控制的研究。",
+        "与 Michal Zawalski、Sergey Levine 等多位研究人员合作。"
+      ],
+      "technical_tags": [
+        "具身思维链推理",
+        "机器人控制"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_074_source_01": {
+      "source_id": "academic_074_source_01",
+      "entity_id": "academic_074",
+      "core_points": [
+        "探讨了智能体需要了解自身身份并进行前瞻性规划的能力。",
+        "撰写了关于提示工程（Prompt Engineering）的长文。"
+      ],
+      "technical_tags": [
+        "智能体规划",
+        "提示工程"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_074_source_02": {
+      "source_id": "academic_074_source_02",
+      "entity_id": "academic_074",
+      "core_points": [
+        "探讨了模型通过生成理由（rationales）来引入词元级别（token-level）推理的方法。",
+        "撰写了关于“我们为何思考”（Why We Think）的长文。"
+      ],
+      "technical_tags": [
+        "词元级推理",
+        "理由生成"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_074_source_03": {
+      "source_id": "academic_074_source_03",
+      "entity_id": "academic_074",
+      "core_points": [
+        "探讨以大型语言模型（LLM）为核心构建自主智能体（Autonomous Agents）的方法。"
+      ],
+      "technical_tags": [
+        "LLM",
+        "Autonomous Agents"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_074_source_04": {
+      "source_id": "academic_074_source_04",
+      "entity_id": "academic_074",
+      "core_points": [
+        "提供关于 LLM 驱动的自主智能体的详细目录与评估基准（benchmark）内容。"
+      ],
+      "technical_tags": [
+        "LLM",
+        "Autonomous Agents",
+        "Benchmark Evaluation"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_074_source_05": {
+      "source_id": "academic_074_source_05",
+      "entity_id": "academic_074",
+      "core_points": [
+        "记录了在世界模型、多智能体强化学习以及 AI 安全与对齐三个领域进行的实验，每个领域包含 45-50 个高质量种子。"
+      ],
+      "technical_tags": [
+        "World Models",
+        "Multi-Agent RL",
+        "AI Safety",
+        "Alignment"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_075_source_01": {
+      "source_id": "academic_075_source_01",
+      "entity_id": "academic_075",
+      "core_points": [
+        "提供将基础模型（包括 LLM 和 LMM）适配到特定应用的框架，并探讨传统机器学习工程与 AI 工程的区别。"
+      ],
+      "technical_tags": [
+        "Foundation Models",
+        "AI Engineering",
+        "LLM",
+        "LMM"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_075_source_02": {
+      "source_id": "academic_075_source_02",
+      "entity_id": "academic_075",
+      "core_points": [
+        "介绍使用现成基础模型构建和部署 AI 应用的实用框架，并涵盖如何评估模型、数据集和基准等 AI 生态。"
+      ],
+      "technical_tags": [
+        "AI Engineering",
+        "Foundation Models",
+        "Model Deployment",
+        "Evaluation Benchmarks"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_075_source_03": {
+      "source_id": "academic_075_source_03",
+      "entity_id": "academic_075",
+      "core_points": [
+        "展示了一个为 LLM、多模态和语音 AI 研究人员及开发者构建的可扩展生成式 AI 框架，并汇总了其相关书籍的资源。"
+      ],
+      "technical_tags": [
+        "Generative AI Framework",
+        "LLM",
+        "Multimodal",
+        "Speech AI"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_075_source_04": {
+      "source_id": "academic_075_source_04",
+      "entity_id": "academic_075",
+      "core_points": [
+        "探讨 LLM 将如何改变机器学习工作流，并基于与多家企业合作及个人构建 LLM 应用的经验总结了相关发现。"
+      ],
+      "technical_tags": [
+        "LLM Applications",
+        "ML Workflows",
+        "Production AI"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_075_source_05": {
+      "source_id": "academic_075_source_05",
+      "entity_id": "academic_075",
+      "core_points": [
+        "重新分析了围绕基础模型的开源 AI 工具栈，指出推理优化（如量化、低秩分解）对于控制当前基础模型的延迟和成本至关重要。"
+      ],
+      "technical_tags": [
+        "Open Source AI",
+        "Inference Optimization",
+        "Quantization",
+        "Foundation Models"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_076_source_01": {
+      "source_id": "academic_076_source_01",
+      "entity_id": "academic_076",
+      "core_points": [
+        "致力于通过可视化方式逐一解析机器学习概念，并推广其著作《Hands-On Large Language Models》。"
+      ],
+      "technical_tags": [
+        "Machine Learning Visualization",
+        "Large Language Models"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_076_source_02": {
+      "source_id": "academic_076_source_02",
+      "entity_id": "academic_076",
+      "core_points": [
+        "提供 Transformer 架构的可视化图解内容。"
+      ],
+      "technical_tags": [
+        "Transformer",
+        "Machine Learning Visualization"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_076_source_03": {
+      "source_id": "academic_076_source_03",
+      "entity_id": "academic_076",
+      "core_points": [
+        "提供 GPT-2 等 Transformer 语言模型的可视化图解。"
+      ],
+      "technical_tags": [
+        "GPT-2",
+        "Transformer Language Models",
+        "Visualization"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_076_source_04": {
+      "source_id": "academic_076_source_04",
+      "entity_id": "academic_076",
+      "core_points": [
+        "提供检索 Transformer（Retrieval Transformer）架构的可视化图解。"
+      ],
+      "technical_tags": [
+        "Retrieval Transformer",
+        "Visualization"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_077_source_01": {
+      "source_id": "academic_077_source_01",
+      "entity_id": "academic_077",
+      "core_points": [
+        "回顾 2025 年大语言模型的重要发展，反思现存的局限性与开放问题，并指出 LLM 进展并未出现饱和或放缓的迹象。"
+      ],
+      "technical_tags": [
+        "LLM Progress",
+        "LLM Limitations",
+        "AI Trends"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_077_source_02": {
+      "source_id": "academic_077_source_02",
+      "entity_id": "academic_077",
+      "core_points": [
+        "整理并分类了 2025 年下半年（7-12月）收藏的有趣研究论文，涵盖基于扩散的语言模型以及多模态与视觉语言模型等方向。"
+      ],
+      "technical_tags": [
+        "LLM Research Papers",
+        "Diffusion Models",
+        "Multimodal Models",
+        "Vision-Language Models"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_077_source_03": {
+      "source_id": "academic_077_source_03",
+      "entity_id": "academic_077",
+      "core_points": [
+        "详细对比和展示了多种 LLM 架构参数，包括采用滑动窗口注意力与多 token 预测的 309B MoE 模型，以及类似 DeepSeek V3 但支持多模态的 673B 模型。"
+      ],
+      "technical_tags": [
+        "LLM Architecture",
+        "Mixture of Experts (MoE)",
+        "Sliding-Window Attention",
+        "Multi-Token Prediction"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_077_source_04": {
+      "source_id": "academic_077_source_04",
+      "entity_id": "academic_077",
+      "core_points": [
+        "对比了从 GPT-2 到 DeepSeek V3、Llama 4 及 Gemma 4 等现代 LLM 的架构设计，指出它们在结构上依然高度相似，并分析了 MoE 变体。"
+      ],
+      "technical_tags": [
+        "LLM Architecture Comparison",
+        "DeepSeek V3",
+        "Llama 4",
+        "Gemma 4"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_077_source_05": {
+      "source_id": "academic_077_source_05",
+      "entity_id": "academic_077",
+      "core_points": [
+        "指出 DeepSeek 团队在训练 DeepSeek-R1-Zero 和 R1 的推理能力时，并未使用基于 LLM 的奖励模型，而是采用了基于规则的奖励（rule-based rewards）。"
+      ],
+      "technical_tags": [
+        "Reinforcement Learning",
+        "LLM Reasoning",
+        "DeepSeek-R1",
+        "Rule-Based Rewards"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_078_source_01": {
+      "source_id": "academic_078_source_01",
+      "entity_id": "academic_078",
+      "core_points": [
+        "建议 2026 年推出新协议或语言时包含语言无关的一致性测试套件；总结 2025 年各大 AI 实验室均发布了至少一款推理模型或混合模式模型。"
+      ],
+      "technical_tags": [
+        "LLM Reasoning Models",
+        "Conformance Suite",
+        "AI Lab Releases"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_078_source_02": {
+      "source_id": "academic_078_source_02",
+      "entity_id": "academic_078",
+      "core_points": [
+        "评测 Qwen 3.8 27B 存在过度思考（overthinking）的默认倾向；对比指出在特定规模下，推理模型（如 GLM-4.5）在生成开箱即用代码方面比非推理模型更具实质性优势。"
+      ],
+      "technical_tags": [
+        "Qwen 3.8",
+        "GLM-4.5",
+        "LLM Reasoning",
+        "Code Generation"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_078_source_03": {
+      "source_id": "academic_078_source_03",
+      "entity_id": "academic_078",
+      "core_points": [
+        "介绍用于评估视觉 LLM 处理长视频能力的新开源基准 TimeScope；报道 Mistral 发布闭源模型 Mistral Medium，其基准得分媲美 GPT-4o 和 Claude 3.7 Sonnet 且定价更低。"
+      ],
+      "technical_tags": [
+        "Vision LLMs",
+        "Video Evaluation Benchmark",
+        "Mistral Medium",
+        "Closed-Source Models"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_078_source_04": {
+      "source_id": "academic_078_source_04",
+      "entity_id": "academic_078",
+      "core_points": [
+        "记录 2026 年 OpenAI 内部智能体工程（agentic engineering）的爆发及研究团队对编码智能体的使用；推测 7 月下旬 AI 支出加速是因为员工获得了后来发布的 GPT-6 Astra 模型的访问权。"
+      ],
+      "technical_tags": [
+        "Agentic Engineering",
+        "Coding Agents",
+        "OpenAI",
+        "GPT-6 Astra"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_078_source_05": {
+      "source_id": "academic_078_source_05",
+      "entity_id": "academic_078",
+      "core_points": [
+        "报道 Qwen 发布开源权重模型 Qwen3.8-Flash-Next，这是一个 125B 总参数但仅 6B 激活参数的多模态 MoE 模型，作为 Qwen4 架构的早期预览并带来显著性能提升。"
+      ],
+      "technical_tags": [
+        "Qwen3.8-Flash-Next",
+        "Multimodal MoE",
+        "Open Weights",
+        "Qwen4 Architecture"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_079_source_01": {
+      "source_id": "academic_079_source_01",
+      "entity_id": "academic_079",
+      "core_points": [
+        "在推理研究浪潮中，推荐并认可了一批值得阅读的 RLHF 与推理相关论文。"
+      ],
+      "technical_tags": [
+        "RLHF",
+        "Reasoning Research",
+        "Paper Recommendations"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_079_source_02": {
+      "source_id": "academic_079_source_02",
+      "entity_id": "academic_079",
+      "core_points": [
+        "探讨推理机器（reasoning machines）的崛起，并指出某些相关争论不值得重复。"
+      ],
+      "technical_tags": [
+        "Reasoning Machines",
+        "AI Debate"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_079_source_03": {
+      "source_id": "academic_079_source_03",
+      "entity_id": "academic_079",
+      "core_points": [
+        "回顾推理技术的现状，内容基于其在 NeurIPS Latent Space 现场活动中的演讲。"
+      ],
+      "technical_tags": [
+        "LLM Reasoning",
+        "NeurIPS",
+        "State of Reasoning"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_079_source_04": {
+      "source_id": "academic_079_source_04",
+      "entity_id": "academic_079",
+      "core_points": [
+        "分享了关于模型训练、推理能力及未来前沿方向的演讲内容。"
+      ],
+      "technical_tags": [
+        "模型训练",
+        "推理模型",
+        "前沿探索"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_079_source_05": {
+      "source_id": "academic_079_source_05",
+      "entity_id": "academic_079",
+      "core_points": [
+        "探讨了 AI 智能体光谱，从强化学习的长期历史中区分和解析不同类别的 AI 智能体。"
+      ],
+      "technical_tags": [
+        "AI智能体",
+        "强化学习",
+        "智能体分类"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_080_source_01": {
+      "source_id": "academic_080_source_01",
+      "entity_id": "academic_080",
+      "core_points": [
+        "在 2025 年回顾中提及构建了将子智能体能力集成到 q-cli 命令行工具中的小型原型。"
+      ],
+      "technical_tags": [
+        "子智能体",
+        "原型开发",
+        "命令行工具"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_080_source_02": {
+      "source_id": "academic_080_source_02",
+      "entity_id": "academic_080",
+      "core_points": [
+        "探讨了基于 LLM 的系统与产品构建模式，提及使用 GPT-4 在 Vicuna 基准上评估各模型相对于 gpt-3.5-turbo 的性能表现。"
+      ],
+      "technical_tags": [
+        "LLM系统构建",
+        "模型评估",
+        "Vicuna基准"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_080_source_03": {
+      "source_id": "academic_080_source_03",
+      "entity_id": "academic_080",
+      "core_points": [
+        "关注长上下文问答系统的评估，涉及商业与金融定量推理基准（BizBench）及长文本问答（ELI5）。"
+      ],
+      "technical_tags": [
+        "长上下文评估",
+        "问答系统",
+        "定量推理基准"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_080_source_04": {
+      "source_id": "academic_080_source_04",
+      "entity_id": "academic_080",
+      "core_points": [
+        "分析了特定任务 LLM 评估的有效性，涉及 FIB 基准、统一摘要基准（USB）以及自然语言推理（NLI）的性能图表。"
+      ],
+      "technical_tags": [
+        "任务特定评估",
+        "摘要基准",
+        "NLI性能"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_080_source_05": {
+      "source_id": "academic_080_source_05",
+      "entity_id": "academic_080",
+      "core_points": [
+        "受邀在 2025 年旧金山 AI 工程师世界博览会上主持推荐系统（RecSys）分会场，探讨利用 LLM 技术改进推荐与搜索。"
+      ],
+      "technical_tags": [
+        "推荐系统",
+        "搜索优化",
+        "行业会议"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_081_source_01": {
+      "source_id": "academic_081_source_01",
+      "entity_id": "academic_081",
+      "core_points": [
+        "总结了教授 AI 评估课程时的常见问题，提出使用转移矩阵将智能体复杂性转化为可操作的洞察，以追踪特定状态转换导致的失败。"
+      ],
+      "technical_tags": [
+        "LLM评估",
+        "智能体调试",
+        "转移矩阵"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_081_source_02": {
+      "source_id": "academic_081_source_02",
+      "entity_id": "academic_081",
+      "core_points": [
+        "介绍了开源 Python 库 Inspect AI 及其创建者 JJ Allaire，该库内置了 GAIA、GDM 危险能力和 SWE-Bench 等知名智能体基准的实现。"
+      ],
+      "technical_tags": [
+        "Inspect AI",
+        "开源评估库",
+        "智能体基准"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_081_source_03": {
+      "source_id": "academic_081_source_03",
+      "entity_id": "academic_081",
+      "core_points": [
+        "发布了针对编码智能体的评估技能（evals skills），强调产品评估（衡量特定任务和数据上的管道效果）而非基础模型基准测试。"
+      ],
+      "technical_tags": [
+        "编码智能体",
+        "产品评估",
+        "管道测试"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_081_source_04": {
+      "source_id": "academic_081_source_04",
+      "entity_id": "academic_081",
+      "core_points": [
+        "推荐在 LLM 评估中使用二元（通过/失败）标签而非李克特量表（1-5 分），因为二元标签判断更清晰，且量表增加的复杂性在实践中往往带来更多问题。"
+      ],
+      "technical_tags": [
+        "二元评估",
+        "评估方法论",
+        "标签设计"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_082_source_01": {
+      "source_id": "academic_082_source_01",
+      "entity_id": "academic_082",
+      "core_points": [
+        "列出了 Arvind Narayanan 参与的多项研究，包括探讨过度依赖 AI 驱动建模对科学的危害、推理缩放定律的局限性，以及通过计算可重复性智能体基准（CORE-Bench）促进研究可信度。"
+      ],
+      "technical_tags": [
+        "AI建模风险",
+        "推理缩放定律",
+        "科研可重复性"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_082_source_02": {
+      "source_id": "academic_082_source_02",
+      "entity_id": "academic_082",
+      "core_points": [
+        "领导团队推进 AI 智能体评估科学，指出截至 2026 年初 AI 智能体能力高但可靠性不足，并发布了评估软件基础设施、基准陷阱论文及测试智能体复现科学论文能力的基准。"
+      ],
+      "technical_tags": [
+        "智能体评估",
+        "智能体可靠性",
+        "评估基础设施"
+      ],
+      "direct_statement": true,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_082_source_03": {
+      "source_id": "academic_082_source_03",
+      "entity_id": "academic_082",
+      "core_points": [
+        "展示了与 Arvind Narayanan 合作的研究与项目，包括 AI 智能体可靠性科学（ICML 2026）、全面智能体排行榜 HAL（ICLR 2026）、开放式评估 CRUX，以及共同撰写“AI as Normal Technology”通讯。"
+      ],
+      "technical_tags": [
+        "智能体可靠性",
+        "智能体排行榜",
+        "开放式评估"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_082_source_04": {
+      "source_id": "academic_082_source_04",
+      "entity_id": "academic_082",
+      "core_points": [
+        "汇总了 Arvind Narayanan 的出版物，涵盖大语言模型中局部文化知识的保守性与可控性、AI 驱动建模的局限性、智能体评估（AI Agents That Matter）及推理缩放缺陷等主题。"
+      ],
+      "technical_tags": [
+        "文化知识控制",
+        "智能体评估",
+        "出版物汇总"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_083_source_01": {
+      "source_id": "academic_083_source_01",
+      "entity_id": "academic_083",
+      "core_points": [
+        "登记说明指出其研究方向为 AI 评测、科研可重复性、社会影响与风险分析。"
+      ],
+      "technical_tags": [
+        "AI评测",
+        "科研可重复性",
+        "风险分析"
+      ],
+      "direct_statement": false,
+      "summary_status": "baseline_only",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_084_source_01": {
+      "source_id": "academic_084_source_01",
+      "entity_id": "academic_084",
+      "core_points": [
+        "指出 OpenAI 和 Google 近期发布的多模态图像生成技术改变了现状，使大语言模型能够像生成文字一样逐块添加颜色来直接创建图像。"
+      ],
+      "technical_tags": [
+        "多模态生成",
+        "图像生成",
+        "大语言模型"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_084_source_02": {
+      "source_id": "academic_084_source_02",
+      "entity_id": "academic_084",
+      "core_points": [
+        "对比了扩散模型与多模态生成模型，强调后者赋予 AI 对图像创建的深度控制能力，其质量已接近最佳闭源模型。"
+      ],
+      "technical_tags": [
+        "扩散模型对比",
+        "闭源模型质量",
+        "图像控制"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_084_source_03": {
+      "source_id": "academic_084_source_03",
+      "entity_id": "academic_084",
+      "core_points": [
+        "通过“水獭在飞机上用 wifi”的图像生成案例，展示了多模态大语言模型在复杂场景下直接生成高质量图像的能力。"
+      ],
+      "technical_tags": [
+        "复杂场景生成",
+        "提示词遵循",
+        "视觉生成"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_084_source_04": {
+      "source_id": "academic_084_source_04",
+      "entity_id": "academic_084",
+      "core_points": [
+        "探讨了多模态生成技术的意义，指出 LLM 直接生成图像的方式（逐像素/色块添加）使其在图像创作上获得了前所未有的控制力。"
+      ],
+      "technical_tags": [
+        "生成机制",
+        "像素级控制",
+        "多模态LLM"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_084_source_05": {
+      "source_id": "academic_084_source_05",
+      "entity_id": "academic_084",
+      "core_points": [
+        "分析了多模态图像生成的技术演进，强调从噪声转换（扩散模型）到自回归式色块添加（LLM）的范式转变及其对 AI 图像控制力的提升。"
+      ],
+      "technical_tags": [
+        "范式转变",
+        "自回归生成",
+        "技术演进"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_085_source_01": {
+      "source_id": "academic_085_source_01",
+      "entity_id": "academic_085",
+      "core_points": [
+        "登记说明表明其专注于神经网络可解释性与深度学习可视化写作。"
+      ],
+      "technical_tags": [
+        "神经网络可解释性",
+        "深度学习可视化"
+      ],
+      "direct_statement": false,
+      "summary_status": "baseline_only",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_086_source_01": {
+      "source_id": "academic_086_source_01",
+      "entity_id": "academic_086",
+      "core_points": [
+        "Jeremy Howard 撰写了关于 Chris Lattner 探讨软件工艺与 AI 的文章，并提及了智能体使用中的“氛围编程”（vibe coding）概念。"
+      ],
+      "technical_tags": [
+        "软件工艺",
+        "氛围编程",
+        "智能体应用"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_086_source_02": {
+      "source_id": "academic_086_source_02",
+      "entity_id": "academic_086",
+      "core_points": [
+        "fast.ai 首页展示了关于 AI 安全、模型许可的文章，提及 Jeremy Howard 与 Seth Lazar、Arvind Narayanan 的合作，以及 Mojo 语言的潜力。"
+      ],
+      "technical_tags": [
+        "AI安全",
+        "模型许可",
+        "Mojo语言"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_087_source_01": {
+      "source_id": "academic_087_source_01",
+      "entity_id": "academic_087",
+      "core_points": [
+        "唐杰探讨了大模型时代的认知智能与超级认知智能，涵盖大模型评测、多模态、强逻辑、通用 Agent 能力、自反思学习及超越 Transformer 的新型架构。"
+      ],
+      "technical_tags": [
+        "认知智能",
+        "超级认知智能",
+        "新型模型架构"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_087_source_02": {
+      "source_id": "academic_087_source_02",
+      "entity_id": "academic_087",
+      "core_points": [
+        "介绍GLM自研大模型架构及其在对话、文生图、代码生成等多模态任务中的应用。",
+        "提出大模型与环境交互及工具使用能力的发展路径，从GLM-4演进至GLM-4V-All Tools。",
+        "展望AGI发展路径，包括构建原生多模态基座模型、研究AIOS系统及超级对齐技术。"
+      ],
+      "technical_tags": [
+        "GLM架构",
+        "多模态大模型",
+        "工具调用",
+        "AIOS",
+        "超级对齐"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_087_source_03": {
+      "source_id": "academic_087_source_03",
+      "entity_id": "academic_087",
+      "core_points": [
+        "展示清华大学KEG实验室团队研发的GLM系列模型与GPT的对比及自研架构演进。",
+        "探讨大模型的“思考”能力及其与外部环境的交互机制。",
+        "规划从语言模型到多模态再到全工具调用的AGI演进路线。"
+      ],
+      "technical_tags": [
+        "KEG实验室",
+        "GLM系列模型",
+        "环境交互",
+        "模型思考",
+        "AGI演进"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_087_source_04": {
+      "source_id": "academic_087_source_04",
+      "entity_id": "academic_087",
+      "core_points": [
+        "介绍开源的ChatGLM-6B及千亿基座GLM-130B模型，后者训练数据量达1万亿字符。",
+        "强调预训练大模型作为新一代AI基础设施，正从单模态向多模态及多场景通用能力发展。",
+        "指出GLM-130B在Stanford主流大模型评测中表现优异，鲁棒性和校准误差在所有模型中最佳。"
+      ],
+      "technical_tags": [
+        "ChatGLM-6B",
+        "GLM-130B",
+        "预训练大模型",
+        "多模态发展",
+        "大模型评测"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_088_source_01": {
+      "source_id": "academic_088_source_01",
+      "entity_id": "academic_088",
+      "core_points": [
+        "介绍刘知远教授的研究关注点包括大模型评测。",
+        "提及团队成员的奖学金获得情况及毕业去向。"
+      ],
+      "technical_tags": [
+        "大模型评测",
+        "自然语言处理",
+        "清华大学"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_088_source_02": {
+      "source_id": "academic_088_source_02",
+      "entity_id": "academic_088",
+      "core_points": [
+        "展示实验室学生在多模态大模型作为具身智能体训练与评测方法方面的研究课题。",
+        "提及学科大模型相关的博士研究题目。"
+      ],
+      "technical_tags": [
+        "多模态大模型",
+        "具身智能体",
+        "模拟环境训练",
+        "学科大模型"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_088_source_03": {
+      "source_id": "academic_088_source_03",
+      "entity_id": "academic_088",
+      "core_points": [
+        "实验室博士生获得2026年度中国电子学会-腾讯博士生科研激励计划（混元大模型专项）。",
+        "刘知远教授连续第6年入选相关学术榜单。"
+      ],
+      "technical_tags": [
+        "混元大模型",
+        "科研激励计划",
+        "中国电子学会"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_088_source_04": {
+      "source_id": "academic_088_source_04",
+      "entity_id": "academic_088",
+      "core_points": [
+        "报道实验室博士生在2026年度中国电子学会-腾讯混元大模型专项科研激励计划中的获奖情况。",
+        "强调刘知远教授连续第六年入选该学术榜单。"
+      ],
+      "technical_tags": [
+        "腾讯混元大模型",
+        "博士生科研激励",
+        "学术榜单"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_088_source_05": {
+      "source_id": "academic_088_source_05",
+      "entity_id": "academic_088",
+      "core_points": [
+        "明确刘知远教授的研究方向涵盖大模型技术、知识图谱和社会计算。",
+        "指出其在ACL、EMNLP等顶级AI会议和期刊发表论文200余篇及高引用量。"
+      ],
+      "technical_tags": [
+        "大模型技术",
+        "知识图谱",
+        "社会计算",
+        "顶级学术会议"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_089_source_01": {
+      "source_id": "academic_089_source_01",
+      "entity_id": "academic_089",
+      "core_points": [
+        "介绍黄民烈为清华大学计算机系全职教授。",
+        "提及ToRA（一种用于数学问题求解的工具集成推理智能体）相关研究。"
+      ],
+      "technical_tags": [
+        "Tool-Integrated Reasoning",
+        "数学问题求解",
+        "推理智能体",
+        "ToRA"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_090_source_01": {
+      "source_id": "academic_090_source_01",
+      "entity_id": "academic_090",
+      "core_points": [
+        "登记说明朱军为清华大学教授，研究方向包括机器学习、贝叶斯方法、深度学习与概率编程。"
+      ],
+      "technical_tags": [
+        "贝叶斯方法",
+        "概率编程",
+        "深度学习"
+      ],
+      "direct_statement": false,
+      "summary_status": "baseline_only",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_091_source_01": {
+      "source_id": "academic_091_source_01",
+      "entity_id": "academic_091",
+      "core_points": [
+        "介绍周志华教授的研究方向为机器学习与逻辑推理的结合以及学件（Learnware）。",
+        "提及其著作《机器学习》由清华大学出版社于2016年出版。"
+      ],
+      "technical_tags": [
+        "逻辑推理",
+        "学件(Learnware)",
+        "机器学习教材"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_091_source_02": {
+      "source_id": "academic_091_source_02",
+      "entity_id": "academic_091",
+      "core_points": [
+        "提供周志华教授的个人基本信息，包括出生年月、籍贯及计算机科学家身份。",
+        "关联南京大学计算机学院、大模型中心及计算机软件新技术国家重点实验室等机构。"
+      ],
+      "technical_tags": [
+        "南京大学",
+        "大模型中心",
+        "国家重点实验室"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_092_source_01": {
+      "source_id": "academic_092_source_01",
+      "entity_id": "academic_092",
+      "core_points": [
+        "阐述围绕下一代多模态大语言模型构建的端到端研究链路，涵盖AI Infra、基础架构到智能体应用。",
+        "聚焦大模型系统的高效训练与推理、长上下文处理及分布式/稀疏化技术。"
+      ],
+      "technical_tags": [
+        "多模态大语言模型",
+        "AI Infra",
+        "长上下文处理",
+        "分布式稀疏化"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_092_source_02": {
+      "source_id": "academic_092_source_02",
+      "entity_id": "academic_092",
+      "core_points": [
+        "明确研究生招生研究方向包括大模型预训练/后训练、新架构、多模态及具身智能等。",
+        "提供复旦大学大模型相关研究生咨询的专用邮箱及邮件主题格式要求。"
+      ],
+      "technical_tags": [
+        "大模型预训练",
+        "后训练",
+        "具身智能",
+        "研究生招生"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_093_source_01": {
+      "source_id": "academic_093_source_01",
+      "entity_id": "academic_093",
+      "core_points": [
+        "登记说明李沐为《动手学深度学习》作者，专注于论文精读、深度学习与AI工程教育。"
+      ],
+      "technical_tags": [
+        "深度学习",
+        "AI工程教育",
+        "动手学深度学习"
+      ],
+      "direct_statement": false,
+      "summary_status": "baseline_only",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_094_source_01": {
+      "source_id": "academic_094_source_01",
+      "entity_id": "academic_094",
+      "core_points": [
+        "探讨通用模型的后训练与持续学习机制，强调模型需通过更新参数进行终身学习。",
+        "介绍Test-Time Training技术，旨在让人工智能实现自发且长期的后训练。",
+        "研究如何让语言模型“说”出其训练资料，涉及模型内部机制与知识提取。"
+      ],
+      "technical_tags": [
+        "持续学习",
+        "Test-Time Training",
+        "后训练",
+        "终身学习"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_094_source_02": {
+      "source_id": "academic_094_source_02",
+      "entity_id": "academic_094",
+      "core_points": [
+        "发布2025年春季机器学习课程的日程安排与Nvidia演讲等补充材料。",
+        "课程大纲涵盖AI Agent、大语言模型内部逻辑剖析、Mamba架构及预训练与对齐技术。"
+      ],
+      "technical_tags": [
+        "AI Agent",
+        "Mamba架构",
+        "预训练与对齐",
+        "课程大纲"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_094_source_03": {
+      "source_id": "academic_094_source_03",
+      "entity_id": "academic_094",
+      "core_points": [
+        "提供2025年秋季生成式AI与机器学习导论课程的教学内容与直播链接。",
+        "课程内容包括解析生成式AI内部运作机制、评估生成式AI能力的方法以及机器学习基本原理。"
+      ],
+      "technical_tags": [
+        "生成式AI评估",
+        "内部运作机制",
+        "机器学习原理",
+        "课程材料"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_094_source_04": {
+      "source_id": "academic_094_source_04",
+      "entity_id": "academic_094",
+      "core_points": [
+        "讲解大模型工具使用机制，包括RAG（检索增强生成）及将其他AI作为工具。",
+        "探讨面对海量工具时的工具选择（Tool Selection）策略及智能体记忆（Agent's Memory）机制。",
+        "强调模型需具备自我判断力，避免过度依赖或盲目相信工具导致错误。"
+      ],
+      "technical_tags": [
+        "检索增强生成(RAG)",
+        "工具选择",
+        "智能体记忆",
+        "模型判断力"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_094_source_05": {
+      "source_id": "academic_094_source_05",
+      "entity_id": "academic_094",
+      "core_points": [
+        "指出多数语音表征模型在说话人验证任务中表现不如传统声学特征（fbank）。",
+        "对比不同语音大模型（Speech LLM）架构的优缺点，如信息丢失与延迟问题。",
+        "回顾自动语音识别（ASR）历史，并提及Whisper等预训练模型。"
+      ],
+      "technical_tags": [
+        "语音表征模型",
+        "说话人验证",
+        "语音大模型",
+        "自动语音识别"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_095_source_01": {
+      "source_id": "academic_095_source_01",
+      "entity_id": "academic_095",
+      "core_points": [
+        "登记说明王树森专注于搜索、推荐、强化学习与工业机器学习公开课程。"
+      ],
+      "technical_tags": [
+        "强化学习",
+        "推荐系统",
+        "工业机器学习"
+      ],
+      "direct_statement": false,
+      "summary_status": "baseline_only",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_096_source_01": {
+      "source_id": "academic_096_source_01",
+      "entity_id": "academic_096",
+      "core_points": [
+        "介绍谭旭担任Moonshot AI（月之暗面）多模态研究副总裁。",
+        "提及他在智能体（如HuggingGPT）方面的研究及多项技术的产品化部署。"
+      ],
+      "technical_tags": [
+        "多模态研究",
+        "HuggingGPT",
+        "智能体",
+        "技术产品化"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_097_source_01": {
+      "source_id": "academic_097_source_01",
+      "entity_id": "academic_097",
+      "core_points": [
+        "介绍博士生Tianyi BAI的论文提案，聚焦多模态大语言模型在细粒度视觉推理中的可靠性问题。",
+        "指出模型在依赖细微视觉证据时易出现遗漏、幻觉等问题，并从数据中心视角研究该弱点。"
+      ],
+      "technical_tags": [
+        "细粒度视觉推理",
+        "多模态大语言模型",
+        "数据中心视角",
+        "模型幻觉"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_097_source_02": {
+      "source_id": "academic_097_source_02",
+      "entity_id": "academic_097",
+      "core_points": [
+        "探讨大型基础模型在数字与智能病理学全栈解决方案中的应用。",
+        "提出提升基础模型推理能力、知识边界意识及推理鲁棒性的技术路线图。",
+        "提及GPT-4o作为全模态模型在情感与语调语音对话方面的里程碑意义。"
+      ],
+      "technical_tags": [
+        "数字病理学",
+        "知识边界意识",
+        "推理鲁棒性",
+        "全模态模型"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_097_source_03": {
+      "source_id": "academic_097_source_03",
+      "entity_id": "academic_097",
+      "core_points": [
+        "介绍一种用于医疗报告生成的多模态大语言模型方法，在CT报告数据集上表现优异。",
+        "该方法在自然语言生成和临床疗效指标上超越现有最先进方法，并保持良好的可解释性。"
+      ],
+      "technical_tags": [
+        "医疗报告生成",
+        "CT报告数据集",
+        "临床疗效指标",
+        "可解释性"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_097_source_04": {
+      "source_id": "academic_097_source_04",
+      "entity_id": "academic_097",
+      "core_points": [
+        "香港科技大学计算机科学与工程系公布了2026年秋季的资格考试与论文答辩日程。",
+        "相关答辩课题涵盖去中心化与概率系统的算法优化验证，以及开放世界空间感知与推理。"
+      ],
+      "technical_tags": [
+        "去中心化系统",
+        "概率系统",
+        "算法优化",
+        "空间感知"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_097_source_05": {
+      "source_id": "academic_097_source_05",
+      "entity_id": "academic_097",
+      "core_points": [
+        "阿里巴巴通义千问团队发布了涵盖语言、视觉和音频的大规模多模态模型系列 Qwen 并予以开源。",
+        "讲座探讨了从大规模预训练向构建多模态通用智能体系统的发展目标。"
+      ],
+      "technical_tags": [
+        "多模态预训练",
+        "大语言模型",
+        "视觉语言模型",
+        "通用智能体"
+      ],
+      "direct_statement": false,
+      "summary_status": "excerpt_grounded",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_098_source_01": {
+      "source_id": "academic_098_source_01",
+      "entity_id": "academic_098",
+      "core_points": [
+        "该登记信息源主要关注 AI 创业、产业趋势、人才发展以及中美技术生态的观察。"
+      ],
+      "technical_tags": [
+        "AI创业",
+        "产业趋势",
+        "技术生态观察"
+      ],
+      "direct_statement": false,
+      "summary_status": "baseline_only",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    },
+    "academic_099_source_01": {
+      "source_id": "academic_099_source_01",
+      "entity_id": "academic_099",
+      "core_points": [
+        "该登记信息源提供关于 AI 技术翻译、产品观察、智能体及工程实践的高频中文内容。"
+      ],
+      "technical_tags": [
+        "AI技术翻译",
+        "智能体工程实践",
+        "产品观察"
+      ],
+      "direct_statement": false,
+      "summary_status": "baseline_only",
+      "analysis_model": "qwen3.7-plus",
+      "analysis_method": "llm_excerpt_summary"
+    }
+  },
+  "metrics": {
+    "sources": 304,
+    "summarized": 304,
+    "llm_summaries": 304,
+    "fallback_summaries": 0,
+    "baseline_only": 16,
+    "direct_statements": 9,
+    "dedup_adjusted": 0,
+    "exact_duplicate_summaries": 0
+  }
+}

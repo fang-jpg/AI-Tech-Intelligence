@@ -1,0 +1,891 @@
+companies:
+  academic_001:
+    name: "Stanford HAI"
+    country: "International"
+    entity_type: "institution"
+    aliases: ["Stanford HAI"]
+    official_domains: ["hai.stanford.edu"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "以人为本 AI、AI Index、政策治理与产业趋势的重要信息源。"
+
+  academic_002:
+    name: "Stanford CRFM"
+    country: "International"
+    entity_type: "institution"
+    aliases: ["Stanford CRFM"]
+    official_domains: ["crfm.stanford.edu", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "基础模型研究中心；持续发布 HELM、透明度与模型评测研究。"
+
+  academic_003:
+    name: "Stanford AI Lab (SAIL)"
+    country: "International"
+    entity_type: "institution"
+    aliases: ["Stanford AI Lab (SAIL)"]
+    official_domains: ["ai.stanford.edu"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "覆盖 NLP、计算机视觉、机器人、强化学习和机器学习基础研究。"
+
+  academic_004:
+    name: "MIT CSAIL"
+    country: "International"
+    entity_type: "institution"
+    aliases: ["MIT CSAIL"]
+    official_domains: ["csail.mit.edu"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "计算机科学与人工智能综合实验室；关注模型、系统、机器人与人机交互。"
+
+  academic_005:
+    name: "CMU Language Technologies Institute (LTI)"
+    country: "International"
+    entity_type: "institution"
+    aliases: ["CMU Language Technologies Institute (LTI)"]
+    official_domains: ["lti.cs.cmu.edu"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "语言技术、语音、信息检索和大模型研究重镇。"
+
+  academic_006:
+    name: "Berkeley Artificial Intelligence Research (BAIR)"
+    country: "International"
+    entity_type: "institution"
+    aliases: ["Berkeley Artificial Intelligence Research (BAIR)"]
+    official_domains: ["bair.berkeley.edu", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "机器学习、机器人、视觉与生成模型；BAIR Blog 适合跟踪研究解读。"
+
+  academic_007:
+    name: "LMSYS Org"
+    country: "International"
+    entity_type: "institution"
+    aliases: ["LMSYS Org"]
+    official_domains: ["lmsys.org", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "大模型系统与开放评测社区；FastChat、Vicuna、SGLang、Chatbot Arena。"
+
+  academic_008:
+    name: "Allen Institute for AI (Ai2)"
+    country: "International"
+    entity_type: "institution"
+    aliases: ["Allen Institute for AI (Ai2)"]
+    official_domains: ["allenai.org", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "非营利 AI 研究机构；OLMo、Tulu、AllenNLP 与开放科学资源。"
+
+  academic_009:
+    name: "EleutherAI"
+    country: "International"
+    entity_type: "institution"
+    aliases: ["EleutherAI"]
+    official_domains: ["eleuther.ai", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "开源 AI 研究集体；The Pile、GPT-NeoX、lm-evaluation-harness。"
+
+  academic_010:
+    name: "LAION"
+    country: "International"
+    entity_type: "institution"
+    aliases: ["LAION"]
+    official_domains: ["laion.ai", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "开放数据集与多模态研究社区；LAION 数据集、OpenCLIP 等。"
+
+  academic_011:
+    name: "ML Foundations"
+    country: "International"
+    entity_type: "institution"
+    aliases: ["ML Foundations"]
+    official_domains: ["mlfoundations.org", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "开放机器学习研究社区；OpenCLIP、DataComp 等可复现项目。"
+
+  academic_012:
+    name: "Harvard Kempner Institute"
+    country: "International"
+    entity_type: "institution"
+    aliases: ["Harvard Kempner Institute"]
+    official_domains: ["kempnerinstitute.harvard.edu"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "研究自然与人工智能的基础机制，发布研究博客、论文和计算资源实践。"
+
+  academic_013:
+    name: "Princeton Language and Intelligence (PLI)"
+    country: "International"
+    entity_type: "institution"
+    aliases: ["Princeton Language and Intelligence (PLI)"]
+    official_domains: ["pli.princeton.edu"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "研究大型 AI 模型的基础、跨学科应用、社会影响与安全。"
+
+  academic_014:
+    name: "University of Washington NLP"
+    country: "International"
+    entity_type: "institution"
+    aliases: ["University of Washington NLP"]
+    official_domains: ["nlp.washington.edu", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "自然语言处理、开放语言模型与推理研究；与 Ai2 生态联系紧密。"
+
+  academic_015:
+    name: "Mila – Quebec AI Institute"
+    country: "International"
+    entity_type: "institution"
+    aliases: ["Mila – Quebec AI Institute"]
+    official_domains: ["mila.quebec", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "深度学习、生成模型、强化学习与负责任 AI；强调开放科学。"
+
+  academic_016:
+    name: "Vector Institute"
+    country: "International"
+    entity_type: "institution"
+    aliases: ["Vector Institute"]
+    official_domains: ["vectorinstitute.ai", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "连接学术研究与产业落地，覆盖基础模型、AI 安全和行业应用。"
+
+  academic_017:
+    name: "Amii"
+    country: "International"
+    entity_type: "institution"
+    aliases: ["Amii"]
+    official_domains: ["amii.ca", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "加拿大国家 AI 研究院之一，强化学习与机器学习优势突出。"
+
+  academic_018:
+    name: "ELLIS"
+    country: "International"
+    entity_type: "institution"
+    aliases: ["ELLIS"]
+    official_domains: ["ellis.eu"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "欧洲机器学习与智能系统研究网络，适合跟踪各研究单元和项目。"
+
+  academic_019:
+    name: "ETH AI Center"
+    country: "International"
+    entity_type: "institution"
+    aliases: ["ETH AI Center"]
+    official_domains: ["ai.ethz.ch"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "ETH Zurich 跨学科 AI 中心，覆盖基础方法、机器人、科学与产业合作。"
+
+  academic_020:
+    name: "EPFL AI Center"
+    country: "International"
+    entity_type: "institution"
+    aliases: ["EPFL AI Center"]
+    official_domains: ["ai.epfl.ch"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "基础模型、开放科学与 Swiss AI Initiative 的重要信息源。"
+
+  academic_021:
+    name: "Oxford Applied and Theoretical ML (OATML)"
+    country: "International"
+    entity_type: "institution"
+    aliases: ["Oxford Applied and Theoretical ML (OATML)"]
+    official_domains: ["oatml.cs.ox.ac.uk", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "应用与理论机器学习、可靠性、生成模型及 AI 安全研究。"
+
+  academic_022:
+    name: "UCL Centre for Artificial Intelligence"
+    country: "International"
+    entity_type: "institution"
+    aliases: ["UCL Centre for Artificial Intelligence"]
+    official_domains: ["ucl.ac.uk"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "基础与应用 AI 研究，覆盖学习、推理、视觉、语言和社会影响。"
+
+  academic_023:
+    name: "University of Edinburgh AI"
+    country: "International"
+    entity_type: "institution"
+    aliases: ["University of Edinburgh AI"]
+    official_domains: ["artificial-intelligence.ed.ac.uk"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "欧洲历史悠久的 AI 研究与教学体系，涵盖语言、机器人和认知。"
+
+  academic_024:
+    name: "RIKEN Center for Advanced Intelligence Project"
+    country: "International"
+    entity_type: "institution"
+    aliases: ["RIKEN Center for Advanced Intelligence Project"]
+    official_domains: ["aip.riken.jp"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "日本综合 AI 研究中心，覆盖机器学习理论、社会 AI 与科学应用。"
+
+  academic_025:
+    name: "NUS Artificial Intelligence Institute"
+    country: "International"
+    entity_type: "institution"
+    aliases: ["NUS Artificial Intelligence Institute"]
+    official_domains: ["ai.nus.edu.sg"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "汇聚新加坡国立大学基础与应用 AI 研究，关注公共价值与产业合作。"
+
+  academic_026:
+    name: "AI Singapore"
+    country: "International"
+    entity_type: "institution"
+    aliases: ["AI Singapore"]
+    official_domains: ["aisingapore.org", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "新加坡国家级 AI 计划，发布开源模型、工程项目和人才培养资源。"
+
+  academic_027:
+    name: "Mohamed bin Zayed University of AI (MBZUAI)"
+    country: "International"
+    entity_type: "institution"
+    aliases: ["Mohamed bin Zayed University of AI (MBZUAI)"]
+    official_domains: ["mbzuai.ac.ae"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "专门型 AI 大学，研究覆盖 NLP、视觉、机器学习、机器人和产业转化。"
+
+  academic_028:
+    name: "清华大学知识工程实验室（THUKEG / THUDM）"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["清华大学知识工程实验室（THUKEG / THUDM）"]
+    official_domains: ["keg.cs.tsinghua.edu.cn", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "GLM、CogVLM、CogVideo、CodeGeeX、知识图谱与大模型系统的重要来源。"
+
+  academic_029:
+    name: "清华大学自然语言处理实验室（THUNLP）"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["清华大学自然语言处理实验室（THUNLP）"]
+    official_domains: ["nlp.csai.tsinghua.edu.cn", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "中文 NLP、知识图谱、预训练模型、对话与大模型研究。"
+
+  academic_030:
+    name: "OpenBMB"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["OpenBMB"]
+    official_domains: ["openbmb.cn", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "开放大模型基地；MiniCPM、UltraRAG、ChatDev 等开源项目。"
+
+  academic_031:
+    name: "清华大学智能产业研究院（AIR）"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["清华大学智能产业研究院（AIR）"]
+    official_domains: ["air.tsinghua.edu.cn"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "面向产业的 AI 研究与技术转化，覆盖智能系统、机器人、医疗等。"
+
+  academic_032:
+    name: "北京大学计算机学院"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["北京大学计算机学院"]
+    official_domains: ["cs.pku.edu.cn"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "机器学习、NLP、视觉、智能系统和大模型相关研究入口。"
+
+  academic_033:
+    name: "PKU-Alignment"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["PKU-Alignment"]
+    official_domains: ["ai-alignment.group", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "北京大学 AI 对齐团队；安全对齐、Safe RLHF、Align Anything 等。"
+
+  academic_034:
+    name: "复旦大学 NLP 与大模型团队"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["复旦大学 NLP 与大模型团队"]
+    official_domains: ["nlp.fudan.edu.cn", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "中文 NLP、信息检索、MOSS、FastNLP 与大模型训练研究。"
+
+  academic_035:
+    name: "OpenMOSS"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["OpenMOSS"]
+    official_domains: ["openmoss.ai", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "复旦等团队参与的开放研究组织，聚焦语言、语音、多模态与智能体。"
+
+  academic_036:
+    name: "GAIR 生成式人工智能研究实验室"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["GAIR 生成式人工智能研究实验室"]
+    official_domains: ["plms.ai", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "SII 与上交相关团队建设，关注生成式 AI、推理、多模态和智能体。"
+
+  academic_037:
+    name: "南京大学 LAMDA"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["南京大学 LAMDA"]
+    official_domains: ["lamda.nju.edu.cn"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "机器学习与数据挖掘研究所；集成学习、学件和机器学习基础研究。"
+
+  academic_038:
+    name: "哈尔滨工业大学 SCIR"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["哈尔滨工业大学 SCIR"]
+    official_domains: ["ir.hit.edu.cn", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "自然语言处理、大语言模型、智能体、知识计算和情感计算。"
+
+  academic_039:
+    name: "中国科学院自动化研究所"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["中国科学院自动化研究所"]
+    official_domains: ["ia.cas.cn"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "模式识别、类脑智能、多模态、机器人和大模型相关研究。"
+
+  academic_040:
+    name: "中科院计算所自然语言处理组"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["中科院计算所自然语言处理组"]
+    official_domains: ["nlp.ict.ac.cn", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "机器翻译、语音语言模型、多语言与大模型效率研究。"
+
+  academic_041:
+    name: "北京智源人工智能研究院（BAAI）"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["北京智源人工智能研究院（BAAI）"]
+    official_domains: ["baai.ac.cn", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "悟道、FlagEval、FlagOpen、开源数据与基础模型研究。"
+
+  academic_042:
+    name: "上海人工智能实验室"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["上海人工智能实验室"]
+    official_domains: ["shlab.org.cn", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "InternLM、OpenCompass、OpenMMLab、书生浦语与多模态研究生态。"
+
+  academic_043:
+    name: "OpenMMLab"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["OpenMMLab"]
+    official_domains: ["openmmlab.com", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "计算机视觉与多模态开源算法体系，覆盖检测、分割、生成和部署。"
+
+  academic_044:
+    name: "OpenCompass"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["OpenCompass"]
+    official_domains: ["opencompass.org.cn", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "大语言模型与多模态模型开放评测平台，持续更新基准和工具链。"
+
+  academic_045:
+    name: "鹏城实验室"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["鹏城实验室"]
+    official_domains: ["pcl.ac.cn"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "鹏城云脑、鹏城·脑海、国产算力与开放大模型基础设施。"
+
+  academic_046:
+    name: "粤港澳大湾区数字经济研究院（IDEA）"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["粤港澳大湾区数字经济研究院（IDEA）"]
+    official_domains: ["idea.edu.cn", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "多模态、视觉、机器人、认知计算、基础软件与产业孵化。"
+
+  academic_047:
+    name: "深圳市大数据研究院（SRIBD）"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["深圳市大数据研究院（SRIBD）"]
+    official_domains: ["sribd.cn"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "依托高校合作开展机器学习、大数据、运筹优化与产业研究。"
+
+  academic_048:
+    name: "浙江大学人工智能学院"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["浙江大学人工智能学院"]
+    official_domains: ["ai.zju.edu.cn"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "人工智能理论、系统、智能设计与跨学科应用研究。"
+
+  academic_049:
+    name: "中国科学技术大学人工智能研究平台"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["中国科学技术大学人工智能研究平台"]
+    official_domains: ["ai.ustc.edu.cn"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "机器人、感知、控制与智能系统研究信息入口。"
+
+  academic_050:
+    name: "香港中文大学 MMLab"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["香港中文大学 MMLab"]
+    official_domains: ["mmlab.ie.cuhk.edu.hk", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "计算机视觉、多媒体与深度学习实验室，OpenMMLab 早期重要来源。"
+
+  academic_051:
+    name: "香港科技大学 MMLab"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["香港科技大学 MMLab"]
+    official_domains: ["mmlab-hkust.github.io", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "多媒体生成、视觉与创意 AI 研究和开源项目。"
+
+  academic_052:
+    name: "Andrej Karpathy"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Andrej Karpathy"]
+    official_domains: ["karpathy.ai", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "LLM、深度学习与 AI 工程教育；主页汇总博客、YouTube、X 和代码。"
+
+  academic_053:
+    name: "Yann LeCun"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Yann LeCun"]
+    official_domains: ["yann.lecun.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "图灵奖得主；深度学习、世界模型与自主机器智能的重要观点来源。"
+
+  academic_054:
+    name: "François Chollet"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["François Chollet"]
+    official_domains: ["fchollet.com", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "Keras 创建者；关注抽象推理、ARC-AGI、深度学习与软件设计。"
+
+  academic_055:
+    name: "Ilya Sutskever"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Ilya Sutskever"]
+    official_domains: ["x.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "深度学习与大模型代表性研究者；SSI 联合创始人。"
+
+  academic_056:
+    name: "Demis Hassabis"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Demis Hassabis"]
+    official_domains: ["x.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "Google DeepMind 联合创始人；通用 AI 与 AI for Science 动态。"
+
+  academic_057:
+    name: "Sam Altman"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Sam Altman"]
+    official_domains: ["blog.samaltman.com", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "AI 产品、创业、算力与产业趋势的直接观点来源。"
+
+  academic_058:
+    name: "Dario Amodei"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Dario Amodei"]
+    official_domains: ["darioamodei.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "Anthropic 联合创始人；模型扩展、AI 安全与产业影响长文。"
+
+  academic_059:
+    name: "Jimmy Ba"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Jimmy Ba"]
+    official_domains: ["jimmylba.github.io"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "优化、生成模型、注意力与大模型研究；主页集中论文和课程。"
+
+  academic_060:
+    name: "Fei-Fei Li"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Fei-Fei Li"]
+    official_domains: ["profiles.stanford.edu"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "计算机视觉、以人为本 AI 与空间智能研究。"
+
+  academic_061:
+    name: "Soumith Chintala"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Soumith Chintala"]
+    official_domains: ["soumith.ch", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "PyTorch 联合创建者；深度学习框架与系统工程重要信息源。"
+
+  academic_062:
+    name: "Andrew Ng"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Andrew Ng"]
+    official_domains: ["andrewng.org"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "机器学习教育、应用 AI、产业落地与创业生态。"
+
+  academic_063:
+    name: "Geoffrey Hinton"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Geoffrey Hinton"]
+    official_domains: ["cs.toronto.edu"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "深度学习先驱；神经网络研究与 AI 风险观点。"
+
+  academic_064:
+    name: "Yoshua Bengio"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Yoshua Bengio"]
+    official_domains: ["yoshuabengio.org"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "深度学习、生成模型、AI 安全与国际 AI 科学治理。"
+
+  academic_065:
+    name: "Christopher Manning"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Christopher Manning"]
+    official_domains: ["nlp.stanford.edu"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "NLP、表示学习和大语言模型研究；Stanford NLP 负责人之一。"
+
+  academic_066:
+    name: "Percy Liang"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Percy Liang"]
+    official_domains: ["cs.stanford.edu", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "基础模型、评测、透明度与 Stanford CRFM。"
+
+  academic_067:
+    name: "Dan Jurafsky"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Dan Jurafsky"]
+    official_domains: ["web.stanford.edu"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "NLP、计算社会科学与经典教材/课程资源。"
+
+  academic_068:
+    name: "Kaiming He（何恺明）"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Kaiming He（何恺明）"]
+    official_domains: ["people.csail.mit.edu", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "计算机视觉、表示学习与生成模型；ResNet、MAE 等工作。"
+
+  academic_069:
+    name: "Yejin Choi"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Yejin Choi"]
+    official_domains: ["homes.cs.washington.edu"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "NLP、常识推理、社会智能与负责任 AI。"
+
+  academic_070:
+    name: "Hanna Hajishirzi"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Hanna Hajishirzi"]
+    official_domains: ["homes.cs.washington.edu"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "开放语言模型、推理与 NLP；共同推动 OLMo 和 Tulu。"
+
+  academic_071:
+    name: "Dawn Song"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Dawn Song"]
+    official_domains: ["people.eecs.berkeley.edu"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "AI 安全、隐私、可信机器学习与智能体安全。"
+
+  academic_072:
+    name: "Pieter Abbeel"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Pieter Abbeel"]
+    official_domains: ["people.eecs.berkeley.edu", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "机器人学习、强化学习与具身智能。"
+
+  academic_073:
+    name: "Chelsea Finn"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Chelsea Finn"]
+    official_domains: ["ai.stanford.edu", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "机器人学习、元学习和通用智能体。"
+
+  academic_074:
+    name: "Lilian Weng"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Lilian Weng"]
+    official_domains: ["lilianweng.github.io", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "高质量技术长文，覆盖 RL、生成模型、智能体、提示与安全。"
+
+  academic_075:
+    name: "Chip Huyen"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Chip Huyen"]
+    official_domains: ["huyenchip.com", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "机器学习系统、LLM 应用工程、数据与产品化。"
+
+  academic_076:
+    name: "Jay Alammar"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Jay Alammar"]
+    official_domains: ["jalammar.github.io", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "Transformer、语言模型与多模态的可视化技术解读。"
+
+  academic_077:
+    name: "Sebastian Raschka"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Sebastian Raschka"]
+    official_domains: ["sebastianraschka.com", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "LLM 架构、训练实践、论文综述与从零实现。"
+
+  academic_078:
+    name: "Simon Willison"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Simon Willison"]
+    official_domains: ["simonwillison.net", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "LLM 产品、模型发布、智能体和开发工具的高频实测记录。"
+
+  academic_079:
+    name: "Nathan Lambert"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Nathan Lambert"]
+    official_domains: ["interconnects.ai", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "开放模型、后训练、RLHF、推理与 AI 产业分析。"
+
+  academic_080:
+    name: "Eugene Yan"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Eugene Yan"]
+    official_domains: ["eugeneyan.com", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "推荐系统、搜索、LLM 应用与生产级机器学习实践。"
+
+  academic_081:
+    name: "Hamel Husain"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Hamel Husain"]
+    official_domains: ["hamel.dev", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "LLM 评测、数据、智能体和应用工程实战。"
+
+  academic_082:
+    name: "Arvind Narayanan"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Arvind Narayanan"]
+    official_domains: ["cs.princeton.edu"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "AI 能力边界、社会影响、隐私与实证评估。"
+
+  academic_083:
+    name: "Sayash Kapoor"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Sayash Kapoor"]
+    official_domains: ["sayashkapoor.com", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "AI 评测、科研可重复性、社会影响与风险分析。"
+
+  academic_084:
+    name: "Ethan Mollick"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Ethan Mollick"]
+    official_domains: ["oneusefulthing.org"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "生成式 AI 在教育、组织、工作流和创新中的实证观察。"
+
+  academic_085:
+    name: "Chris Olah"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Chris Olah"]
+    official_domains: ["colah.github.io", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "神经网络可解释性与深度学习可视化写作。"
+
+  academic_086:
+    name: "Jeremy Howard"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Jeremy Howard"]
+    official_domains: ["fast.ai", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "fast.ai 创始人；深度学习教育、开源工具与实用 AI。"
+
+  academic_087:
+    name: "唐杰"
+    country: "CN"
+    entity_type: "researcher"
+    aliases: ["唐杰"]
+    official_domains: ["keg.cs.tsinghua.edu.cn"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "清华大学教授；知识图谱、社交网络、AMiner 与 ChatGLM 相关研究。"
+
+  academic_088:
+    name: "刘知远"
+    country: "CN"
+    entity_type: "researcher"
+    aliases: ["刘知远"]
+    official_domains: ["nlp.csai.tsinghua.edu.cn", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "清华大学教授；知识表示、NLP、预训练模型与大模型开放研究。"
+
+  academic_089:
+    name: "黄民烈"
+    country: "CN"
+    entity_type: "researcher"
+    aliases: ["黄民烈"]
+    official_domains: ["coai.cs.tsinghua.edu.cn", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "清华大学教授；对话、社会智能、AI 对齐、安全与伦理。"
+
+  academic_090:
+    name: "朱军"
+    country: "CN"
+    entity_type: "researcher"
+    aliases: ["朱军"]
+    official_domains: ["ml.cs.tsinghua.edu.cn"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "清华大学教授；机器学习、贝叶斯方法、深度学习与概率编程。"
+
+  academic_091:
+    name: "周志华"
+    country: "CN"
+    entity_type: "researcher"
+    aliases: ["周志华"]
+    official_domains: ["cs.nju.edu.cn"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "南京大学教授；机器学习、集成学习、数据挖掘与学件。"
+
+  academic_092:
+    name: "邱锡鹏"
+    country: "CN"
+    entity_type: "researcher"
+    aliases: ["邱锡鹏"]
+    official_domains: ["xpqiu.github.io", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "复旦大学教授；OpenMOSS、FastNLP、NLP 与大模型/智能体研究。"
+
+  academic_093:
+    name: "李沐"
+    country: "CN"
+    entity_type: "researcher"
+    aliases: ["李沐"]
+    official_domains: ["mu-li.com", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "《动手学深度学习》作者；论文精读、深度学习与 AI 工程教育。"
+
+  academic_094:
+    name: "李宏毅"
+    country: "CN"
+    entity_type: "researcher"
+    aliases: ["李宏毅"]
+    official_domains: ["speech.ee.ntu.edu.tw"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "台湾大学教授；机器学习、语音、生成式 AI 与公开视频课程。"
+
+  academic_095:
+    name: "王树森"
+    country: "CN"
+    entity_type: "researcher"
+    aliases: ["王树森"]
+    official_domains: ["wangshusen.github.io", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "搜索、推荐、强化学习与工业机器学习公开课程。"
+
+  academic_096:
+    name: "谭旭"
+    country: "CN"
+    entity_type: "researcher"
+    aliases: ["谭旭"]
+    official_domains: ["tan-xu.github.io", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "大模型、多模态、音频/视频生成和智能体研究。"
+
+  academic_097:
+    name: "杨强"
+    country: "CN"
+    entity_type: "researcher"
+    aliases: ["杨强"]
+    official_domains: ["cse.hkust.edu.hk"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "迁移学习、联邦学习与 AI 产业化代表学者。"
+
+  academic_098:
+    name: "李开复"
+    country: "CN"
+    entity_type: "researcher"
+    aliases: ["李开复"]
+    official_domains: ["x.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "AI 创业、产业趋势、人才与中美技术生态观察。"
+
+  academic_099:
+    name: "宝玉（Baoyu / dotey）"
+    country: "CN"
+    entity_type: "researcher"
+    aliases: ["宝玉（Baoyu / dotey）"]
+    official_domains: ["baoyu.io", "github.com"]
+    query_topics: ["foundation model", "large language model", "agent", "reasoning", "multimodal", "AI safety", "evaluation", "open source"]
+    description: "AI 技术翻译、产品观察、智能体与工程实践的中文高频信息源。"

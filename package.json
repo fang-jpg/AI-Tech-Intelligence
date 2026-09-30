@@ -1,0 +1,16 @@
+{
+  "name": "ai-tech-intelligence-recovery",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:registry": "node scripts/build_academic_registry.mjs",
+    "collect:academic": "node scripts/collect_academic_intelligence.mjs",
+    "analyze:academic": "node scripts/analyze_academic_outlooks.mjs",
+    "export:academic": "node scripts/export_academic_workbook.mjs",
+    "verify:academic": "node scripts/verify_academic_workbook.mjs"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0"
+  }
+}
