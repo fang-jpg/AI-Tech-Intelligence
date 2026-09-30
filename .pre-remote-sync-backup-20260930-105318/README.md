@@ -1,0 +1,183 @@
+# AI Tech Intelligence
+
+面向国内外关键大模型厂商的高管技术情报流水线。系统持续发现第一方博客、研究页面、官方演讲和可核验采访，进行来源分级、人物归因、事实抽取和未来模型路线推断，并输出 Excel、CSV 与 Markdown 表格。
+
+当前默认覆盖：OpenAI、Google DeepMind、Baidu、Tencent、ByteDance、MiniMax、Alibaba、DeepSeek、Moonshot AI/Kimi、Zhipu AI、Xiaomi。
+
+## 设计原则
+
+- 第一方优先：官方站点是 Tier A，官方视频/本人正式演讲是 Tier B，权威媒体采访是 Tier C，转载和自媒体仅作为 Tier D 线索。
+- 不强行归因：官方博客未明确出现高管姓名时，标记为“官方团队内容”，不写成某位高管发言。
+- 两阶段分析：先抽取事实、技术信号和证据短句，再做趋势推断。
+- 显式区分结论强度：`Explicit`、`Strong inference`、`Speculative`。
+- 保留历史：SQLite 持久保存文档、人物、信号和分析，后续运行增量去重。
+- 可降级：没有 LLM 时使用保守的关键词规则，报告会明确标记 `heuristic_fallback`。
+
+## 项目结构
+
+```text
+config/                         厂商、人物、来源注册表
+src/ai_tech_intelligence/
+  collectors/                   官方站点、搜索 API、YouTube 适配器
+  pipeline/                     发现、核验、抓取、分析、编排
+  reports/                      Excel/CSV/Markdown 输出
+  evaluation/                   证据落地、归因与去重评测
+skills/executive-intelligence/  Codex Skill 入口
+tests/                          离线单元测试
+data/                           SQLite（运行后生成，不提交）
+outputs/                        报告（运行后生成，不提交）
+```
+
+## 在 E 盘创建虚拟环境
+
+项目本身位于 E 盘，以下命令会把虚拟环境建立在项目目录的 `.venv` 中，不占用系统盘：
+
+```powershell
+cd E:\openclaw-huawei\AI-Scientist\AI-Tech-Intelligence
+python -m venv E:\openclaw-huawei\AI-Scientist\AI-Tech-Intelligence\.venv
+E:\openclaw-huawei\AI-Scientist\AI-Tech-Intelligence\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+python -m pip install -e ".[dev]"
+```
+
+如果 PowerShell 禁止激活脚本，可直接使用虚拟环境里的 Python：
+
+```powershell
+E:\openclaw-huawei\AI-Scientist\AI-Tech-Intelligence\.venv\Scripts\python.exe main.py doctor
+```
+
+## 密钥配置
+
+程序默认读取项目根目录的 `.env.txt`。现有文件不会被修改，且已被 `.gitignore` 排除。可参考 `.env.example`；请勿把密钥提交到 Git。
+
+至少需要一个搜索 API。自动选择顺序为 Tavily、Exa、Serper、Bocha、Bing、SerpAPI。分析模型使用项目现有的 `GENERAL_AI_REPORT_LLM_*` 变量，兼容 OpenAI 风格的 `/chat/completions` 接口。
+
+先运行无泄密检查：
+
+```powershell
+python main.py doctor
+```
+
+`doctor` 只显示哪些能力已配置，不显示密钥值。
+
+## 常用命令
+
+初始化数据库并查看注册表：
+
+```powershell
+python main.py init
+python main.py list-companies
+```
+
+先用 3 家厂商小规模试跑，控制搜索和 LLM 成本：
+
+```powershell
+python main.py run `
+  --companies openai,google_deepmind,deepseek `
+  --days 30 `
+  --max-links-per-source 6 `
+  --max-search-queries 2 `
+  --max-results-per-query 3
+```
+
+运行全部 11 家：
+
+```powershell
+python main.py run --companies all --days 30
+```
+
+分阶段运行：
+
+```powershell
+python main.py collect --companies alibaba,bytedance,moonshot --days 90
+python main.py analyze --companies alibaba,bytedance,moonshot --workers 3
+python main.py report --companies alibaba,bytedance,moonshot --days 90
+python main.py eval
+```
+
+只扫描官方入口、不调用搜索 API：
+
+```powershell
+python main.py collect --companies all --days 30 --skip-search
+```
+
+报告默认写到 `outputs/`，包括：
+
+- Excel：`情报明细`、`厂商趋势`、`说明与口径` 三个工作表。
+- CSV：UTF-8 BOM，可直接用中文 Excel 打开。
+- Markdown：适合提交到仓库或交给 Agent 继续总结。
+
+## 搜索源与费用
+
+以下是 2026-09 核对的公开方案，供应商可能调整额度，生产部署前应再次查看其定价页。
+
+| 来源 | 是否可免费起步 | 当前公开说明 | 配置变量 |
+| --- | --- | --- | --- |
+| 官方网站 | 是 | 无 API 调用费；需遵守站点条款、robots 和合理抓取频率 | 无 |
+| Tavily | 是 | 免费 1,000 credits/月，无需信用卡；本项目的 advanced search 通常消耗 2 credits/次 | `TAVILY_API_KEY` |
+| Exa | 是 | 注册赠送额度，并有每月免费 credits；超额按量付费 | `EXA_API_KEY` |
+| Serper | 是 | 新账号 2,500 次免费查询，无需信用卡；之后预付费 | `SERPER_API_KEY` |
+| Bocha | 部分 | 正式服务按调用付费，平台活动可能赠送测试额度；Web Search 公开目录价约 ¥0.036/次 | `BOCHA_API_KEY` |
+| SerpAPI | 视套餐 | 作为备用适配器，额度以其控制台为准 | `SERPAPI_API_KEY` |
+| Bing Web Search API | 否/已退役 | 传统 Bing Search APIs 已于 2025-08-11 退役；仅为旧环境保留兼容代码，不建议新配置 | `BING_API_KEY` |
+
+相关页面：
+
+- Tavily pricing: https://www.tavily.com/pricing
+- Exa pricing: https://exa.ai/pricing
+- Serper pricing: https://serper.dev/
+- Bocha platform: https://open.bochaai.com/
+- Bing retirement: https://learn.microsoft.com/en-us/lifecycle/announcements/bing-search-api-retirement
+
+推荐顺序：个人 MVP 优先使用已有的 Tavily；需要补充召回时启用 Exa 或 Serper；中文搜索不足时再切 Bocha。程序不会同时调用所有搜索源，`auto` 只选择第一个可用源。
+
+## YouTube：免费额度和配置
+
+YouTube Data API v3 可免费使用默认配额。2026 年的新配额体系中，`search.list` 默认每天 100 次调用、每次消耗该独立配额 1 次；其他大部分读取端点共享默认每天 10,000 units。额度以 Google Cloud Console 实际显示为准。
+
+配置步骤：
+
+1. 在 Google Cloud Console 创建项目。
+2. 启用 `YouTube Data API v3`。
+3. 创建 API key，并建议把 key 限制为该 API 和你的服务器/IP。
+4. 在 `.env.txt` 添加 `YOUTUBE_API_KEY=...`。
+5. 编辑 `config/sources.yaml`：把 `youtube.enabled` 改为 `true`，并给每个官方频道填入 `channel_id`。
+6. 运行 `python main.py collect --companies openai --youtube`。
+
+官方说明：
+
+- Getting started: https://developers.google.com/youtube/v3/getting-started
+- `search.list`: https://developers.google.com/youtube/v3/docs/search/list
+
+重要限制：YouTube Data API 的搜索结果只含视频元数据和描述，不直接提供可分析的公开转写全文。本项目因此默认不会把视频描述当成完整演讲。后续接入字幕/ASR有两条路线：
+
+- `youtube-transcript-api`：开源且无按次 API 费，但属于非官方接口，只能读取已有字幕，可能被限流或失效。
+- `yt-dlp + faster-whisper`：软件开源、无按次服务费，但会消耗本地 CPU/GPU，并须确认下载、保存和转写行为符合视频授权与平台条款。
+
+生产版建议优先处理官方上传且带公开字幕的视频，并保存频道 ID、视频 ID、speaker、字幕语言和时间戳，之后再进入人物归因与事实抽取。
+
+## 表格字段
+
+主表包含：模型厂商、高管/来源、职位、日期、来源类型、原文标题、高管发言/博客链接、核心观点、技术标签、AI未来模型动向分析、证据等级、置信度、时间窗口、来源等级、是否官方、归因状态、证据落地校验、分析方法/模型、抓取时间。
+
+“AI未来模型动向分析”始终是基于公开信号的推断，不是厂商已确认事实。
+
+## 添加厂商或人物
+
+- 在 `config/companies.yaml` 添加厂商别名、官方域名和主题词。
+- 在 `config/people.yaml` 添加人物、职位、别名和官方核验页面。
+- 在 `config/sources.yaml` 添加第一方入口和文章 URL 过滤规则。
+
+不建议把 `github.com`、`youtube.com` 这类平台根域名加入厂商官方域名白名单。应按具体账号/频道配置，否则会把第三方内容误判为官方来源。
+
+## 评测口径
+
+`python main.py eval` 输出：
+
+- `source_precision_proxy`：Tier A/B 占比，属于自动化代理指标。
+- `duplicate_rate`：相同正文哈希的重复率。
+- `speaker_attribution_accuracy`：分析中的 speaker 是否被正文人物匹配器识别。
+- `trend_grounding_rate`：分析是否通过证据落地检查。
+- `evidence_exact_match_rate`：证据短句能否在清洗后原文中精确找到。
+
+严格的 Source Precision/Recall 仍需要人工维护金标集。`eval/gold/source_eval.example.json` 给出了格式，可复制为团队自己的周期性金标数据。

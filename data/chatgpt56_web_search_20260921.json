@@ -1,0 +1,52 @@
+[
+  {"company":"openai","url":"https://openai.com/index/built-to-benefit-everyone-our-plan/","source_name":"OpenAI executive-authored plan","source_type":"official_blog","title":"Built to benefit everyone: our plan","published_at":"2026-06-08"},
+  {"company":"openai","url":"https://openai.com/index/amazon-partnership/","source_name":"OpenAI newsroom","source_type":"official_news","title":"OpenAI and Amazon announce strategic partnership","published_at":"2026-02-27"},
+  {"company":"openai","url":"https://openai.com/index/scaling-ai-for-everyone/","source_name":"OpenAI newsroom","source_type":"official_news","title":"Scaling AI for everyone","published_at":"2026-02-27"},
+  {"company":"openai","url":"https://openai.com/index/aws-and-openai-partnership/","source_name":"OpenAI newsroom","source_type":"official_news","title":"AWS and OpenAI announce multi-year strategic partnership","published_at":"2025-11-03"},
+
+  {"company":"google_deepmind","url":"https://deepmind.google/blog/accelerating-discovery-in-india-through-ai-powered-science-and-education/","source_name":"Google DeepMind Blog","source_type":"official_blog","title":"Accelerating discovery in India through AI-powered science and education","published_at":"2026-02-18"},
+  {"company":"google_deepmind","url":"https://deepmind.google/blog/co-scientist-a-multi-agent-ai-partner-to-accelerate-research/","source_name":"Google DeepMind Blog","source_type":"official_research","title":"Co-Scientist: A multi-agent AI partner to accelerate research","published_at":"2026-05-19"},
+  {"company":"google_deepmind","url":"https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-july-2026/","source_name":"Google AI Blog","source_type":"official_blog","title":"Google AI announcements from July 2026","published_at":"2026-08-01"},
+  {"company":"google_deepmind","url":"https://blog.google/innovation-and-ai/technology/ai/google-gemini-ai/","source_name":"Google Blog executive-authored post","source_type":"official_blog","title":"Introducing Gemini: our largest and most capable AI model","published_at":"2023-12-06"},
+
+  {"company":"baidu","url":"https://anquan.baidu.com/article/1877","source_name":"Baidu official article","source_type":"official_event","title":"百度发布文心大模型4.0 Turbo，多端面向用户正式开放","published_at":"2024-07-01"},
+
+  {"company":"tencent","url":"https://static.www.tencent.com/uploads/2026/05/13/47382ae415a209fd161bc19a1f9b3704.pdf","source_name":"Tencent Q1 2026 results","source_type":"investor_relation","title":"Tencent Announces 2026 First Quarter Results","published_at":"2026-05-13"},
+  {"company":"tencent","url":"https://www.tencent.com/index.php/en-us/articles/2202320.html","source_name":"Tencent official newsroom","source_type":"official_news","title":"Tencent Unveils Hy3 preview; Model Enhances Agent Capabilities and Real-World Usability","published_at":"2026-04-24"},
+  {"company":"tencent","url":"https://www.tencent.com/en-us/articles/2202350.html","source_name":"Tencent official newsroom","source_type":"official_event","title":"Tencent Cloud Debuts Productivity Agent Suite","published_at":"2026-06-05"},
+  {"company":"tencent","url":"https://www.tencent.com/tencent-hy3-now-available-globally-extending-practical-ai-across-products-workflows-and-cloud-services/","source_name":"Tencent official newsroom","source_type":"official_news","title":"Tencent Hy3 Now Available Globally","published_at":"2026-08-05"},
+
+  {"company":"bytedance","url":"https://seed.bytedance.com/blog/seed-2-0-official-launch","source_name":"ByteDance Seed Blog","source_type":"official_blog","title":"Seed 2.0 Official Launch","published_at":"2026-02-14"},
+  {"company":"bytedance","url":"https://seed.bytedance.com/en/blog/official-release-of-seed1-8-a-generalized-agentic-model","source_name":"ByteDance Seed Blog","source_type":"official_blog","title":"Official Release of Seed1.8: A Generalized Agentic Model","published_at":"2025-12-18"},
+  {"company":"bytedance","url":"https://seed.bytedance.com/en/blog/seedrealtime-audio-visual-full-duplex-llm-released-toward-omni-modal-natural-interaction","source_name":"ByteDance Seed Blog","source_type":"official_blog","title":"SeedRealtime Audio-Visual Full-Duplex LLM Released","published_at":"2026-08-05"},
+  {"company":"bytedance","url":"https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5","source_name":"ByteDance Seed Blog","source_type":"official_blog","title":"Introducing Seedance 2.5","published_at":"2026-07-31"},
+
+  {"company":"minimax","url":"https://www.minimax.io/news/minimax-global-announces-full-year-2025-financial-results","source_name":"MiniMax investor news","source_type":"investor_relation","title":"MiniMax Global Announces Full Year 2025 Financial Results","published_at":"2026-03-02"},
+  {"company":"minimax","url":"https://www.minimax.io/news/minimax-m27-en","source_name":"MiniMax News","source_type":"official_blog","title":"MiniMax M2.7: Early Echoes of Self-Evolution","published_at":"2026-03-18"},
+  {"company":"minimax","url":"https://www.minimax.io/news/post-training-experience-and-insights-for-agent-models","source_name":"MiniMax News","source_type":"official_research","title":"MiniMax M2.1: Post-Training Experience and Insights for Agent Models","published_at":"2026-01-22"},
+  {"company":"minimax","url":"https://www.minimax.io/news/minimax-speech-28","source_name":"MiniMax News","source_type":"official_blog","title":"MiniMax Speech 2.8: Breathing life into AI voice","published_at":"2026-01-23"},
+  {"company":"minimax","url":"https://www.minimax.io/news/music-26","source_name":"MiniMax News","source_type":"official_blog","title":"MiniMax Music 2.6: Four Stories We Want to Tell","published_at":"2026-04-10"},
+
+  {"company":"alibaba","url":"https://www.alibabagroup.com/en-US/document-1991364841188622336","source_name":"Alibaba Group newsroom","source_type":"investor_relation","title":"Alibaba’s Cloud Revenue Growth Accelerates to 40% as AI Strategy Delivers","published_at":"2026-05-13"},
+  {"company":"alibaba","url":"https://www.alibabagroup.com/en-US/document-1971445322303406080","source_name":"Alibaba Group newsroom","source_type":"investor_relation","title":"Alibaba Reports Solid Progress in AI + Cloud","published_at":"2026-03-19"},
+  {"company":"alibaba","url":"https://www.alibabagroup.com/en-US/document-2027233133950140416","source_name":"Alibaba Group newsroom","source_type":"investor_relation","title":"Alibaba’s Full-Stack AI Accelerates Monetization","published_at":"2026-08-20"},
+
+  {"company":"deepseek","url":"https://api-docs.deepseek.com/news/news260813/","source_name":"DeepSeek API Docs","source_type":"official_news","title":"DeepSeek-V4-Pro GA Release","published_at":"2026-08-13"},
+  {"company":"deepseek","url":"https://api-docs.deepseek.com/news/news260821/","source_name":"DeepSeek API Docs","source_type":"official_news","title":"DeepSeek-V4-Flash-Vision-Exp Release","published_at":"2026-08-21"},
+  {"company":"deepseek","url":"https://api-docs.deepseek.com/updates/","source_name":"DeepSeek API Docs","source_type":"official_documentation","title":"DeepSeek API Change Log","published_at":"2026-09-10"},
+
+  {"company":"moonshot","url":"https://www.kimi.com/en/blog/kimi-k2","source_name":"Kimi Research Blog","source_type":"official_research","title":"Kimi K2: Open Agentic Intelligence","published_at":"2025-07-11"},
+  {"company":"moonshot","url":"https://www.kimi.com/en/blog/kimi-k2-5","source_name":"Kimi Research Blog","source_type":"official_research","title":"Kimi K2.5: Visual Agentic Intelligence","published_at":"2026-01-27"},
+  {"company":"moonshot","url":"https://www.kimi.com/en/help/agent/agent-overview","source_name":"Kimi Help Center","source_type":"official_documentation","title":"Introducing Kimi Agent","published_at":"2026-07-16"},
+
+  {"company":"zhipu","url":"https://z.ai/blog/glm-built-its-inference-infrastructure","source_name":"Z.ai Research Blog","source_type":"official_research","title":"Toward Recursive Self-Improvement: How GLM Built Its Own Inference Infrastructure","published_at":"2026-09-17"},
+  {"company":"zhipu","url":"https://autoclaw.z.ai/blog/model/glm-5.3-flash/","source_name":"Z.ai AutoClaw Blog","source_type":"official_blog","title":"GLM-5.3-Flash: More Intelligence with Less Compute","published_at":"2026-09-21"},
+  {"company":"zhipu","url":"https://www.zhipuai.cn/zh/news/148","source_name":"Zhipu AI News","source_type":"official_news","title":"GLM-4.7-Flash开源、免费","published_at":"2026-01-19"},
+  {"company":"zhipu","url":"https://www.zhipuai.cn/zh/research","source_name":"Zhipu AI Research Index","source_type":"official_research","title":"智谱 GLM 研究与模型发布","published_at":"2026-09-21"},
+
+  {"company":"xiaomi","url":"https://mimo.mi.com/docs/en-US/updates/model","source_name":"Xiaomi MiMo Docs","source_type":"official_documentation","title":"Xiaomi MiMo Model Release Log","published_at":"2026-06-02"},
+  {"company":"xiaomi","url":"https://mimo.mi.com/docs/en-US/news/latest/v2.5-open-sourced","source_name":"Xiaomi MiMo Blog","source_type":"official_blog","title":"Xiaomi MiMo-V2.5 series open-sourced","published_at":"2026-06-29"},
+  {"company":"xiaomi","url":"https://mimo.mi.com/docs/en-US/news/latest/v2.5-price-update","source_name":"Xiaomi MiMo Blog","source_type":"official_blog","title":"MiMo V2.5 inference price and infrastructure update","published_at":"2026-06-29"},
+  {"company":"xiaomi","url":"https://mimo.mi.com/docs/en-US/news/previous-news/v2-omni-release","source_name":"Xiaomi MiMo Blog","source_type":"official_blog","title":"MiMo V2 Omni release","published_at":"2026-06-29"},
+  {"company":"xiaomi","url":"https://ir.mi.com/static-files/4a85fc36-8a6d-4c24-b45b-b18d5d162e6c","source_name":"Xiaomi Investor Relations","source_type":"investor_relation","title":"Xiaomi 2026 interim business review","published_at":"2026-08-19"}
+]

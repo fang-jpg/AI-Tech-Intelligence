@@ -1,0 +1,871 @@
+companies:
+  openai:
+    name: OpenAI
+    country: US
+    aliases: [OpenAI]
+    official_domains: [openai.com]
+    query_topics: [reasoning model, agent, multimodal, coding, scaling, safety, inference]
+
+  google_deepmind:
+    name: Google DeepMind
+    country: US/UK
+    aliases: [Google DeepMind, DeepMind, Gemini]
+    official_domains: [deepmind.google, blog.google]
+    query_topics: [Gemini, agent, multimodal, world model, robotics, AI for science, scaling]
+
+  baidu:
+    name: Baidu
+    country: CN
+    aliases: [Baidu, 百度, 文心, ERNIE]
+    official_domains: [baidu.com, ir.baidu.com, research.baidu.com, cloud.baidu.com]
+    query_topics: [文心大模型, ERNIE, agent, multimodal, inference, AI cloud]
+
+  tencent:
+    name: Tencent
+    country: CN
+    aliases: [Tencent, 腾讯, 混元, Hunyuan]
+    official_domains: [tencent.com, cloud.tencent.com, hunyuan.tencent.com]
+    query_topics: [混元大模型, Hunyuan, agent, multimodal, 3D generation, inference]
+
+  bytedance:
+    name: ByteDance
+    country: CN
+    aliases: [ByteDance, 字节跳动, Seed, 豆包, Doubao]
+    official_domains: [bytedance.com, seed.bytedance.com, volcengine.com]
+    query_topics: [Seed, 豆包大模型, general agent, coding agent, multimodal, video generation]
+
+  minimax:
+    name: MiniMax
+    country: CN
+    aliases: [MiniMax, 稀宇科技, 海螺AI]
+    official_domains: [minimax.io, minimaxi.com, ir.minimax.io]
+    query_topics: [foundation model, agent, multimodal, video generation, speech, long context]
+
+  alibaba:
+    name: Alibaba
+    country: CN
+    aliases: [Alibaba, 阿里巴巴, 通义千问, Qwen]
+    official_domains: [alibabagroup.com, home.alibabagroup.com, alibabacloud.com, qwenlm.ai]
+    query_topics: [Qwen, 通义千问, agentic AI, coding, multimodal, open source, AI cloud]
+
+  deepseek:
+    name: DeepSeek
+    country: CN
+    aliases: [DeepSeek, 深度求索]
+    official_domains: [deepseek.com, api-docs.deepseek.com]
+    query_topics: [reasoning, MoE, sparse attention, long context, agent, efficient training]
+
+  moonshot:
+    name: Moonshot AI
+    country: CN
+    aliases: [Moonshot AI, 月之暗面, Kimi]
+    official_domains: [kimi.com, platform.kimi.com, moonshot.cn]
+    query_topics: [Kimi, long context, agent, reasoning, reinforcement learning, inference]
+
+  zhipu:
+    name: Zhipu AI
+    country: CN
+    aliases: [Zhipu AI, 智谱, 智谱AI, Z.ai, GLM]
+    official_domains: [zhipuai.cn, z.ai]
+    query_topics: [GLM, AutoGLM, agent, computer use, multimodal, reasoning, open source]
+
+  xiaomi:
+    name: Xiaomi
+    country: CN
+    aliases: [Xiaomi, 小米, MiMo]
+    official_domains: [mi.com, ir.mi.com, dev.mi.com, mimo.xiaomi.com]
+    query_topics: [Xiaomi MiMo, 小米大模型, on-device AI, agent, multimodal, embodied AI]
+
+# Academic institutions and individual research voices imported from the 2026-09-22 workbook.
+  stanford_hai:
+    name: "Stanford HAI"
+    country: "US"
+    entity_type: "institution"
+    aliases: ["Stanford HAI"]
+    official_domains: ["hai.stanford.edu"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  stanford_crfm:
+    name: "Stanford CRFM"
+    country: "US"
+    entity_type: "institution"
+    aliases: ["Stanford CRFM"]
+    official_domains: ["crfm.stanford.edu"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  stanford_sail:
+    name: "Stanford AI Lab (SAIL)"
+    country: "US"
+    entity_type: "institution"
+    aliases: ["Stanford AI Lab (SAIL)", "SAIL", "Stanford AI Lab"]
+    official_domains: ["ai.stanford.edu"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  mit_csail:
+    name: "MIT CSAIL"
+    country: "US"
+    entity_type: "institution"
+    aliases: ["MIT CSAIL"]
+    official_domains: ["csail.mit.edu"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  cmu_lti:
+    name: "CMU Language Technologies Institute (LTI)"
+    country: "US"
+    entity_type: "institution"
+    aliases: ["CMU Language Technologies Institute (LTI)", "LTI", "CMU Language Technologies Institute"]
+    official_domains: ["lti.cs.cmu.edu"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  ucb_bair:
+    name: "Berkeley Artificial Intelligence Research (BAIR)"
+    country: "US"
+    entity_type: "institution"
+    aliases: ["Berkeley Artificial Intelligence Research (BAIR)", "BAIR", "Berkeley Artificial Intelligence Research"]
+    official_domains: ["bair.berkeley.edu"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  lmsys:
+    name: "LMSYS Org"
+    country: "US"
+    entity_type: "institution"
+    aliases: ["LMSYS Org"]
+    official_domains: ["lmsys.org"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  allen_ai:
+    name: "Allen Institute for AI (Ai2)"
+    country: "US"
+    entity_type: "institution"
+    aliases: ["Allen Institute for AI (Ai2)", "Ai2", "Allen Institute for AI"]
+    official_domains: ["allenai.org"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  eleutherai:
+    name: "EleutherAI"
+    country: "International"
+    entity_type: "institution"
+    aliases: ["EleutherAI"]
+    official_domains: ["eleuther.ai"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  laion:
+    name: "LAION"
+    country: "DE"
+    entity_type: "institution"
+    aliases: ["LAION"]
+    official_domains: ["laion.ai"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  ml_foundations:
+    name: "ML Foundations"
+    country: "US"
+    entity_type: "institution"
+    aliases: ["ML Foundations"]
+    official_domains: ["mlfoundations.org"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  harvard_kempner:
+    name: "Harvard Kempner Institute"
+    country: "US"
+    entity_type: "institution"
+    aliases: ["Harvard Kempner Institute"]
+    official_domains: ["kempnerinstitute.harvard.edu"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  princeton_pli:
+    name: "Princeton Language and Intelligence (PLI)"
+    country: "US"
+    entity_type: "institution"
+    aliases: ["Princeton Language and Intelligence (PLI)", "PLI", "Princeton Language and Intelligence"]
+    official_domains: ["pli.princeton.edu"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  uw_nlp:
+    name: "University of Washington NLP"
+    country: "US"
+    entity_type: "institution"
+    aliases: ["University of Washington NLP"]
+    official_domains: ["nlp.washington.edu"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  mila:
+    name: "Mila – Quebec AI Institute"
+    country: "CA"
+    entity_type: "institution"
+    aliases: ["Mila – Quebec AI Institute"]
+    official_domains: ["mila.quebec"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  vector_institute:
+    name: "Vector Institute"
+    country: "CA"
+    entity_type: "institution"
+    aliases: ["Vector Institute"]
+    official_domains: ["vectorinstitute.ai"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  amii:
+    name: "Amii"
+    country: "CA"
+    entity_type: "institution"
+    aliases: ["Amii"]
+    official_domains: ["amii.ca"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  ellis:
+    name: "ELLIS"
+    country: "EU"
+    entity_type: "institution"
+    aliases: ["ELLIS"]
+    official_domains: ["ellis.eu"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  eth_ai_center:
+    name: "ETH AI Center"
+    country: "CH"
+    entity_type: "institution"
+    aliases: ["ETH AI Center"]
+    official_domains: ["ai.ethz.ch"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  epfl_ai_center:
+    name: "EPFL AI Center"
+    country: "CH"
+    entity_type: "institution"
+    aliases: ["EPFL AI Center"]
+    official_domains: ["ai.epfl.ch"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  oxford_applied_and_theoretical_ml_oatml:
+    name: "Oxford Applied and Theoretical ML (OATML)"
+    country: "UK"
+    entity_type: "institution"
+    aliases: ["Oxford Applied and Theoretical ML (OATML)", "OATML", "Oxford Applied and Theoretical ML"]
+    official_domains: ["oatml.cs.ox.ac.uk"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  ucl_centre_for_artificial_intelligence:
+    name: "UCL Centre for Artificial Intelligence"
+    country: "UK"
+    entity_type: "institution"
+    aliases: ["UCL Centre for Artificial Intelligence"]
+    official_domains: ["ucl.ac.uk"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  university_of_edinburgh_ai:
+    name: "University of Edinburgh AI"
+    country: "UK"
+    entity_type: "institution"
+    aliases: ["University of Edinburgh AI"]
+    official_domains: ["artificial-intelligence.ed.ac.uk"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  riken_aip:
+    name: "RIKEN Center for Advanced Intelligence Project"
+    country: "JP"
+    entity_type: "institution"
+    aliases: ["RIKEN Center for Advanced Intelligence Project"]
+    official_domains: ["aip.riken.jp"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  nus_ai:
+    name: "NUS Artificial Intelligence Institute"
+    country: "SG"
+    entity_type: "institution"
+    aliases: ["NUS Artificial Intelligence Institute"]
+    official_domains: ["ai.nus.edu.sg"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  ai_singapore:
+    name: "AI Singapore"
+    country: "SG"
+    entity_type: "institution"
+    aliases: ["AI Singapore"]
+    official_domains: ["aisingapore.org"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  mbzuai:
+    name: "Mohamed bin Zayed University of AI (MBZUAI)"
+    country: "UAE"
+    entity_type: "institution"
+    aliases: ["Mohamed bin Zayed University of AI (MBZUAI)", "MBZUAI", "Mohamed bin Zayed University of AI"]
+    official_domains: ["mbzuai.ac.ae"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  thu_keg:
+    name: "清华大学知识工程实验室（THUKEG / THUDM）"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["清华大学知识工程实验室（THUKEG / THUDM）", "THUKEG", "THUDM", "清华大学知识工程实验室"]
+    official_domains: ["keg.cs.tsinghua.edu.cn"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  thu_nlp:
+    name: "清华大学自然语言处理实验室（THUNLP）"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["清华大学自然语言处理实验室（THUNLP）", "THUNLP", "清华大学自然语言处理实验室"]
+    official_domains: ["nlp.csai.tsinghua.edu.cn"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  openbmb:
+    name: "OpenBMB"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["OpenBMB"]
+    official_domains: ["openbmb.cn"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  tsinghua_air:
+    name: "清华大学智能产业研究院（AIR）"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["清华大学智能产业研究院（AIR）", "AIR", "清华大学智能产业研究院"]
+    official_domains: ["air.tsinghua.edu.cn"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  pku_cs:
+    name: "北京大学计算机学院"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["北京大学计算机学院"]
+    official_domains: ["cs.pku.edu.cn"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  pku_alignment:
+    name: "PKU-Alignment"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["PKU-Alignment"]
+    official_domains: ["ai-alignment.group"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  fudan_nlp:
+    name: "复旦大学 NLP 与大模型团队"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["复旦大学 NLP 与大模型团队"]
+    official_domains: ["nlp.fudan.edu.cn"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  openmoss:
+    name: "OpenMOSS"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["OpenMOSS"]
+    official_domains: ["openmoss.ai"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  gair:
+    name: "GAIR 生成式人工智能研究实验室"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["GAIR 生成式人工智能研究实验室"]
+    official_domains: ["plms.ai"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  nju_lamda:
+    name: "南京大学 LAMDA"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["南京大学 LAMDA"]
+    official_domains: ["lamda.nju.edu.cn"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  hit_scir:
+    name: "哈尔滨工业大学 SCIR"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["哈尔滨工业大学 SCIR"]
+    official_domains: ["ir.hit.edu.cn"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  cas_ia:
+    name: "中国科学院自动化研究所"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["中国科学院自动化研究所"]
+    official_domains: ["ia.cas.cn"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  ict_nlp:
+    name: "中科院计算所自然语言处理组"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["中科院计算所自然语言处理组"]
+    official_domains: ["nlp.ict.ac.cn"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  baai:
+    name: "北京智源人工智能研究院（BAAI）"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["北京智源人工智能研究院（BAAI）", "BAAI", "北京智源人工智能研究院"]
+    official_domains: ["baai.ac.cn"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  shanghai_ai_lab:
+    name: "上海人工智能实验室"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["上海人工智能实验室"]
+    official_domains: ["shlab.org.cn"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  openmmlab:
+    name: "OpenMMLab"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["OpenMMLab"]
+    official_domains: ["openmmlab.com"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  opencompass:
+    name: "OpenCompass"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["OpenCompass"]
+    official_domains: ["opencompass.org.cn"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  pengcheng_lab:
+    name: "鹏城实验室"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["鹏城实验室"]
+    official_domains: ["pcl.ac.cn"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  idea_research:
+    name: "粤港澳大湾区数字经济研究院（IDEA）"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["粤港澳大湾区数字经济研究院（IDEA）", "IDEA", "粤港澳大湾区数字经济研究院"]
+    official_domains: ["idea.edu.cn"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  sribd:
+    name: "深圳市大数据研究院（SRIBD）"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["深圳市大数据研究院（SRIBD）", "SRIBD", "深圳市大数据研究院"]
+    official_domains: ["sribd.cn"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  zju_ai:
+    name: "浙江大学人工智能学院"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["浙江大学人工智能学院"]
+    official_domains: ["ai.zju.edu.cn"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  ustc_ai:
+    name: "中国科学技术大学人工智能研究平台"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["中国科学技术大学人工智能研究平台"]
+    official_domains: ["ai.ustc.edu.cn"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  cuhk_mmlab:
+    name: "香港中文大学 MMLab"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["香港中文大学 MMLab"]
+    official_domains: ["mmlab.ie.cuhk.edu.hk"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  hkust_mmlab:
+    name: "香港科技大学 MMLab"
+    country: "CN"
+    entity_type: "institution"
+    aliases: ["香港科技大学 MMLab"]
+    official_domains: ["mmlab-hkust.github.io"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_andrej_karpathy:
+    name: "Andrej Karpathy"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Andrej Karpathy"]
+    official_domains: ["karpathy.ai"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_yann_lecun:
+    name: "Yann LeCun"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Yann LeCun"]
+    official_domains: ["yann.lecun.com"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_franois_chollet:
+    name: "François Chollet"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["François Chollet"]
+    official_domains: ["fchollet.com"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_ilya_sutskever:
+    name: "Ilya Sutskever"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Ilya Sutskever"]
+    official_domains: []
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_demis_hassabis:
+    name: "Demis Hassabis"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Demis Hassabis"]
+    official_domains: []
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_sam_altman:
+    name: "Sam Altman"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Sam Altman"]
+    official_domains: ["blog.samaltman.com"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_dario_amodei:
+    name: "Dario Amodei"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Dario Amodei"]
+    official_domains: ["darioamodei.com"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_jimmy_ba:
+    name: "Jimmy Ba"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Jimmy Ba"]
+    official_domains: ["jimmylba.github.io"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_fei_fei_li:
+    name: "Fei-Fei Li"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Fei-Fei Li"]
+    official_domains: ["profiles.stanford.edu"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_soumith_chintala:
+    name: "Soumith Chintala"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Soumith Chintala"]
+    official_domains: ["soumith.ch"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_andrew_ng:
+    name: "Andrew Ng"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Andrew Ng"]
+    official_domains: ["andrewng.org"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_geoffrey_hinton:
+    name: "Geoffrey Hinton"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Geoffrey Hinton"]
+    official_domains: ["cs.toronto.edu"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_yoshua_bengio:
+    name: "Yoshua Bengio"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Yoshua Bengio"]
+    official_domains: ["yoshuabengio.org"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_christopher_manning:
+    name: "Christopher Manning"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Christopher Manning"]
+    official_domains: ["nlp.stanford.edu"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_percy_liang:
+    name: "Percy Liang"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Percy Liang"]
+    official_domains: ["cs.stanford.edu"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_dan_jurafsky:
+    name: "Dan Jurafsky"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Dan Jurafsky"]
+    official_domains: ["web.stanford.edu"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_kaiming_he:
+    name: "Kaiming He（何恺明）"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Kaiming He（何恺明）", "何恺明", "Kaiming He"]
+    official_domains: ["people.csail.mit.edu"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_yejin_choi:
+    name: "Yejin Choi"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Yejin Choi"]
+    official_domains: ["homes.cs.washington.edu"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_hanna_hajishirzi:
+    name: "Hanna Hajishirzi"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Hanna Hajishirzi"]
+    official_domains: ["homes.cs.washington.edu"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_dawn_song:
+    name: "Dawn Song"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Dawn Song"]
+    official_domains: ["people.eecs.berkeley.edu"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_pieter_abbeel:
+    name: "Pieter Abbeel"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Pieter Abbeel"]
+    official_domains: ["people.eecs.berkeley.edu"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_chelsea_finn:
+    name: "Chelsea Finn"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Chelsea Finn"]
+    official_domains: ["ai.stanford.edu"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_lilian_weng:
+    name: "Lilian Weng"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Lilian Weng"]
+    official_domains: ["lilianweng.github.io"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_chip_huyen:
+    name: "Chip Huyen"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Chip Huyen"]
+    official_domains: ["huyenchip.com"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_jay_alammar:
+    name: "Jay Alammar"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Jay Alammar"]
+    official_domains: ["jalammar.github.io"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_sebastian_raschka:
+    name: "Sebastian Raschka"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Sebastian Raschka"]
+    official_domains: ["sebastianraschka.com"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_simon_willison:
+    name: "Simon Willison"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Simon Willison"]
+    official_domains: ["simonwillison.net"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_nathan_lambert:
+    name: "Nathan Lambert"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Nathan Lambert"]
+    official_domains: ["interconnects.ai"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_eugene_yan:
+    name: "Eugene Yan"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Eugene Yan"]
+    official_domains: ["eugeneyan.com"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_hamel_husain:
+    name: "Hamel Husain"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Hamel Husain"]
+    official_domains: ["hamel.dev"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_arvind_narayanan:
+    name: "Arvind Narayanan"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Arvind Narayanan"]
+    official_domains: ["cs.princeton.edu"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_sayash_kapoor:
+    name: "Sayash Kapoor"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Sayash Kapoor"]
+    official_domains: ["sayashkapoor.com"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_ethan_mollick:
+    name: "Ethan Mollick"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Ethan Mollick"]
+    official_domains: ["oneusefulthing.org"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_chris_olah:
+    name: "Chris Olah"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Chris Olah"]
+    official_domains: ["colah.github.io"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_jeremy_howard:
+    name: "Jeremy Howard"
+    country: "International"
+    entity_type: "researcher"
+    aliases: ["Jeremy Howard"]
+    official_domains: ["fast.ai"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_tang_jie:
+    name: "唐杰"
+    country: "CN"
+    entity_type: "researcher"
+    aliases: ["唐杰"]
+    official_domains: ["keg.cs.tsinghua.edu.cn"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_liu_zhiyuan:
+    name: "刘知远"
+    country: "CN"
+    entity_type: "researcher"
+    aliases: ["刘知远"]
+    official_domains: ["nlp.csai.tsinghua.edu.cn"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_huang_minlie:
+    name: "黄民烈"
+    country: "CN"
+    entity_type: "researcher"
+    aliases: ["黄民烈"]
+    official_domains: ["coai.cs.tsinghua.edu.cn"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_zhu_jun:
+    name: "朱军"
+    country: "CN"
+    entity_type: "researcher"
+    aliases: ["朱军"]
+    official_domains: ["ml.cs.tsinghua.edu.cn"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_zhou_zhihua:
+    name: "周志华"
+    country: "CN"
+    entity_type: "researcher"
+    aliases: ["周志华"]
+    official_domains: ["cs.nju.edu.cn"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_qiu_xipeng:
+    name: "邱锡鹏"
+    country: "CN"
+    entity_type: "researcher"
+    aliases: ["邱锡鹏"]
+    official_domains: ["xpqiu.github.io"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_li_mu:
+    name: "李沐"
+    country: "CN"
+    entity_type: "researcher"
+    aliases: ["李沐"]
+    official_domains: ["mu-li.com"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_li_hungyi:
+    name: "李宏毅"
+    country: "CN"
+    entity_type: "researcher"
+    aliases: ["李宏毅"]
+    official_domains: ["speech.ee.ntu.edu.tw"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_wang_shusen:
+    name: "王树森"
+    country: "CN"
+    entity_type: "researcher"
+    aliases: ["王树森"]
+    official_domains: ["wangshusen.github.io"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_tan_xu:
+    name: "谭旭"
+    country: "CN"
+    entity_type: "researcher"
+    aliases: ["谭旭"]
+    official_domains: ["tan-xu.github.io"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_yang_qiang:
+    name: "杨强"
+    country: "CN"
+    entity_type: "researcher"
+    aliases: ["杨强"]
+    official_domains: ["cse.hkust.edu.hk"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_kai_fu_lee:
+    name: "李开复"
+    country: "CN"
+    entity_type: "researcher"
+    aliases: ["李开复"]
+    official_domains: []
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+
+  researcher_baoyu:
+    name: "宝玉（Baoyu / dotey）"
+    country: "CN"
+    entity_type: "researcher"
+    aliases: ["宝玉（Baoyu / dotey）", "Baoyu", "dotey", "宝玉"]
+    official_domains: ["baoyu.io"]
+    query_topics: [foundation model, large language model, agent, reasoning, multimodal, embodied AI, AI safety, evaluation, open source]
+

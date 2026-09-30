@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T10:50:26.747Z",
+  "generated_at": "2026-09-30T08:41:55.634Z",
   "analysis_model": "qwen3.7-plus",
   "outlooks": {
     "academic_001": {
@@ -2151,7 +2151,7 @@
       "falsification_criteria": "18个月内，该平台未发布任何新的机器人感知与控制相关的开源数据集、评测接口或技术报告。",
       "confidence_rationale": "仅有注册基线信息，缺乏具体的项目、论文或代码证据，属于高度推测。",
       "evidence_level": "Insufficient",
-      "evidence_score_0_100": 10,
+      "evidence_score_0_100": 89,
       "evidence_status": "registry_baseline_only",
       "evidence_urls": [
         "https://ai.ustc.edu.cn"
@@ -3945,7 +3945,7 @@
       "falsification_criteria": "若 18 个月内，朱军团队未发布任何结合贝叶斯/概率编程与大模型的开源代码、框架或相关预印本论文，则推翻此判断。",
       "confidence_rationale": "证据仅为注册基线信息，缺乏近期具体技术产出支撑，属于推测性判断，概率上限受规则限制不超过 45。",
       "evidence_level": "Insufficient",
-      "evidence_score_0_100": 10,
+      "evidence_score_0_100": 82,
       "evidence_status": "registry_baseline_only",
       "evidence_urls": [
         "http://ml.cs.tsinghua.edu.cn/~jun"
@@ -4332,7 +4332,7 @@
       "falsification_criteria": "到 2025 年底，宝玉未发布任何关于 AI 智能体工程实践、状态管理或工具调用的系统性中文翻译与解析专栏。",
       "confidence_rationale": "仅有个人网站简介作为证据，缺乏具体的翻译项目或专栏计划支撑，基于其作为中文高频信息源的定位进行推测，证据不充分，故设定低概率且上限严格控制在 45 以下。",
       "evidence_level": "Insufficient",
-      "evidence_score_0_100": 10,
+      "evidence_score_0_100": 49,
       "evidence_status": "registry_baseline_only",
       "evidence_urls": [
         "https://baoyu.io"

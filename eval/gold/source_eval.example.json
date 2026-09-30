@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "description": "Copy this file and replace examples with human-reviewed documents for a fixed evaluation window.",
+  "window": {
+    "start": "2026-01-01",
+    "end": "2026-01-31"
+  },
+  "documents": [
+    {
+      "company": "openai",
+      "url": "https://openai.com/example-reviewed-url",
+      "expected_tier": "A",
+      "expected_people": ["Sam Altman"],
+      "must_find": false
+    }
+  ]
+}
+

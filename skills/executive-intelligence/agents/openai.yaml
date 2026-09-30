@@ -1,0 +1,7 @@
+interface:
+  display_name: "Executive Intelligence"
+  short_description: "Track verified AI vendor executive technology signals"
+  default_prompt: "Use $executive-intelligence to collect recent official AI vendor signals and export an evidence-grounded trend table."
+policy:
+  allow_implicit_invocation: true
+

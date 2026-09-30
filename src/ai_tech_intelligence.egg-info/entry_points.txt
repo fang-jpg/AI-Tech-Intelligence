@@ -1,0 +1,2 @@
+[console_scripts]
+ai-tech-intel = ai_tech_intelligence.cli:main

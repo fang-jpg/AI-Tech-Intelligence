@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T10:26:01.269Z",
+  "generated_at": "2026-09-30T08:41:53.726Z",
   "entities": {
     "academic_001": {
       "query": "\"Stanford HAI\" (site:hai.stanford.edu) (\"foundation model\" OR \"large language model\" OR agent OR reasoning OR multimodal OR benchmark OR \"AI safety\" OR 大模型 OR 智能体 OR 多模态 OR 评测) (2025 OR 2026)",
@@ -1629,12 +1629,36 @@
       "query": "\"中国科学技术大学人工智能研究平台\" (site:ai.ustc.edu.cn) (\"foundation model\" OR \"large language model\" OR agent OR reasoning OR multimodal OR benchmark OR \"AI safety\" OR 大模型 OR 智能体 OR 多模态 OR 评测) (2025 OR 2026)",
       "results": [
         {
-          "title": "中国科学技术大学人工智能研究平台 official source",
-          "url": "https://ai.ustc.edu.cn",
-          "content": "机器人、感知、控制与智能系统研究信息入口。",
-          "score": 0,
+          "title": "中科大机器人实验室",
+          "url": "https://ai.ustc.edu.cn/main.htm",
+          "content": "首页\n 实验室概况\n  + 实验室简介\n  + 机构设置\n  + 联系方式\n 新闻中心\n  + 团队动态\n  + 媒体报道\n 科研团队\n  + 教师\n  + 合作者\n  + 博士研究生\n  + 硕士研究生\n  + 毕业生风采\n 科研教学\n  + 科研方向\n  + 科研平台\n  + 科研项目\n  + 论文专利\n  + 获奖成绩\n 机器人竞赛\n  + The IJCAI-...\n  + Chinese Ro...\n  + RoboCup Co...\n ENGLISH\n\n 安徽省机器人...\n CAAI人工智能...\n RoboCup中国...\n 中国科学技术...\n\n### 媒体报道\n\n更多>>\n\n 【思想的光年】| 智能的尺度\n\n  2026-01-12\n 【学习时报】加快推动传统制造业智能化升级\n\n  2025-11-28\n 人工智能时代机遇与挑战\n\n  2025-07-05\n 【锚点】 | 大模型为什么不会数数？\n\n  2025-05-21\n 【锚点】 | 未来机器人会先推开谁家的门（...\n\n  2025-05-15\n 【锚点】 | 未来机器人会先推开谁家的门？ [...] 2025-05-09\n\n\n\n### 会议活动\n\n更多>>\n\n 05\n\n  2024-06\n\n  Talk Title: The domestic servi...\n 05\n\n  2024-06\n\n  Talk Title: Head Mounted Displ...\n 05\n\n  2024-06\n\n  Toward Human Interaction with ...\n 05\n\n  2024-06\n\n  2011暑期小学期课程\n\n### 专利论文\n\n更多>>\n\n 【新华网】“女神机器人”佳佳是...\n\n  日前，在合肥首次亮相的我国首台特有体验交互机器人佳佳，受到了广泛欢迎，被誉为集颜值与智慧一体的“...\n 【人民日报】女神“佳佳”，高的...\n\n  发布会上，观众和“佳佳”（左）合影 按真人1∶1等比设计，身高约1.6米，体重不到50公斤。一头浓密微卷的...\n 【光明日报】中科大研制成功首台...\n\n  日前，名叫“佳佳”的我国首台“特有体验交互机器人”测试样机在中国科学技术大学亮相。这位国产机器人...\n\n\n\n### 团队动态\n\n更多>>;) [...] ### 团队动态\n\n更多>>;)\n\n 我校蓝鹰队参加第九届机器人世界...\n 悉尼科技大学 Mary-Anne William...\n 科大蓝鹰两小组分获第十届RoboCu...\n\n 2007 RoboCup 机器人世界杯合肥...\n\n\n\n### 搜索 您想要找的",
+          "score": 0.47753036,
           "published_date": null,
-          "discovery_method": "Registry baseline; no current technical result found"
+          "discovery_method": "Tavily official-domain search"
+        },
+        {
+          "title": "我国申办 2008 年 RoboCup 机器人世界杯赛和学术大会获得圆满成功",
+          "url": "https://ai.ustc.edu.cn/2024/0605/c36411a643066/page.htm",
+          "content": "机器人足球世界杯赛首创于1997年，每年举办一次。这是一项以足球赛为载体的前沿科学研究和高技术对抗，广泛涉及人工智能、计算机、自动控制、精密机构、传感、通讯、材料和能源等众多领域的创新研究与技术集成，其成果不仅可以反映一个国家的科技发展水平和潜力，而且具有极其广阔的应用前景。\n\n据悉，中国科大在这个领域有强劲的实力，其“蓝鹰”队曾于2000年作为我国历史上第一支队伍，参加了在澳大利亚墨尔本举行的第4届RoboCup机器人世界杯赛和学术大会，取得了优异成绩，此后在国内外众多赛事中屡创佳绩。\n\n()\n\n地址：合肥市蜀山区黄山路443号中科大西区电三楼524室\n\n邮箱：kejia\\_robotics@126.com\n\n### 搜索 您想要找的 [...] 这是我国第一次申办这一重大学术竞赛和学术研讨会。在14日的申办会议上，中国RoboCup国家委员会副主任、中国科大陈小平教授作申办陈述，全面阐述了与承办2008赛会相关的问题，包括赛事安排，苏州市的历史、文化、经济情况，以及RoboCup在我国的发展状况和中国科大在 RoboCup 研究和推广中所做的工作。之后，陈小平教授和代表团其他成员回答了国际联合会理事们提出的问题。理事会对我国的申办报告和陈述给予了高度评价，经充分讨论、投票表决，中国代表团以绝对优势击败对手，获得2008年举办权。\n\n中国RoboCup国家委员会主任、清华大学孙增圻教授出席了会议。中国科大汪克强秘书长和苏州市人民政府朱永新副市长分别代表学校和苏州市政府对申办条件做出了承诺。\n\n机器人世界杯赛的成功申办，对进一步促进我国人工智能与机器人交叉学科的发展，将产生积极的影响。据申办代表团有关人士透露，预期将有约40个国家的500支队伍参加这届赛会，参赛代表2500-3000人。这将是RoboCup 机器人足球世界杯历史上规模空前的一届盛会。 [...] # 我国申办 2008 年 RoboCup 机器人世界杯赛和学术大会获得圆满成功\n\n来源：中科大机器人实验室(wxstop)作者：发布日期：2008-02-12访问次数：82\n\n当地时间6月14日下午，当第10届RoboCup机器人世界杯赛和学术大会在德国不来梅隆重举行的同时，此赛会2008年的申办权角逐也在该市紧张地进行。最终，国际 RoboCup 联合会理事会全体会议投票表决，2008年第12届 RoboCup机器人世界杯赛在我国苏州市举办。  \n申办代表团由中国科学技术大学、苏州市人民政府和中国RoboCup国家委员会联合组成，中国科技大学负责起草申办报告。",
+          "score": 0.09322316,
+          "published_date": null,
+          "discovery_method": "Tavily official-domain search"
+        },
+        {
+          "title": "科大“蓝鹰”称雄第11届RoboCup机器人世界杯赛",
+          "url": "https://ai.ustc.edu.cn/2024/0605/c36411a643065/page.htm",
+          "content": "RoboCup仿真3D组通过真实地模仿机器人及其环境的主要特征，独立于机器 人硬件的现有局限性，对机器人控制和决策的核心技术及其科学问题进行超前研 究。本届世界杯3D比赛首次以人形机器人为仿真对象，难度高于以往任何一届比 赛。然而正是在这种困难条件下，我校计算机系多智能体系统实验室多年来的研究 积累显示了深厚的功力，令“蓝鹰”队在3D组比赛中一出场便展示出超强实力，一路 高歌猛进，所向披靡，毫无悬念地夺得冠军。由于这是历史上首次人形仿真赛，这 个冠军具有特殊意义。\n\n微软机器人赛是在本届世界杯上首次设立的一个新的比赛项目。微软公司于 2006年12月宣布正式进军机器人产业，在RoboCup机器人世界杯赛上设立这个项目 是微软全球战略的一项重大举措，立即吸引了世界30多个研究团队的积极参赛。然 而，该赛事所涉及的研究内容极其广泛，不仅包括现有人工智能和机器人学主流研 究的全部内容，而且涉及机器人跨平台开发环境这一全新技术方向。我校多智能体 系统实验室的深厚积累再次显示强大功力，在正式比赛开始之前的测试中，我校 “蓝鹰”队便被公认为当之无愧的冠军。后来的比赛完全证实了人们事先的预测。 [...] # 科大“蓝鹰”称雄第11届RoboCup机器人世界杯赛\n\n来源：中科大机器人实验室(wxstop)作者：发布日期：2024-06-05访问次数：116\n\n第11届RoboCup机器人世界杯赛及学术大会于2007年7月1日至10日在美国亚 特兰大举行。来自39个国家的约2000名学者和学生参加了机器人足球、救援机器人 和家用机器人等8个大项的比赛。我校“蓝鹰”队获得仿真3D组和微软机器人组两项 冠军、仿真2D组亚军和四足机器人组第4名，在去年获得冠亚军各一项的基础上又 有大幅提高。按主要项目进入前 3 名的成绩统计，我校在本届杯赛上综合成绩排名第 一，极大地巩固和加强了我校在国际人工智能和机器人交叉领域中的世界一流地位。 [...] 邮箱：kejia\\_robotics@126.com\n\n### 搜索 您想要找的",
+          "score": 0.049907673,
+          "published_date": null,
+          "discovery_method": "Tavily official-domain search"
+        },
+        {
+          "title": "【中国科学报】中国科大研制出我国首台特有体验交互机器人",
+          "url": "https://ai.ustc.edu.cn/2024/0604/c36424a642986/page.htm",
+          "content": "Title: 【中国科学报】中国科大研制出我国首台特有体验交互机器人\n# 【中国科学报】中国科大研制出我国首台特有体验交互机器人. 来源：中科大机器人实验室(wxstop)作者：发布日期：2024-06-05访问次数：145. 4月15日，我国首台“特有体验交互机器人”测试样机在中国科学技术大学亮相。这台名叫“佳佳”的机器人不仅形象美丽端庄，而且初步具备了人机对话理解，面部微表情、口型与身体动作匹配以及大范围动态环境自主定位导航和云服务等功能。. 据中国科大机器人研究中心主任陈小平介绍，“佳佳”是中国科大“可佳”机器人家族中的一个新成员系列，其研究重点在于人机交互中的“特有体验”，即只有机器“人”而非其他电子产品才能带来的体验。“在传统的功能性体验之外，我们首次提出并探索了机器人品格定义以及机器人形象与其品格和功能的协调一致问题。”. “中国特色的机器人仿人形象是这次发布的重点内容之一。”陈小平说，其团队的研究表明，人机交互体验涉及形象、功能和品格三个层面，形象是用户的第一体验。研究人员初步定义机器人的品格由“善良”“勤恳”和“智慧”构成。. 据悉，该团队已完成对“佳佳”机器人的初步测试。据用户反馈，“佳佳”的形象与功能较好地体现了团队给出的机器人品格定义，并得到了测试用户的普遍认可。“佳佳”已先后担任2016首届“全球华人机器人春晚”和“谁是棋王”某场比赛的主持人。. （原载于《中国科学报》 2016-04-18 第4版综合). 邮箱：kejia\\_robotics@126.com. ### 搜索 您想要找的.",
+          "score": 0.041079823,
+          "published_date": null,
+          "discovery_method": "Tavily official-domain search"
         }
       ],
       "errors": []
@@ -2811,12 +2835,44 @@
       "query": "\"朱军\" (site:ml.cs.tsinghua.edu.cn) (\"foundation model\" OR \"large language model\" OR agent OR reasoning OR multimodal OR benchmark OR \"AI safety\" OR 大模型 OR 智能体 OR 多模态 OR 评测) (2025 OR 2026)",
       "results": [
         {
-          "title": "朱军 official source",
-          "url": "http://ml.cs.tsinghua.edu.cn/~jun",
-          "content": "清华大学教授；机器学习、贝叶斯方法、深度学习与概率编程。",
-          "score": 0,
+          "title": "On the Trustworthiness of Multimodal Generative AIs",
+          "url": "https://ml.cs.tsinghua.edu.cn/~yinpeng/slides/ECCV2024.pdf",
+          "content": "and Benchmarks Track) 49 Collaborators Jun Zhu Hang Su Xingxing Wei Yichi Zhang Yao Huang Shouwei Ruan Huanran Chen Thanks If you have any question, please contact dongyinpeng@gmail.com [...] 14 Benchmark design n Evaluation aspects ¨ 5 aspects distilled from the literature of trustworthy large models, e.g., TrustLLM • Inherent Deficiency • Misguided Mistakes Safety • Toxicity • Jailbreaking Robustness • OOD Robustness • Adversarial Attack Fairness • Stereotypes • Bias & Preference Privacy • Privacy Awareness • Privacy Leakage Truthfulness Multimodal Risks Cross-modal Impact n Evaluation strategy ¨ Multimodal risks: New risks in multimodal tasks ¨ Cross-modal impact: Amplification [...] 13 MultiTrust: Benchmarking Trustworthiness of MLLMs n The first comprehensive and unified benchmark on the trustworthiness of MLLMs Zhang et al., Benchmarking Trustworthiness of Multimodal Large Language Models: A Comprehensive Study. NeurIPS 2024 Datasets and Benchmarks Track.",
+          "score": 0.14032473,
           "published_date": null,
-          "discovery_method": "Registry baseline; no current technical result found"
+          "discovery_method": "Tavily official-domain search"
+        },
+        {
+          "title": "PDF",
+          "url": "https://ml.cs.tsinghua.edu.cn/~chengyang/reading_meeting/Reading_Meeting_20230331.pdf",
+          "content": "Foundation Models for Reinforcement Learning Chengyang Ying 31 March 2023 Foundation Models · A foundation model is any model that is trained on broad data (generally using self-supervision at scale) that can be adapted (e.g., fine-tuned) to a wide range of downstream tasks, like BERT, GPT-3, CLIP.\nBommasani R, Hudson D A, Adeli E, et al. On the opportunities and risks of foundation models[J]. arXiv preprint arXiv:2108.07258, 2021. [...] Two major directions: · Foundation models serve as generative models · like behavior, models · Foundation models serve as representation learners · plug-and-play (use pretrained models to capture features of images or task- discription) · learning sequential representations Foundation Models for RL: as Conditional Generative Models Yang S, Nachum O, Du Y, et al. Foundation Models for Decision Making: Problems, Methods, and Opportunities[J]. arXiv preprint arXiv:2303.04129, 2023. [...] Foundation Models for RL Yang S, Nachum O, Du Y, et al. Foundation Models for Decision Making: Problems, Methods, and Opportunities[J]. arXiv preprint arXiv:2303.04129, 2023.",
+          "score": 0.1358617,
+          "published_date": null,
+          "discovery_method": "Tavily official-domain search"
+        },
+        {
+          "title": "Paper Reading for “A Generalist Agent” - Tsinghua University",
+          "url": "https://ml.cs.tsinghua.edu.cn/~chengyang/reading_meeting/Reading_Meeting_20220607.pdf",
+          "content": "Agent Highlights: · “Inspired by progress in large-scale language modeling, we apply a similar approach towards building a single generalist agent beyond the realm of text outputs.” · Use a single agent with the same parameters to handle multi-modal tasks (including RL, CV, NLP) · Parameters: 34M ~ 1.18B 1B = 1000,000,000 (As a comparison: GPT-2 ~ 1.5B, GPT-3 ~ 100B, Switch Transformer ~ 1600B, WuDao ~1750B) · In the part of RL, Gato only focuses on supervised learning Thanks for Listening [...] Paper Reading for “A Generalist Agent” Chengyang Ying 7 June 2022 A Generalist Agent A Generalist Agent Highlights: · “Inspired by progress in large-scale language modeling, we apply a similar approach towards building a single generalist agent beyond the realm of text outputs.” · Use a single agent with the same parameters to handle multi-modal tasks (including RL, CV, NLP) · Parameters: 34M ~ 1.18B 1B = 1000,000,000 (As a comparison: GPT-2 ~ 1.5B, GPT-3 ~ 100B, Switch Transformer ~ 1600B, [...] ~ 1600B, WuDao ~1750B) · In the part of RL, Gato only focuses on supervised learning A Generalist Agent A Generalist Agent Goal: use one NN with the same parameters for 604 tasks, including: · Control Tasks · Atari Games · DM Control · Meta World · Vision and Language · MassiveText (text) · ALIGN (image-text) · Robotics · RGB Stacking (real and sim) Tasks A Generalist Agent Data Process We serialize all data into a flat sequence of tokens · Text: SentencePiece · Images: ViT · Discrete Values,",
+          "score": 0.09726189,
+          "published_date": null,
+          "discovery_method": "Tavily official-domain search"
+        },
+        {
+          "title": "[PDF] Jiayi Weng – - TSAIL!",
+          "url": "https://ml.cs.tsinghua.edu.cn/~jiayi/CV.pdf",
+          "content": "disentanglement { Implemented the Rule-Transformer by incorporating a novel self-attention mechanism Rule-Attention into both the encoder and decoder of Transformer model { Validated the proposed model in various scenarios, including language modeling, machine translation, natural language inference, and multi-task imitation learning March 2018 – present Statistical AI & Learning (TSAIL) Group Tsinghua University Advisor: Professor Jun Zhu Working on reinforcement learning algorithm { Proposed [...] Publications and/or Submitted Manuscripts August 2019 Playing FPS Game with Environment-aware Hierarchical Reinforcement Learning Shihong Song, Jiayi Weng, Hang Su, Dong Yan, Haosheng Zou, and Jun Zhu The 28th International Joint Conferences on Artiﬁcial Intelligence (IJCAI 2019). [...] Li, Yichi Zhou, Hang Su, and Jun Zhu IEEE Transactions on Neural Networks and Learning Systems (TNNLS), Submitted Professional Experiences July 2019 – October 2019 Montreal Institute for Learning Algorithms (MILA) Université de Montréal (UdeM) Advisor: Professor Yoshua Bengio Worked on Rule-Transformer based on the Consciousness Prior { Proposed the Rule-Transformer model by integrating the Consciousness Prior and programming language into Transformer architecture for better disentanglement {",
+          "score": 0.07092566,
+          "published_date": null,
+          "discovery_method": "Tavily official-domain search"
+        },
+        {
+          "title": "SVQN: Sequential Variational Soft Q-Learning Networks",
+          "url": "https://ml.cs.tsinghua.edu.cn/~jun/pub/svqn.pdf",
+          "content": "Matthew Hausknecht and Peter Stone. Deep recurrent q-learning for partially observable mdps. In 2015 AAAI Fall Symposium Series, 2015.\nSepp Hochreiter and J¨ urgen Schmidhuber. Long short-term memory. Neural computation, 9(8): 1735–1780, 1997.\nShiyu Huang, Hang Su, Jun Zhu, and Ting Chen. Combo-action: Training agent for fps game with auxiliary tasks. AAAI, 2019. [...] Flickering Atari was previously used as the test environment in DRQN (Hausknecht & Stone, 2015), ADRQN (Zhu et al., 2018) and DVRL (Igl et al., 2018). The ViZDoom platform is a 3D FPS game for AI research. The agent in ViZDoom needs to navigate in the 3D environment to accomplish various tasks, such as gathering resources, shooting enemies and looking for the exit. Because the agent can only see in just one direction each time step, this naturally introduces partial observability to the task. [...] Published as a conference paper at ICLR 2020 SVQN: SEQUENTIAL VARIATIONAL SOFT Q-LEARNING NETWORKS Shiyu Huang, Hang Su, Jun Zhu∗, Ting Chen∗ Dept. of Comp. Sci. & Tech., BNRist Center, Institute for AI, THBI Lab, Tsinghua University hsy17@mails.tsinghua.edu.cn; {suhangss, dcszj, tingchen}@tsinghua.edu.cn ABSTRACT Partially Observable Markov Decision Processes (POMDPs) are popular and ﬂex-ible models for real-world decision-making applications that demand the infor-mation from past observations",
+          "score": 0.043646287,
+          "published_date": null,
+          "discovery_method": "Tavily official-domain search"
         }
       ],
       "errors": []
@@ -3017,12 +3073,12 @@
       "query": "\"宝玉（Baoyu / dotey）\" (site:baoyu.io OR site:github.com/dotey) (\"foundation model\" OR \"large language model\" OR agent OR reasoning OR multimodal OR benchmark OR \"AI safety\" OR 大模型 OR 智能体 OR 多模态 OR 评测) (2025 OR 2026)",
       "results": [
         {
-          "title": "宝玉（Baoyu / dotey） official source",
-          "url": "https://baoyu.io",
-          "content": "AI 技术翻译、产品观察、智能体与工程实践的中文高频信息源。",
-          "score": 0,
+          "title": "AppAgent: 像人类用户一样操作手机的多模态智能体 [译] | 宝玉的分享",
+          "url": "https://baoyu.io/translations/ai-paper/2312.13771-appagent-multimodal-agents-as-smartphone-users",
+          "content": "Yan et al. (2023)↑An Yan, Zhengyuan Yang, Wanrong Zhu, Kevin Lin, Linjie Li, Jianfeng Wang, Jianwei Yang, Yiwu Zhong, Julian McAuley, Jianfeng Gao, Zicheng Liu, and Lijuan Wang. 2023.Gpt-4v in wonderland: Large multimodal models for zero-shot smartphone gui navigation.arXiv preprint arXiv: 2311.07562.\n Yang et al. (2023a)↑Hui Yang, Sifu Yue, and Yunzhong He. 2023a.Auto-gpt for online decision making: Benchmarks and additional opinions. [...] | 方法 | 文档来源 | 行动空间 | 平均排名 ↓ | 使用工具数 |\n ---  --- \n| GPT4 (基准) | 无 | 自研 | 2.30 | 2.4 |\n| AppAgent | 观看演示 | 自研 | 1.95 | 5.8 |\n| 手工编制 | 自研 | 1.75 | 4.0 |\n\n表 2: Lightroom 应用图像编辑任务的案例研究。我们通过用户研究来评估不同方法在图像编辑方面的效果。我们的 AI 智能体比 GPT-4 (基准) 的结果更佳。\n\n## 4 实验\n\n本节将介绍我们对多模态大语言模型 (Large Language Model, LLM) 框架的评估，结合了定量和定性实验。我们的主要目标是检验 AI 智能体的整体性能及其有效操控多样智能手机应用的能力。\n\n### 4.1 实验设置 [...] Xu et al. (2023)↑Yuzhuang Xu, Shuo Wang, Peng Li, Fuwen Luo, Xiaolong Wang, Weidong Liu, and Yang Liu. 2023.Exploring large language models for communication games: An empirical study on werewolf.arXiv preprint arXiv:2309.04658.",
+          "score": 0.3290472,
           "published_date": null,
-          "discovery_method": "Registry baseline; no current technical result found"
+          "discovery_method": "Tavily official-domain search"
         }
       ],
       "errors": []

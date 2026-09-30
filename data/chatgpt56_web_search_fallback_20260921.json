@@ -1,0 +1,47 @@
+[
+  {
+    "company":"openai",
+    "url":"https://openai.com/index/built-to-benefit-everyone-our-plan/",
+    "source_name":"OpenAI executive-authored plan",
+    "source_type":"official_blog",
+    "title":"Built to benefit everyone: our plan",
+    "published_at":"2026-06-08",
+    "fallback_text":"Built-in search excerpt from the official OpenAI page. Authors: Sam Altman and Jakub Pachocki. The article says OpenAI is moving from an initial phase centered on AGI research toward making advanced AI abundant, affordable, safe, useful, and broadly accessible. The authors write: AI can become a foundation for greater productivity, creativity, scientific progress, and economic opportunity for the many. The plan emphasizes frontier capability together with practical tools, safety, privacy, affordability, open ecosystems, resilience, and public oversight."
+  },
+  {
+    "company":"openai",
+    "url":"https://openai.com/index/amazon-partnership/",
+    "source_name":"OpenAI newsroom",
+    "source_type":"official_news",
+    "title":"OpenAI and Amazon announce strategic partnership",
+    "published_at":"2026-02-27",
+    "fallback_text":"Built-in search excerpt from the official OpenAI page. The partnership covers stateful developer environments, enterprise agents, custom models for Amazon developers, Bedrock distribution, and large-scale Trainium infrastructure. Sam Altman, OpenAI co-founder and CEO, says AI should show up in ways that are practical and genuinely useful for people. The agreement includes next-generation Trainium capacity intended to support increasingly capable AI systems and production-scale agent applications."
+  },
+  {
+    "company":"openai",
+    "url":"https://openai.com/index/scaling-ai-for-everyone/",
+    "source_name":"OpenAI newsroom",
+    "source_type":"official_news",
+    "title":"Scaling AI for everyone",
+    "published_at":"2026-02-27",
+    "fallback_text":"Built-in search excerpt from the official OpenAI page. OpenAI describes a phase in which frontier AI moves from research into daily use at global scale. The page connects future progress to compute, distribution, capital, dedicated inference capacity, and deployment of agentic products such as Codex. Sam Altman says the company is pushing the frontier across infrastructure, research, and products to make AI more capable, reliable, and broadly useful."
+  },
+  {
+    "company":"openai",
+    "url":"https://openai.com/index/aws-and-openai-partnership/",
+    "source_name":"OpenAI newsroom",
+    "source_type":"official_news",
+    "title":"AWS and OpenAI announce multi-year strategic partnership",
+    "published_at":"2025-11-03",
+    "fallback_text":"Built-in search excerpt from the official OpenAI page. OpenAI states that AWS infrastructure will support core AI workloads, inference for ChatGPT, training of next-generation models, and agentic workloads. Sam Altman, co-founder and CEO, says: Scaling frontier AI requires massive, reliable compute. The capacity plan spans large GPU and CPU clusters and is presented as part of a broader compute ecosystem for advanced models."
+  },
+  {
+    "company":"google_deepmind",
+    "url":"https://deepmind.google/blog/accelerating-discovery-in-india-through-ai-powered-science-and-education/",
+    "source_name":"Google DeepMind Blog",
+    "source_type":"official_blog",
+    "title":"Accelerating discovery in India through AI-powered science and education",
+    "published_at":"2026-02-18",
+    "fallback_text":"Built-in search excerpt from the official Google DeepMind page. Authors: Demis Hassabis, Lila Ibrahim, and Pushmeet Kohli. The article presents national partnerships for AI as a route for deploying frontier Gemini models and AI agents in science, education, resilience, and public services. The authors write that AI will be the most transformative technology in human history. The announced work includes research collaboration, broader access to frontier capabilities, and adoption of AI models for scientific discovery and education."
+  }
+]

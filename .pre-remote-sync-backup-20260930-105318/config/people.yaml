@@ -1,289 +1,363 @@
 people:
-  - company: academic_052
+  - company: openai
+    name: Sam Altman
+    role: CEO
+    aliases: [Sam Altman, 山姆·奥尔特曼]
+    profile_url: https://openai.com/index/leadership-updates-march-2025/
+  - company: openai
+    name: Mark Chen
+    role: Chief Research Officer
+    aliases: [Mark Chen, 陈马克]
+    profile_url: https://openai.com/index/leadership-updates-march-2025/
+  - company: openai
+    name: Jakub Pachocki
+    role: Chief Scientist
+    aliases: [Jakub Pachocki]
+    profile_url: https://openai.com/index/jakub-pachocki-announced-as-chief-scientist/
+
+  - company: google_deepmind
+    name: Demis Hassabis
+    role: Co-founder and CEO
+    aliases: [Demis Hassabis, 戴密斯·哈萨比斯]
+    profile_url: https://deepmind.google/about/
+  - company: google_deepmind
+    name: Koray Kavukcuoglu
+    role: Technical leadership
+    aliases: [Koray Kavukcuoglu]
+    profile_url: https://deepmind.google/about/
+
+  - company: baidu
+    name: Robin Li
+    role: Co-founder, Chairman and CEO
+    aliases: [Robin Li, 李彦宏]
+    profile_url: https://ir.baidu.com/
+  - company: baidu
+    name: Haifeng Wang
+    role: CTO
+    aliases: [Haifeng Wang, 王海峰]
+    profile_url: https://ir.baidu.com/
+
+  - company: tencent
+    name: Pony Ma
+    role: Co-founder, Chairman and CEO
+    aliases: [Pony Ma, 马化腾, Ma Huateng]
+    profile_url: https://www.tencent.com/team/ma-huateng-pony-ma/
+  - company: tencent
+    name: Shunyu Yao
+    role: Chief AI Scientist
+    aliases: [Shunyu Yao, Yao Shunyu, 姚顺雨]
+    profile_url: https://www.tencent.com/index.php/en-us/articles/2202320.html
+  - company: tencent
+    name: Dowson Tong
+    role: Senior Executive Vice President; CEO, Cloud and Smart Industries Group
+    aliases: [Dowson Tong, Tang Daosheng, 汤道生]
+    profile_url: https://www.tencent.com/en-us/articles/2201697.html
+
+  - company: bytedance
+    name: Rubo Liang
+    role: CEO
+    aliases: [Rubo Liang, 梁汝波]
+    profile_url: https://www.bytedance.com/en/news/a-letter-from-yiming
+
+  - company: minimax
+    name: Junjie Yan
+    role: Founder, Chairman, CEO and CTO
+    aliases: [Junjie Yan, Yan Junjie, 闫俊杰]
+    profile_url: https://ir.minimax.io/corporate-information/management
+
+  - company: alibaba
+    name: Eddie Wu
+    role: Director and CEO
+    aliases: [Eddie Wu, Eddie Yongming Wu, 吴泳铭]
+    profile_url: https://home.alibabagroup.com/en-US/about-alibaba-leadership-1637927598568767488
+  - company: alibaba
+    name: Zeming Wu
+    role: Group CTO
+    aliases: [Zeming Wu, 吴泽明]
+    profile_url: https://home.alibabagroup.com/en-US/ir-corporate-governance-partnership
+  - company: alibaba
+    name: Jingren Zhou
+    role: Chief AI Architect, Head of Tongyi Foundation Model Division
+    aliases: [Jingren Zhou, 周靖人]
+    profile_url: https://home.alibabagroup.com/en-US/ir-corporate-governance-partnership
+  - company: alibaba
+    name: Wu Jia
+    role: Vice President
+    aliases: [Wu Jia, 吴嘉]
+    profile_url: https://www.alibabagroup.com/document-1948497434959151104
+
+  - company: deepseek
+    name: Wenfeng Liang
+    role: Founder and CEO
+    aliases: [Wenfeng Liang, Liang Wenfeng, 梁文锋]
+    profile_url: https://www.deepseek.com/
+
+  - company: moonshot
+    name: Yang Zhilin
+    role: Founder and CEO
+    aliases: [Yang Zhilin, 杨植麟]
+    profile_url: https://www.kimi.com/en/blog/
+
+  - company: zhipu
+    name: Zhang Peng
+    role: CEO
+    aliases: [Zhang Peng, 张鹏]
+    profile_url: https://www.zhipuai.cn/en/news/86
+  - company: zhipu
+    name: Tang Jie
+    role: Chief Scientist
+    aliases: [Tang Jie, 唐杰]
+    profile_url: https://www.zhipuai.cn/
+
+  - company: xiaomi
+    name: Lei Jun
+    role: Founder, Chairman and CEO
+    aliases: [Lei Jun, 雷军]
+    profile_url: https://ir.mi.com/corporate-information/management
+  - company: xiaomi
+    name: Luo Fuli
+    role: Head of Xiaomi MiMo foundation model
+    aliases: [Luo Fuli, 罗福莉]
+    profile_url: https://dev.mi.com/partnersconference/2025
+
+  # Individual research voices from the academic-source workbook.
+  - company: researcher_andrej_karpathy
     name: "Andrej Karpathy"
     role: "Researcher / technical public voice"
     aliases: ["Andrej Karpathy"]
     profile_url: "https://karpathy.ai/"
-
-  - company: academic_053
+  - company: researcher_yann_lecun
     name: "Yann LeCun"
     role: "Researcher / technical public voice"
     aliases: ["Yann LeCun"]
     profile_url: "http://yann.lecun.com/"
-
-  - company: academic_054
+  - company: researcher_franois_chollet
     name: "François Chollet"
     role: "Researcher / technical public voice"
     aliases: ["François Chollet"]
     profile_url: "https://fchollet.com/"
-
-  - company: academic_055
+  - company: researcher_ilya_sutskever
     name: "Ilya Sutskever"
     role: "Researcher / technical public voice"
     aliases: ["Ilya Sutskever"]
     profile_url: "https://x.com/ilyasut"
-
-  - company: academic_056
+  - company: researcher_demis_hassabis
     name: "Demis Hassabis"
     role: "Researcher / technical public voice"
     aliases: ["Demis Hassabis"]
     profile_url: "https://x.com/demishassabis"
-
-  - company: academic_057
+  - company: researcher_sam_altman
     name: "Sam Altman"
     role: "Researcher / technical public voice"
     aliases: ["Sam Altman"]
     profile_url: "https://blog.samaltman.com/"
-
-  - company: academic_058
+  - company: researcher_dario_amodei
     name: "Dario Amodei"
     role: "Researcher / technical public voice"
     aliases: ["Dario Amodei"]
     profile_url: "https://darioamodei.com/"
-
-  - company: academic_059
+  - company: researcher_jimmy_ba
     name: "Jimmy Ba"
     role: "Researcher / technical public voice"
     aliases: ["Jimmy Ba"]
     profile_url: "https://jimmylba.github.io/"
-
-  - company: academic_060
+  - company: researcher_fei_fei_li
     name: "Fei-Fei Li"
     role: "Researcher / technical public voice"
     aliases: ["Fei-Fei Li"]
     profile_url: "https://profiles.stanford.edu/fei-fei-li"
-
-  - company: academic_061
+  - company: researcher_soumith_chintala
     name: "Soumith Chintala"
     role: "Researcher / technical public voice"
     aliases: ["Soumith Chintala"]
     profile_url: "https://soumith.ch/"
-
-  - company: academic_062
+  - company: researcher_andrew_ng
     name: "Andrew Ng"
     role: "Researcher / technical public voice"
     aliases: ["Andrew Ng"]
     profile_url: "https://www.andrewng.org/"
-
-  - company: academic_063
+  - company: researcher_geoffrey_hinton
     name: "Geoffrey Hinton"
     role: "Researcher / technical public voice"
     aliases: ["Geoffrey Hinton"]
     profile_url: "https://www.cs.toronto.edu/~hinton/"
-
-  - company: academic_064
+  - company: researcher_yoshua_bengio
     name: "Yoshua Bengio"
     role: "Researcher / technical public voice"
     aliases: ["Yoshua Bengio"]
     profile_url: "https://yoshuabengio.org/"
-
-  - company: academic_065
+  - company: researcher_christopher_manning
     name: "Christopher Manning"
     role: "Researcher / technical public voice"
     aliases: ["Christopher Manning"]
     profile_url: "https://nlp.stanford.edu/~manning/"
-
-  - company: academic_066
+  - company: researcher_percy_liang
     name: "Percy Liang"
     role: "Researcher / technical public voice"
     aliases: ["Percy Liang"]
     profile_url: "https://cs.stanford.edu/~pliang/"
-
-  - company: academic_067
+  - company: researcher_dan_jurafsky
     name: "Dan Jurafsky"
     role: "Researcher / technical public voice"
     aliases: ["Dan Jurafsky"]
     profile_url: "https://web.stanford.edu/~jurafsky/"
-
-  - company: academic_068
+  - company: researcher_kaiming_he
     name: "Kaiming He（何恺明）"
     role: "Researcher / technical public voice"
-    aliases: ["Kaiming He（何恺明）"]
+    aliases: ["Kaiming He（何恺明）", "何恺明", "Kaiming He"]
     profile_url: "https://people.csail.mit.edu/kaiming/"
-
-  - company: academic_069
+  - company: researcher_yejin_choi
     name: "Yejin Choi"
     role: "Researcher / technical public voice"
     aliases: ["Yejin Choi"]
     profile_url: "https://homes.cs.washington.edu/~yejin/"
-
-  - company: academic_070
+  - company: researcher_hanna_hajishirzi
     name: "Hanna Hajishirzi"
     role: "Researcher / technical public voice"
     aliases: ["Hanna Hajishirzi"]
     profile_url: "https://homes.cs.washington.edu/~hannaneh/"
-
-  - company: academic_071
+  - company: researcher_dawn_song
     name: "Dawn Song"
     role: "Researcher / technical public voice"
     aliases: ["Dawn Song"]
     profile_url: "https://people.eecs.berkeley.edu/~dawnsong/"
-
-  - company: academic_072
+  - company: researcher_pieter_abbeel
     name: "Pieter Abbeel"
     role: "Researcher / technical public voice"
     aliases: ["Pieter Abbeel"]
     profile_url: "https://people.eecs.berkeley.edu/~pabbeel/"
-
-  - company: academic_073
+  - company: researcher_chelsea_finn
     name: "Chelsea Finn"
     role: "Researcher / technical public voice"
     aliases: ["Chelsea Finn"]
     profile_url: "https://ai.stanford.edu/~cbfinn/"
-
-  - company: academic_074
+  - company: researcher_lilian_weng
     name: "Lilian Weng"
     role: "Researcher / technical public voice"
     aliases: ["Lilian Weng"]
     profile_url: "https://lilianweng.github.io/"
-
-  - company: academic_075
+  - company: researcher_chip_huyen
     name: "Chip Huyen"
     role: "Researcher / technical public voice"
     aliases: ["Chip Huyen"]
     profile_url: "https://huyenchip.com/"
-
-  - company: academic_076
+  - company: researcher_jay_alammar
     name: "Jay Alammar"
     role: "Researcher / technical public voice"
     aliases: ["Jay Alammar"]
     profile_url: "https://jalammar.github.io/"
-
-  - company: academic_077
+  - company: researcher_sebastian_raschka
     name: "Sebastian Raschka"
     role: "Researcher / technical public voice"
     aliases: ["Sebastian Raschka"]
     profile_url: "https://sebastianraschka.com/"
-
-  - company: academic_078
+  - company: researcher_simon_willison
     name: "Simon Willison"
     role: "Researcher / technical public voice"
     aliases: ["Simon Willison"]
     profile_url: "https://simonwillison.net/"
-
-  - company: academic_079
+  - company: researcher_nathan_lambert
     name: "Nathan Lambert"
     role: "Researcher / technical public voice"
     aliases: ["Nathan Lambert"]
     profile_url: "https://www.interconnects.ai/"
-
-  - company: academic_080
+  - company: researcher_eugene_yan
     name: "Eugene Yan"
     role: "Researcher / technical public voice"
     aliases: ["Eugene Yan"]
     profile_url: "https://eugeneyan.com/"
-
-  - company: academic_081
+  - company: researcher_hamel_husain
     name: "Hamel Husain"
     role: "Researcher / technical public voice"
     aliases: ["Hamel Husain"]
     profile_url: "https://hamel.dev/"
-
-  - company: academic_082
+  - company: researcher_arvind_narayanan
     name: "Arvind Narayanan"
     role: "Researcher / technical public voice"
     aliases: ["Arvind Narayanan"]
     profile_url: "https://www.cs.princeton.edu/~arvindn/"
-
-  - company: academic_083
+  - company: researcher_sayash_kapoor
     name: "Sayash Kapoor"
     role: "Researcher / technical public voice"
     aliases: ["Sayash Kapoor"]
     profile_url: "https://www.sayashkapoor.com/"
-
-  - company: academic_084
+  - company: researcher_ethan_mollick
     name: "Ethan Mollick"
     role: "Researcher / technical public voice"
     aliases: ["Ethan Mollick"]
     profile_url: "https://www.oneusefulthing.org/"
-
-  - company: academic_085
+  - company: researcher_chris_olah
     name: "Chris Olah"
     role: "Researcher / technical public voice"
     aliases: ["Chris Olah"]
     profile_url: "https://colah.github.io/"
-
-  - company: academic_086
+  - company: researcher_jeremy_howard
     name: "Jeremy Howard"
     role: "Researcher / technical public voice"
     aliases: ["Jeremy Howard"]
     profile_url: "https://www.fast.ai/about/#jeremy"
-
-  - company: academic_087
+  - company: researcher_tang_jie
     name: "唐杰"
     role: "Researcher / technical public voice"
     aliases: ["唐杰"]
     profile_url: "https://keg.cs.tsinghua.edu.cn/jietang/"
-
-  - company: academic_088
+  - company: researcher_liu_zhiyuan
     name: "刘知远"
     role: "Researcher / technical public voice"
     aliases: ["刘知远"]
     profile_url: "https://nlp.csai.tsinghua.edu.cn/~lzy/"
-
-  - company: academic_089
+  - company: researcher_huang_minlie
     name: "黄民烈"
     role: "Researcher / technical public voice"
     aliases: ["黄民烈"]
     profile_url: "https://coai.cs.tsinghua.edu.cn/hml"
-
-  - company: academic_090
+  - company: researcher_zhu_jun
     name: "朱军"
     role: "Researcher / technical public voice"
     aliases: ["朱军"]
     profile_url: "http://ml.cs.tsinghua.edu.cn/~jun/"
-
-  - company: academic_091
+  - company: researcher_zhou_zhihua
     name: "周志华"
     role: "Researcher / technical public voice"
     aliases: ["周志华"]
     profile_url: "https://cs.nju.edu.cn/zhouzh/"
-
-  - company: academic_092
+  - company: researcher_qiu_xipeng
     name: "邱锡鹏"
     role: "Researcher / technical public voice"
     aliases: ["邱锡鹏"]
     profile_url: "https://xpqiu.github.io/"
-
-  - company: academic_093
+  - company: researcher_li_mu
     name: "李沐"
     role: "Researcher / technical public voice"
     aliases: ["李沐"]
     profile_url: "https://mu-li.com/"
-
-  - company: academic_094
+  - company: researcher_li_hungyi
     name: "李宏毅"
     role: "Researcher / technical public voice"
     aliases: ["李宏毅"]
     profile_url: "https://speech.ee.ntu.edu.tw/~tlkagk/"
-
-  - company: academic_095
+  - company: researcher_wang_shusen
     name: "王树森"
     role: "Researcher / technical public voice"
     aliases: ["王树森"]
     profile_url: "https://wangshusen.github.io/"
-
-  - company: academic_096
+  - company: researcher_tan_xu
     name: "谭旭"
     role: "Researcher / technical public voice"
     aliases: ["谭旭"]
     profile_url: "https://tan-xu.github.io/"
-
-  - company: academic_097
+  - company: researcher_yang_qiang
     name: "杨强"
     role: "Researcher / technical public voice"
     aliases: ["杨强"]
     profile_url: "https://cse.hkust.edu.hk/~qyang/"
-
-  - company: academic_098
+  - company: researcher_kai_fu_lee
     name: "李开复"
     role: "Researcher / technical public voice"
     aliases: ["李开复"]
     profile_url: "https://x.com/kaifulee"
-
-  - company: academic_099
+  - company: researcher_baoyu
     name: "宝玉（Baoyu / dotey）"
     role: "Researcher / technical public voice"
-    aliases: ["宝玉（Baoyu / dotey）"]
+    aliases: ["宝玉（Baoyu / dotey）", "Baoyu", "dotey", "宝玉"]
     profile_url: "https://baoyu.io/"
-
