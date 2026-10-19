@@ -2,7 +2,7 @@
 
 面向高校、研究机构与技术研究者的**证据约束型 AI 技术情报流水线**。项目以 `executive-intelligence` Skill 为方法规范，将实体注册、官方来源发现、来源摘要、量化趋势研判、跨实体去重、Excel 导出和交付前校验拆分为可审计的独立阶段。
 
-本项目不追求生成听起来确定的“行业预测”，而是在明确证据边界的前提下回答：
+本项目在明确证据边界的前提下回答：
 
 - 哪些机构或研究者正在公开讨论、研究或交付某项 AI 技术？
 - 当前判断来自官网、官方代码仓库、个人主页，还是仅来自注册表说明？
@@ -12,9 +12,9 @@
 
 > 当前仓库是一份以 **2026-09-22 / 2026-09-23** 为数据快照日期的实现。部分文件名、日期、查询年份和验收行数写在脚本中；用于新的周期性任务前，请先阅读[已知限制与改造建议](#已知限制与改造建议)。
 
-## 交接结论（先读这一节）
+## 概述
 
-仓库中存在两条执行路径。当前主要维护对象是 **Node.js 高校/研究机构快照流水线**；`src/ai_tech_intelligence/` 下的 **Python 通用流水线**功能更完整，但当前配置和部分测试仍处于迁移状态。两条路径都需要先处理下述版本漂移，才能形成新的正式交付。接手时不要把两条路径的命令、缓存或数据口径混用。
+仓库中存在两条执行路径。当前主要维护对象是 **Node.js 高校/研究机构快照流水线**；`src/ai_tech_intelligence/` 下的 **Python 通用流水线**功能更完整，但当前配置和部分测试仍处于迁移状态。两条路径都需要先处理下述版本漂移，才能形成新的正式交付。
 
 | 路径 | 适用场景 | 主入口 | 数据落点 | 当前状态 |
 | --- | --- | --- | --- | --- |
@@ -22,11 +22,11 @@
 | Python 通用流水线 | 持续采集网页/PDF、写入 SQLite、按文档分析和导出报告 | `python main.py ...` / `ai-tech-intel ...` | `data/intelligence.db`、`outputs/ai_executive_intelligence_*` | 实现已存在但本机未实跑；当前注册表与旧厂商测试不一致 |
 | 模板合并路径 | 把高校情报合并进历史“高管/厂商情报”工作簿 | `merge_academic_into_template.mjs` | 合并版 XLSX、HTML 预览 | 现存合并文件较旧，须重新生成后再验收 |
 
-推荐接手顺序：先执行 `npm.cmd ci` 和 `npm.cmd run verify:academic` 验证冻结交付物，再决定是继续维护快照脚本，还是将业务迁移到 Python + SQLite 主干。若要开始新周期，优先完成日期/路径参数化和统一实体注册表，不要直接覆盖 2026-09 的历史 JSON。
+先执行 `npm.cmd ci` 和 `npm.cmd run verify:academic` 验证冻结交付物，再决定是继续维护快照脚本，还是将业务迁移到 Python + SQLite 主干。若要开始新周期，优先完成日期/路径参数化和统一实体注册表，不要直接覆盖 2026-09 的历史 JSON。
 
 ## 目录
 
-- [交接结论（先读这一节）](#交接结论先读这一节)
+- [概述]
 - [当前仓库验证状态](#当前仓库验证状态)
 - [Skill 的核心原则](#skill-的核心原则)
 - [工作流与系统边界](#工作流与系统边界)
@@ -45,7 +45,6 @@
 - [安全与合规](#安全与合规)
 - [已知限制与改造建议](#已知限制与改造建议)
 - [常见问题](#常见问题)
-- [接手人第一天检查清单](#接手人第一天检查清单)
 
 ## 当前仓库验证状态
 
@@ -61,7 +60,7 @@
 | Python 测试 | **未执行** | 当前机器没有可用 Python；项目要求 Python 3.11+ |
 | Python 测试/配置静态一致性 | **不一致** | 当前注册表只有 99 个 `academic_*` 实体，部分测试仍引用 `openai`、`deepseek` 等旧厂商 ID |
 
-正式交付前建议把独立版和合并版都重新生成。注意当前搜索 JSON 有 311 条来源，而摘要缓存和旧合并契约仍是 304 条；必须先按“当前数据快照”下方说明统一口径，不能直接期待旧验收通过。
+注意当前搜索 JSON 有 311 条来源，而摘要缓存和旧合并契约仍是 304 条；必须先按“当前数据快照”下方说明统一口径，不能直接期待旧验收通过。
 
 ```powershell
 npm.cmd run export:academic
@@ -86,7 +85,7 @@ Skill 位于 [`skills/executive-intelligence/SKILL.md`](skills/executive-intelli
 
 ### 2. 将发现、证据、推断和交付分层
 
-项目明确区分来源发现、证据摘录、趋势研判、报告导出和质量校验。搜索结果摘要不等于网页全文，模型推断也不等于机构承诺。
+项目明确区分来源发现、证据摘录、趋势研判、报告导出和质量校验。搜索结果摘要不等于网页全文。
 
 ### 3. 保守归因
 
@@ -159,14 +158,6 @@ Node.js 路径主要使用搜索摘录；Python 路径会抓取 HTML 或 PDF 正
 | 最高两两趋势相似度 | 0.386 |
 | 实际持久化分析模型 | `qwen3.7-plus` |
 
-这些数字来自当前 JSON 快照，不是未来运行的固定承诺。`academic_web_search_20260922.json` 在 2026-10-19 更新后包含 311 条来源，而 `academic_source_summaries_20260923.json` 仍只有 304 条摘要，缺少 `academic_049` 的 3 条和 `academic_090` 的 4 条新增来源。旧合并校验又硬编码为 304 条，因此当前存在三种口径：
-
-- 保持历史 304 条交付：恢复与摘要文件同批次的搜索 JSON，再验证旧产物；
-- 升级到当前 311 条（推荐用于新交付）：备份并完整重建来源摘要，重新导出，同时把合并校验中的 304 链接/308 行契约改为从输入动态计算；
-- 在口径尚未统一前，只把现有文件视为历史快照，不宣称它代表最新搜索结果。
-
-来源摘要 ID 按“实体 + 当前结果序号”生成，并不是 URL 哈希。若搜索结果顺序改变，旧摘要可能与新 URL 错配；输入变化后应完整重建摘要，而不是只补缺失的 7 条。
-
 ## 项目结构
 
 ```text
@@ -198,7 +189,7 @@ AI-Tech-Intelligence/
 └─ README.md
 ```
 
-`.gitignore` 会忽略 `.env.txt`、`.artifact-runtime/`、SQLite、`outputs/` 和 `node_modules/`。仓库中有少量历史 JSON/XLSX 被人工强制纳入版本控制，但新的克隆环境不应假定本地运行时输入或所有模板都存在。特别是 `.artifact-runtime/academic_source_rows.json` 与 `outputs/ai_executive_intelligence_web_20260921.xlsx`，必须在交接时单独确认。
+`.gitignore` 会忽略 `.env.txt`、`.artifact-runtime/`、SQLite、`outputs/` 和 `node_modules/`。仓库中有少量历史 JSON/XLSX 被人工强制纳入版本控制，但新的克隆环境不应假定本地运行时输入或所有模板都存在。特别是 `.artifact-runtime/academic_source_rows.json` 与 `outputs/ai_executive_intelligence_web_20260921.xlsx`。
 
 ## 环境要求
 
@@ -606,7 +597,6 @@ GitHub 结果必须位于登记的组织或用户路径下；X/Twitter 结果必
 
 同时生成只展示前 25 条趋势的 HTML 预览。预览用于视觉检查，不是完整交付物。
 
-> 仓库中现存的独立 XLSX 仍只有前五页，说明产物落后于当前导出代码。`verify_academic_workbook.mjs` 目前也只强制检查前五页；正式交付前应重新导出，并人工确认八页都存在。
 
 ### 模板合并工作簿
 
@@ -709,134 +699,3 @@ Remove-Item Env:ACADEMIC_RETRY_CONCURRENCY
 当前工作副本中存在 `.env.txt`，但它被 Git 忽略。本次文档核对没有读取其中的值。交接密钥时应使用密码管理器或公司批准的安全通道，并由接手人重新验证/轮换；不要通过 README、聊天记录、Excel 或 Git 传递。
 
 `outputs/` 虽被忽略，历史上仍有文件通过强制添加进入 Git。判断文件是否会随仓库交付，应使用 `git ls-files data outputs .artifact-runtime`，不要只看 `.gitignore`。
-
-## 已知限制与改造建议
-
-### 日期和路径是快照化的
-
-多个脚本把 `2026-09-22`、`2026-09-23`、查询年份和输出路径写在代码中。新一轮运行前应改为统一的截至日期、运行 ID 和路径配置，避免覆盖旧快照或产生过期阈值。
-
-### 主要依据搜索摘录
-
-Node.js 快照路径持久化的材料主要是搜索摘要，不是完整网页正文。Python 路径已支持 HTML/PDF 正文与内容哈希，但尚未提供原始页面快照或对象存储。生产化时建议分别保存发现摘要、原始响应、清洗正文、证据片段、抓取时间、内容哈希和失败原因。
-
-### 注册表尚未成为唯一事实源
-
-JavaScript 流水线直接从 `.artifact-runtime` 构造实体，YAML 主要用于治理和导出。建议统一为一个稳定、版本化的实体注册表，并让所有脚本只从该注册表读取。
-
-当前 `build_academic_registry.mjs` 会直接覆盖 `config/companies.yaml`、`people.yaml` 和 `sources.yaml`。这正是旧厂商测试与高校配置脱节的主要原因。新架构至少应拆分 `config/vendor/` 与 `config/academic/`，并通过 `--config-dir` 显式选择。
-
-### 校验规则与当前数量耦合
-
-验证脚本硬编码 99 个实体和部分工作表尺寸，合并验收还硬编码 304 条来源；独立工作簿验收没有覆盖新增的三个技术分析页。建议将期望数量和工作表契约从输入/导出定义动态计算，同时保留可选的冻结快照契约。
-
-### 代码与历史产物存在版本漂移
-
-当前两个现存 XLSX 都是在新增三张技术分析页之前生成的。独立版仍能通过旧的五页核心验收，合并版会被新验收脚本拒绝。README 和代码修改完成后，应重新运行两条导出路径，并将新产物与当前 commit 一起标记版本或 run ID。
-
-### 当前年份固定为 2026
-
-`evidenceScore()` 中的当前年份是常量。跨年度运行时应由截至日期派生，否则近期来源评分会逐渐失真。
-
-### 模型回退只保证流程完成
-
-确定性回退能避免整批任务因 API 失败中断，但结果只能作为待复核草稿。模板合并验证要求来源摘要中不存在回退结果，因此正式交付前必须重试或人工修订。
-
-### 相似度不是语义等价检测
-
-Jaccard 方法适合发现明显模板化文本，但可能漏掉语义相同、措辞不同的结论，也可能误报共享术语较多的不同结论。可在保留可解释词面指标的基础上增加嵌入相似度与人工抽查。
-
-## 常见问题
-
-### 提示缺少搜索密钥
-
-确认项目根目录存在 `.env.txt`。Node.js 高校采集脚本至少需要 Tavily 或 Serper，Exa、Bocha、Bing、SerpAPI 对这条路径无效；Python 路径支持六种服务，可用 `python main.py doctor` 查看识别结果。
-
-### 提示缺少分析模型密钥或地址
-
-Node.js 的分析和摘要阶段要求 OpenAI 兼容接口。确认 `GENERAL_AI_REPORT_LLM_API_KEY` 与 `GENERAL_AI_REPORT_LLM_BASE_URL` 均已配置。Python 路径不配置 LLM 时会进入 `heuristic_fallback`。基础地址既可填写 API 根地址，也可直接填写完整的 chat completions 地址。
-
-### 为什么 `ATI_SEARCH_PROVIDER` 写进 `.env.txt` 没生效
-
-当前 Python CLI 在加载 `.env.txt` 前已经计算了参数默认值。请在命令中显式添加 `--search-provider <名称>`，或先设置 PowerShell 进程环境变量；这属于已知实现问题。
-
-### 为什么 Python 测试找不到 `openai` 或 `deepseek`
-
-当前 YAML 已被高校注册表生成脚本覆盖，只包含 `academic_001` 至 `academic_099`；部分测试仍使用旧厂商 ID。使用独立测试 fixture、恢复厂商配置，或迁移测试后再判断其余失败。
-
-### 为什么独立工作簿通过校验却没有三个技术分析页
-
-现有独立 XLSX 和 `verify_academic_workbook.mjs` 都沿用五页基础契约，而当前导出代码已经新增三页。重新运行 `npm.cmd run export:academic`，并人工确认总计八个工作表；后续应把这三页加入自动验收。
-
-### 为什么结果仍是旧模型或旧来源
-
-脚本支持断点续跑，会复用已有 JSON。修改模型、提示词或数据后，应先备份并删除对应缓存项，再重新执行。
-
-### 为什么很多记录是 `registry_baseline_only`
-
-常见原因包括官方域名错误、查询年份过窄、页面未被索引、动态渲染、反爬限制，或结果没有命中技术关键词。应先检查该实体的查询式、错误列表和官方域名，而不是直接提高概率。
-
-### 为什么 Excel 校验提示行数不匹配
-
-当前合并校验器绑定 99 实体和 304 来源的旧冻结快照；当前搜索 JSON 已有 311 条。修改实体集或检索结果后，需要同步更新契约，或把固定数量改为从 JSON 动态计算。
-
-### 报错 `Object.groupBy is not a function`
-
-升级到 Node.js 22 或更高版本并重新安装依赖。
-
-### PowerShell 无法运行 npm
-
-使用 `npm.cmd ci` 和 `npm.cmd run <script>`，绕过可能被执行策略拦截的 `npm.ps1`。
-
-### 生成 Excel 后能否直接发布
-
-不能。还应运行对应验证脚本、查看 HTML 预览、打开 Excel 检查布局和链接，并对高影响结论阅读全文复核具名归因、日期和数值口径。
-
-## 接手人第一天检查清单
-
-- [ ] 运行 `git status --short`，确认接手基线无意外本地修改；
-- [ ] 用 `git ls-files data outputs .artifact-runtime` 区分已跟踪快照和仅本机存在的文件；
-- [ ] 从原维护者处通过安全渠道取得 `.artifact-runtime/academic_source_rows.json`，并核对哈希/行数；
-- [ ] 若需要模板合并，单独取得未被 Git 跟踪的 `outputs/ai_executive_intelligence_web_20260921.xlsx`；
-- [ ] 从 `.env.example` 创建自己的 `.env.txt`，不要复制或提交他人的密钥；
-- [ ] 执行 `npm.cmd ci`、`npm.cmd run verify:academic`；
-- [ ] 重新生成独立版和合并版工作簿，确认新增的三张技术分析页存在；
-- [ ] 安装 Python 3.11+，运行 `doctor`，并先修复测试 fixture/注册表不一致再把 pytest 作为门禁；
-- [ ] 明确后续主路径：维持冻结 Node 快照，或迁移到 Python + SQLite；不要让两套缓存同时成为事实源。
-
-### 维护导航
-
-| 要修改的内容 | 主要文件 |
-| --- | --- |
-| 高校实体原始清单 | `.artifact-runtime/academic_source_rows.json`（当前未跟踪） |
-| YAML 注册表生成 | `scripts/build_academic_registry.mjs` |
-| Node 搜索查询、官方域过滤 | `scripts/collect_academic_intelligence.mjs`、`scripts/lib.mjs` |
-| Node 量化研判与去重 | `scripts/analyze_academic_outlooks.mjs` |
-| 来源摘要 | `scripts/summarize_academic_sources.mjs` |
-| 技术分类 | `config/technology_taxonomy.json`、`scripts/technology_intelligence.mjs`、`src/ai_tech_intelligence/taxonomy.py` |
-| 独立/合并 Excel 布局 | `scripts/export_academic_workbook.mjs`、`scripts/merge_academic_into_template.mjs` |
-| Python CLI 与编排 | `src/ai_tech_intelligence/cli.py`、`pipeline/runner.py` |
-| Python 采集器 | `src/ai_tech_intelligence/collectors/` |
-| Python 分析提示词与规则降级 | `src/ai_tech_intelligence/pipeline/analyze.py` |
-| SQLite 模型 | `src/ai_tech_intelligence/db.py` |
-| Python 报告 | `src/ai_tech_intelligence/reports/export.py` |
-| 验收与回归 | `scripts/verify_*.mjs`、`tests/`、`eval/` |
-
-## 推荐交付检查清单
-
-- [ ] 实体主表和官方域名已人工复核；
-- [ ] 搜索与分析使用的截至日期一致；
-- [ ] API 密钥未进入 Git、JSON、Excel 或日志；
-- [ ] `analysis_model` 与实际调用模型一致；
-- [ ] 注册表基线项已标记为证据不足；
-- [ ] 没有无来源支持的性能提升数字；
-- [ ] 具名人物观点已在原文中确认；
-- [ ] 高相似趋势已改写或进入人工复核；
-- [ ] 对应校验脚本已经通过；
-- [ ] Excel 和 HTML 已完成人工视觉检查；
-- [ ] 重要结论的官方链接可访问；
-- [ ] 报告明确说明概率是主观区间，不是机构承诺。
-
----
-
-如果要把本项目改造成持续运行的生产级情报系统，优先建议完成三项改造：**统一并版本化实体注册表、把截至日期与路径参数化、增加网页正文证据存档**。这三项会显著提升跨周期可复现性和审计能力。
