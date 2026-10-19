@@ -1,0 +1,100 @@
+[
+  {
+    "id": "llm",
+    "name": "LLM架构与语言能力",
+    "keywords": ["llm", "large language model", "大语言模型", "语言模型", "foundation model", "基础模型", "transformer", "attention", "moe", "mixture of experts", "稀疏专家", "tokenizer", "language modeling"],
+    "module_terms": ["Transformer", "Attention", "MoE/FFN", "语言建模", "模型架构"],
+    "product_focus": "关注模型架构、语言能力、模型规模与单位推理成本的联动，判断是否需要调整基座模型、路由或模型组合。"
+  },
+  {
+    "id": "multimodal",
+    "name": "多模态理解与生成",
+    "keywords": ["multimodal", "多模态", "vision-language", "vision language", "vlm", "视觉语言", "图像理解", "视频理解", "audio", "语音", "视频生成", "图像生成", "text-to-video", "跨模态"],
+    "module_terms": ["视觉语言模型", "图像/视频理解", "音频与语音", "跨模态融合", "多模态生成"],
+    "product_focus": "关注文本、图像、音频和视频是否由统一模型处理，以及多模态能力能否稳定进入创作、搜索、办公和行业产品。"
+  },
+  {
+    "id": "world_model",
+    "name": "世界模型与仿真",
+    "keywords": ["world model", "世界模型", "environment model", "环境模型", "simulation", "simulator", "仿真", "interactive environment", "交互环境", "视频世界模型", "spatial intelligence", "空间智能"],
+    "module_terms": ["环境建模", "交互式仿真", "空间智能", "视频世界模型", "预测式状态转移"],
+    "product_focus": "关注模型能否预测环境状态并支持可交互仿真；产品侧重点是游戏、机器人、自动驾驶和数字孪生的可控生成。"
+  },
+  {
+    "id": "embodied",
+    "name": "具身智能与机器人",
+    "keywords": ["embodied", "具身", "robot", "robotics", "机器人", "vla", "vision-language-action", "视觉-语言-动作", "physical ai", "物理智能", "manipulation", "抓取", "自动驾驶"],
+    "module_terms": ["VLA", "感知-规划-动作闭环", "机器人操作", "移动与导航", "物理世界交互"],
+    "product_focus": "关注感知、规划和动作闭环的可靠性，以及仿真数据、真实世界数据和硬件平台能否共同支撑规模部署。"
+  },
+  {
+    "id": "pretraining",
+    "name": "训练范式：预训练",
+    "keywords": ["pretrain", "pre-training", "pretraining", "预训练", "continued pretraining", "持续预训练", "scaling law", "扩展定律", "data mixture", "数据配比", "synthetic pretraining", "预训练数据", "训练语料", "next-token", "下一个词"],
+    "module_terms": ["数据配比", "规模扩展", "持续预训练", "合成预训练数据", "目标函数"],
+    "product_focus": "关注数据质量、规模扩展、训练稳定性和基础能力边界，评估新增预训练投入能否形成可验证的能力增益。"
+  },
+  {
+    "id": "posttraining",
+    "name": "训练范式：后训练",
+    "keywords": ["post-train", "post training", "posttraining", "后训练", "rlhf", "rlaif", "reinforcement learning", "强化学习", "dpo", "grpo", "sft", "instruction tuning", "指令微调", "fine-tun", "微调", "alignment tuning", "对齐训练", "reward model", "奖励模型", "preference data", "偏好数据", "distillation", "蒸馏"],
+    "module_terms": ["SFT/指令微调", "强化学习", "偏好优化", "奖励模型", "蒸馏与自训练"],
+    "product_focus": "关注后训练数据、奖励信号、可验证任务和安全对齐如何改变推理、Agent与专业任务表现。"
+  },
+  {
+    "id": "agent",
+    "name": "Agent与工具使用",
+    "keywords": ["agent", "agentic", "智能体", "tool use", "工具调用", "computer use", "计算机使用", "multi-agent", "多智能体", "workflow", "工作流", "task assistant", "任务助理", "planning agent", "browser use", "function calling"],
+    "module_terms": ["工具调用", "规划与执行", "多智能体协作", "计算机使用", "长程任务"],
+    "product_focus": "关注任务完成率、长程可靠性、工具权限与成本；产品路线应从演示转向可审计、可恢复的真实工作流。"
+  },
+  {
+    "id": "reasoning",
+    "name": "推理、规划与可验证计算",
+    "keywords": ["reasoning", "推理", "chain of thought", "思维链", "test-time compute", "测试时计算", "planning", "规划", "math", "数学", "theorem", "定理", "proof", "证明", "verification", "可验证", "self-correction", "自校正"],
+    "module_terms": ["复杂推理", "测试时计算", "规划", "自校正", "可验证推理"],
+    "product_focus": "关注可验证正确率、推理时延和单位任务成本，而不是只看静态榜单；高风险场景需要外部验证器和失败回退。"
+  },
+  {
+    "id": "context_memory",
+    "name": "长上下文、记忆与检索",
+    "keywords": ["long context", "long-context", "长上下文", "context window", "上下文窗口", "memory", "记忆", "rag", "retrieval augmented", "检索增强", "kv cache", "kv缓存", "cache compression", "上下文管理"],
+    "module_terms": ["长上下文", "外部记忆", "RAG", "KV Cache", "上下文管理"],
+    "product_focus": "关注有效上下文利用率、记忆一致性、检索质量和缓存成本，避免把标称窗口长度等同于真实任务能力。"
+  },
+  {
+    "id": "efficiency_infra",
+    "name": "训练推理效率与基础设施",
+    "keywords": ["inference", "推理效率", "serving", "部署", "latency", "时延", "throughput", "吞吐", "quantization", "量化", "compression", "压缩", "sparse", "稀疏", "training efficiency", "训练效率", "ai chip", "ai芯片", "gpu", "xpu", "算力", "服务器", "数据中心", "cloud", "云基础设施", "成本"],
+    "module_terms": ["训练系统", "推理服务", "模型压缩", "异构算力", "数据中心"],
+    "product_focus": "关注吞吐、时延、能耗和单位任务成本，并把模型结构、服务框架与芯片供给放在同一条成本曲线上评估。"
+  },
+  {
+    "id": "ai_science",
+    "name": "AI for Science与专业模型",
+    "keywords": ["ai for science", "ai4science", "科学发现", "scientific discovery", "biology", "生物", "protein", "蛋白质", "drug", "药物", "material", "材料", "climate", "气候", "medical", "医学", "clinical", "临床", "genomics", "基因"],
+    "module_terms": ["科学推理", "生物医药", "材料与化学", "临床与医学", "科研智能体"],
+    "product_focus": "关注领域数据、专业评测、实验闭环和专家验证；产品价值取决于能否进入真实科研或临床流程。"
+  },
+  {
+    "id": "safety_eval",
+    "name": "安全、对齐与评测",
+    "keywords": ["safety", "安全", "alignment", "对齐", "evaluation", "评测", "benchmark", "基准", "red team", "红队", "governance", "治理", "interpretability", "可解释", "transparency", "透明度", "bias", "偏见", "robustness", "鲁棒性", "hallucination", "幻觉"],
+    "module_terms": ["能力评测", "安全对齐", "红队测试", "透明度与治理", "鲁棒性"],
+    "product_focus": "关注能力与风险是否有可重复评测、上线门槛和持续监控；把安全结论绑定到具体人群、任务和版本。"
+  },
+  {
+    "id": "open_ecosystem",
+    "name": "开源、数据与开发者生态",
+    "keywords": ["open source", "open-source", "开源", "open weight", "开放权重", "github", "dataset", "数据集", "developer", "开发者", "ecosystem", "生态", "model hub", "模型库", "api", "maas"],
+    "module_terms": ["开放权重", "数据集", "开发者工具", "模型服务", "社区生态"],
+    "product_focus": "关注开放许可、复现成本、开发者采用和模型服务覆盖，判断生态扩张能否转化为真实调用与应用。"
+  },
+  {
+    "id": "on_device",
+    "name": "端侧AI与软硬件协同",
+    "keywords": ["on-device", "on device", "端侧", "端上", "edge ai", "边缘ai", "mobile", "手机", "pc", "vehicle", "车载", "iot", "物联网", "端云协同", "npu"],
+    "module_terms": ["端侧模型", "端云协同", "移动设备", "车载与IoT", "软硬件协同"],
+    "product_focus": "关注模型压缩、隐私、功耗与离线能力，评估哪些能力应下沉设备、哪些仍需云端协同。"
+  }
+]

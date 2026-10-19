@@ -2,6 +2,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import ExcelJS from "exceljs";
 import { DATASET_PATH, ROOT, readJson, toEntities } from "./lib.mjs";
+import { buildEvolutionRows, buildStrategicProfiles, normalizeClassificationRecords } from "./technology_intelligence.mjs";
 
 const INPUT_PATH = path.join(ROOT, "outputs", "ai_executive_intelligence_web_20260921.xlsx");
 const OUTPUT_PATH = path.join(ROOT, "outputs", "ai_executive_intelligence_web_20260921_高校研究机构补充_20260923.xlsx");
@@ -16,7 +17,7 @@ const entities = toEntities(registryRows);
 const workbook = new ExcelJS.Workbook();
 await workbook.xlsx.readFile(INPUT_PATH);
 
-for (const name of ["高校研究机构情报", "高校趋势汇总"]) {
+for (const name of ["高校研究机构情报", "高校趋势汇总", "前沿技术分类", "技术演进沙盘", "主体战略画像"]) {
   const existing = workbook.getWorksheet(name);
   if (existing) workbook.removeWorksheet(existing.id);
 }
@@ -57,6 +58,12 @@ function styleBodyRow(row, height = 112) {
   });
 }
 
+function setLink(cell, url, text = url) {
+  if (!url) return;
+  cell.value = { text, hyperlink: url, tooltip: url };
+  cell.font = { name: "Arial", size: 10, color: { argb: "0563C1" }, underline: true };
+}
+
 function parseDate(value) {
   if (!value) return null;
   const date = new Date(value);
@@ -78,6 +85,7 @@ detailWidths.forEach((width, index) => { detail.getColumn(index + 1).width = wid
 let sourceRows = 0;
 let trendRows = 0;
 let directStatementRows = 0;
+const technologySourceRecords = [];
 for (const entity of entities) {
   const sources = search.entities[entity.id]?.results ?? [];
   const outlook = analysis.outlooks[entity.id];
@@ -128,6 +136,25 @@ for (const entity of entities) {
       trendRows += 1;
     }
     if (summary.direct_statement) directStatementRows += 1;
+    technologySourceRecords.push({
+      sourceKind: entity.entity_type === "institution" ? "高校/研究机构" : "研究者/技术发言人",
+      subject: entity.name,
+      sourceName: entity.name,
+      role: entity.entity_type === "institution" ? "高校 / 研究机构" : "研究者 / 技术公共发声者",
+      date: source.published_date ?? "",
+      title: source.title,
+      url: source.url,
+      tags: summary.technical_tags.join(", "),
+      evidence: summary.core_points.join("；"),
+      statement: summary.direct_statement ? summary.core_points.join("；") : "",
+      trend: outlook.trend_hypothesis,
+      evidenceLevel: outlook.evidence_level,
+      confidence: outlook.probability_midpoint_pct / 100,
+      timeWindow: `${outlook.horizon_months_low}-${outlook.horizon_months_high}个月（自2026-09-22）`,
+      contentBasis: isBaseline ? "注册表基线" : "官方搜索摘录",
+      evidenceStatus: isBaseline ? "待补充近期正文" : "摘要级通过",
+      model: `${summary.analysis_method} / ${summary.analysis_model}`,
+    });
     sourceRows += 1;
   });
 }
@@ -160,6 +187,74 @@ for (const entity of entities) {
   if (outlook.forecast_status === "insufficient_evidence") row.getCell(7).fill = { type: "pattern", pattern: "solid", fgColor: { argb: colors.red } };
 }
 
+const executiveSheet = workbook.getWorksheet("高管发言");
+if (executiveSheet) {
+  for (let rowNumber = 5; rowNumber <= executiveSheet.rowCount; rowNumber += 1) {
+    const row = executiveSheet.getRow(rowNumber);
+    if (!String(row.getCell(1).value ?? "").trim()) continue;
+    const linkValue = row.getCell(10).value;
+    const url = typeof linkValue === "object" && linkValue?.hyperlink ? linkValue.hyperlink : String(linkValue ?? "");
+    technologySourceRecords.push({
+      sourceKind: "企业高管",
+      subject: String(row.getCell(1).value ?? ""),
+      sourceName: String(row.getCell(2).value ?? ""),
+      role: String(row.getCell(3).value ?? ""),
+      date: row.getCell(4).value ?? "",
+      title: String(row.getCell(5).value ?? "").slice(0, 240),
+      url,
+      tags: "",
+      evidence: String(row.getCell(6).value ?? ""),
+      statement: String(row.getCell(5).value ?? ""),
+      trend: String(row.getCell(7).value ?? ""),
+      evidenceLevel: String(row.getCell(8).value ?? ""),
+      confidence: Number(row.getCell(9).value) || null,
+      timeWindow: "",
+      contentBasis: String(row.getCell(11).value ?? ""),
+      evidenceStatus: "具名高管发言 / 原文可追溯",
+      model: String(row.getCell(12).value ?? ""),
+    });
+  }
+}
+
+const classificationRows = normalizeClassificationRecords(technologySourceRecords);
+const classificationHeaders = ["信息源类型", "主体", "发言人/来源", "职位", "日期", "一级技术分类", "技术模块/命中词", "是否主分类", "证据摘要", "趋势/主张", "成熟度 1-5", "成熟度说明", "采用阶段", "证据等级", "置信度", "时间窗口", "官方链接", "内容基础", "归因/证据状态", "分析模型"];
+const classificationSheet = workbook.addWorksheet("前沿技术分类");
+titleAndHeaders(classificationSheet, "高校研究机构与高管发言前沿技术分类", `按统一技术分类展开 ${technologySourceRecords.length} 条材料；一条材料可映射至最多 3 个技术方向，主分类用于优先排序。`, classificationHeaders);
+[18, 28, 26, 24, 14, 26, 32, 12, 62, 68, 12, 22, 22, 18, 12, 24, 56, 20, 30, 32].forEach((width, index) => { classificationSheet.getColumn(index + 1).width = width; });
+for (const item of classificationRows) {
+  const row = classificationSheet.addRow([
+    item.sourceKind, item.subject, item.sourceName, item.role, parseDate(item.date), item.category, item.module,
+    item.isPrimary ? "是" : "否", item.evidence, item.trend, item.maturityStage, item.maturityLabel, item.adoptionStage,
+    item.evidenceLevel, item.confidence, item.timeWindow, item.url, item.contentBasis, item.evidenceStatus, item.model,
+  ]);
+  styleBodyRow(row, 100);
+  if (row.getCell(5).value) row.getCell(5).numFmt = "yyyy-mm-dd";
+  if (item.confidence !== null) row.getCell(15).numFmt = "0%";
+  if (item.url) setLink(row.getCell(17), item.url);
+}
+
+const evolutionHeaders = ["前沿技术", "核心模块/演进方向", "技术状态", "采用阶段", "信号数", "主体数", "代表高校/机构", "代表厂商/发言人", "代表证据", "未来可观察变化", "产品/战略影响", "证据等级", "平均置信度", "主要来源"];
+const evolutionSheet = workbook.addWorksheet("技术演进沙盘");
+titleAndHeaders(evolutionSheet, "前沿技术演进沙盘", "横向汇总高校研究、研究者材料与企业高管发言；成熟度和采用阶段来自可观察证据，不把模型推断写成已确认事实。", evolutionHeaders);
+[26, 36, 34, 24, 10, 10, 48, 48, 76, 76, 68, 22, 14, 58].forEach((width, index) => { evolutionSheet.getColumn(index + 1).width = width; });
+for (const item of buildEvolutionRows(classificationRows)) {
+  const row = evolutionSheet.addRow([item.category, item.modules, item.status, item.adoption, item.signalCount, item.subjectCount, item.institutionExamples, item.executiveExamples, item.representativeEvidence, item.nextSignals, item.productImpact, item.evidenceLevel, item.confidence, item.urls]);
+  styleBodyRow(row, 126);
+  if (item.confidence !== null) row.getCell(13).numFmt = "0%";
+  if (item.urls) setLink(row.getCell(14), item.urls.split("\n")[0], item.urls);
+}
+
+const profileHeaders = ["主体", "类型", "核心定位", "研究路线", "产品/应用信号", "组织/资本/基础设施", "关键行动", "未来重点", "领先指标", "风险/反向信号", "证据等级", "平均置信度", "主要来源"];
+const profileSheet = workbook.addWorksheet("主体战略画像");
+titleAndHeaders(profileSheet, "主体战略画像", "优先展示企业高管主体和证据较丰富的高校/研究机构；空缺表示当前材料没有形成可核验信号。", profileHeaders);
+[28, 16, 38, 52, 68, 68, 64, 76, 60, 56, 20, 14, 58].forEach((width, index) => { profileSheet.getColumn(index + 1).width = width; });
+for (const item of buildStrategicProfiles(classificationRows)) {
+  const row = profileSheet.addRow([item.subject, item.sourceKind, item.positioning, item.research, item.products, item.organizationInfra, item.keyActions, item.outlook, item.leadingIndicators, item.risks, item.evidenceLevel, item.confidence, item.urls]);
+  styleBodyRow(row, 132);
+  if (item.confidence !== null) row.getCell(12).numFmt = "0%";
+  if (item.urls) setLink(row.getCell(13), item.urls.split("\n")[0], item.urls);
+}
+
 const notes = workbook.getWorksheet("说明与口径");
 if (notes) {
   const additions = [
@@ -168,6 +263,8 @@ if (notes) {
     ["趋势去重", `每个实体只在首条来源填写一次未来趋势；共 ${trendRows} 条独特趋势，精确重复 0，最高两两相似度 ${analysis.metrics.max_pairwise_similarity}。`],
     ["量化口径", "趋势包含主观概率区间、时间窗口、领先指标、可核验阈值和证伪条件。没有数值基线时不虚构模型性能涨幅。"],
     ["证据限制", "高校补充页主要使用官方搜索摘录，不等于完整网页正文；具名发言线索和重要趋势应打开官方链接阅读全文复核。"],
+    ["前沿技术分类", "统一分类覆盖 LLM、多模态、世界模型、具身智能、预训练、后训练、Agent、推理、长上下文、效率与基础设施、AI for Science、安全评测、开源生态和端侧 AI。一条材料最多映射 3 个方向。"],
+    ["技术演进沙盘", "成熟度和采用阶段由材料中的研究、原型、发布、部署、客户或规模化信号确定；代表证据、主要来源和反向信号用于复核，不是厂商承诺。"],
   ];
   for (const values of additions) {
     const row = notes.addRow(values);
@@ -184,4 +281,4 @@ if (notes) {
 await fs.mkdir(path.dirname(OUTPUT_PATH), { recursive: true });
 await workbook.xlsx.writeFile(OUTPUT_PATH);
 const stat = await fs.stat(OUTPUT_PATH);
-console.log(JSON.stringify({ input: INPUT_PATH, output: OUTPUT_PATH, bytes: stat.size, sourceRows, trendRows, directStatementRows, sheets: workbook.worksheets.map((sheet) => sheet.name) }, null, 2));
+console.log(JSON.stringify({ input: INPUT_PATH, output: OUTPUT_PATH, bytes: stat.size, sourceRows, trendRows, directStatementRows, classifiedRows: classificationRows.length, evolutionRows: evolutionSheet.rowCount - 4, profileRows: profileSheet.rowCount - 4, sheets: workbook.worksheets.map((sheet) => sheet.name) }, null, 2));

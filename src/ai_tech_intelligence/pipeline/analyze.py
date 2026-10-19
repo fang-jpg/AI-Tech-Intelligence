@@ -8,6 +8,7 @@ from typing import Any
 import httpx
 
 from ..models import Analysis, EvidenceLevel, SourceTier
+from ..taxonomy import adoption_stage, classify_text, infer_maturity
 from ..utils import compact_excerpt, extract_json_object, normalized_for_match
 
 
@@ -138,11 +139,14 @@ future_commitments 每项包含 direction、evidence；只收集明确的未来�
 质量要求：
 1. trend_summary 写 2-4 句，必须指出该机构/人物最具区分度的技术信号、变化机制与潜在下一步，禁止套用“加强推理、多模态、Agent”等可复制到任何主体的模板句。
 2. directions 输出 1-3 个互不重复的方向；若两个方向的机制或可观察结果相同，合并为一个。
-3. directions 每项包含 direction、reasoning、evidence、evidence_level、confidence、quantitative_outlook。
-4. quantitative_outlook 必须包含 probability_low、probability_base、probability_high、horizon_months、observable_metric、forecast_range、assumptions、falsifiers。
-5. 三个 probability 是分析师估计的方向发生概率，取值 0-1，且 low <= base <= high；它们不是来源事实。horizon_months 只能为 12、24 或 36。
-6. observable_metric 必须是未来能核验的指标，例如正式模型/数据集发布次数、公开评测覆盖数、推理成本变化、基准改善或开放权重规模。forecast_range 写带单位的区间；没有原文数字基线时，必须写“分析估计”，不得伪造当前参数量、成本或基准成绩。
-7. assumptions 列出 1-3 个关键假设，falsifiers 列出 1-2 个可使判断失效的观察条件。
+3. directions 每项必须包含 technology_domain、technical_module、direction、evolution_mechanism、maturity_stage_1_5、adoption_status、representative_examples、product_implications、reasoning、evidence、evidence_level、confidence、quantitative_outlook。
+4. technology_domain 必须从 LLM架构与语言能力、多模态理解与生成、世界模型与仿真、具身智能与机器人、训练范式：预训练、训练范式：后训练、Agent与工具使用、推理、规划与可验证计算、长上下文、记忆与检索、训练推理效率与基础设施、AI for Science与专业模型、安全、对齐与评测、开源、数据与开发者生态、端侧AI与软硬件协同中选择。technical_module 写到 Attention、MoE、VLA、RLHF、Agent规划、KV Cache 等可比较的模块层；禁止只重复大类名称。
+5. maturity_stage_1_5 使用 1=早期研究、2=多项研究/原型、3=可复现实验或持续项目、4=产品化/规模采用、5=成熟基础设施或标准生态。adoption_status 只能是研究探索、研究原型、工程验证/产品导入、规模应用之一。representative_examples 只能使用输入证据中的模型、系统、数据集、评测或产品名。
+6. product_implications 必须回答“这条演进对模型/产品/基础设施的具体决策意味着什么”，不得写空泛的“提升能力”或“保持领先”。evolution_mechanism 必须说明从当前信号到下一步的机制链。
+7. quantitative_outlook 必须包含 probability_low、probability_base、probability_high、horizon_months、observable_metric、forecast_range、assumptions、counter_signals、falsifiers。
+8. 三个 probability 是分析师估计的方向发生概率，取值 0-1，且 low <= base <= high；它们不是来源事实。horizon_months 只能为 12、24 或 36。
+9. observable_metric 必须是未来能核验的指标，例如正式模型/数据集发布次数、公开评测覆盖数、推理成本变化、基准改善或开放权重规模。forecast_range 写带单位的区间；没有原文数字基线时，必须写“分析估计”，不得伪造当前参数量、成本或基准成绩。
+10. assumptions 列出 1-3 个关键假设，counter_signals 与 falsifiers 各列出 1-2 个降低或推翻判断的观察条件。
 
 evidence_level 只能是 Explicit、Strong inference、Speculative。Explicit 仅用于原文明确未来计划；Strong inference 需要多个一致信号；单一模糊信号只能是 Speculative。confidence 为 0 到 1。
 trend_summary 必须明确这是“基于公开信号的推断”，不能写成确定事实。"""
@@ -183,7 +187,10 @@ trend_summary 必须明确这是“基于公开信号的推断”，不能写成
             if level == EvidenceLevel.EXPLICIT:
                 level = EvidenceLevel.SPECULATIVE
         raw_directions = trends.get("directions") if isinstance(trends.get("directions"), list) else []
-        directions = _deduplicate_directions([item for item in raw_directions if isinstance(item, dict)])
+        directions = [
+            _normalize_direction_fields(item)
+            for item in _deduplicate_directions([item for item in raw_directions if isinstance(item, dict)])
+        ]
         return Analysis(
             document_id=int(document["id"]),
             core_points=[str(value) for value in facts.get("core_points", []) if str(value).strip()][:8],
@@ -221,16 +228,38 @@ trend_summary 必须明确这是“基于公开信号的推断”，不能写成
         else:
             level = EvidenceLevel.SPECULATIVE
             confidence = 0.35 if signals else 0.2
-        directions = [
-            {
-                "direction": TREND_LABELS[item["tag"]],
-                "reasoning": f"原文出现 {item['tag']} 相关信号；规则分析未使用外部信息。",
-                "evidence": item["evidence"],
-                "evidence_level": str(level),
-                "confidence": confidence,
-            }
-            for item in signals[:5]
-        ]
+        directions = []
+        for item in signals[:5]:
+            categories = classify_text([item["tag"], item["description"], item["evidence"]], max_categories=1)
+            category = categories[0] if categories else {"name": "其他前沿技术与应用", "module_terms": [item["tag"]], "product_focus": "需要更多证据后判断产品影响。"}
+            maturity, _ = infer_maturity({"technical_signals": signals, "title": document.get("title"), "trend_summary": item["description"], "confidence": confidence})
+            directions.append(
+                {
+                    "technology_domain": category["name"],
+                    "technical_module": "、".join(category.get("module_terms", [])[:3]),
+                    "direction": TREND_LABELS[item["tag"]],
+                    "evolution_mechanism": f"原文出现 {item['tag']} 相关信号，规则分析将其映射到统一技术分类。",
+                    "maturity_stage_1_5": maturity,
+                    "adoption_status": adoption_stage({"title": document.get("title"), "trend_summary": item["description"], "confidence": confidence}, maturity),
+                    "representative_examples": [],
+                    "product_implications": category.get("product_focus", "需要更多证据后判断产品影响。"),
+                    "reasoning": f"原文出现 {item['tag']} 相关信号；规则分析未使用外部信息。",
+                    "evidence": item["evidence"],
+                    "evidence_level": str(level),
+                    "confidence": confidence,
+                    "quantitative_outlook": {
+                        "probability_low": max(0.0, confidence - 0.2),
+                        "probability_base": confidence,
+                        "probability_high": min(1.0, confidence + 0.15),
+                        "horizon_months": 12,
+                        "observable_metric": "同方向正式模型、数据集、评测或产品发布数量",
+                        "forecast_range": "分析估计，待后续公开结果校准",
+                        "assumptions": ["当前技术信号在预测窗口内持续"],
+                        "counter_signals": ["公开资源转向其他技术路线"],
+                        "falsifiers": ["预测窗口内未出现同方向可核验发布"],
+                    },
+                }
+            )
         trend_text = "；".join(item["direction"] for item in directions)
         if trend_text:
             summary = f"基于该公开来源的关键词信号推断：{trend_text}。该结论为规则降级分析，需结合更多时间线证据复核。"
@@ -288,3 +317,43 @@ def _deduplicate_directions(values: list[dict[str, Any]]) -> list[dict[str, Any]
         output.append(item)
         seen.append(tokens)
     return output
+
+
+def _normalize_direction_fields(item: dict[str, Any]) -> dict[str, Any]:
+    normalized = dict(item)
+    categories = classify_text(
+        [
+            item.get("technology_domain"),
+            item.get("technical_module"),
+            item.get("direction"),
+            item.get("evolution_mechanism"),
+            item.get("reasoning"),
+            item.get("evidence"),
+        ],
+        max_categories=1,
+    )
+    category = categories[0] if categories else None
+    if not str(normalized.get("technology_domain", "")).strip():
+        normalized["technology_domain"] = category["name"] if category else "其他前沿技术与应用"
+    if not str(normalized.get("technical_module", "")).strip():
+        normalized["technical_module"] = "、".join((category or {}).get("module_terms", [])[:3]) or "待细分"
+    if not str(normalized.get("evolution_mechanism", "")).strip():
+        normalized["evolution_mechanism"] = str(normalized.get("reasoning", "")).strip()
+    try:
+        maturity = max(1, min(5, int(normalized.get("maturity_stage_1_5", 1))))
+    except (TypeError, ValueError):
+        maturity = 1
+    normalized["maturity_stage_1_5"] = maturity
+    if normalized.get("adoption_status") not in {"研究探索", "研究原型", "工程验证/产品导入", "规模应用"}:
+        normalized["adoption_status"] = {1: "研究探索", 2: "研究原型", 3: "工程验证/产品导入", 4: "规模应用", 5: "规模应用"}[maturity]
+    examples = normalized.get("representative_examples")
+    normalized["representative_examples"] = [str(value) for value in examples if str(value).strip()][:5] if isinstance(examples, list) else []
+    if not str(normalized.get("product_implications", "")).strip():
+        normalized["product_implications"] = (category or {}).get("product_focus", "需要更多证据后判断产品影响。")
+    quantitative = normalized.get("quantitative_outlook")
+    if not isinstance(quantitative, dict):
+        quantitative = {}
+    quantitative.setdefault("counter_signals", [])
+    quantitative.setdefault("falsifiers", [])
+    normalized["quantitative_outlook"] = quantitative
+    return normalized

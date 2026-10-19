@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import csv
 import json
+import re
 from collections import Counter, defaultdict
 from datetime import date, datetime
 from pathlib import Path
@@ -12,6 +13,14 @@ from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.formatting.rule import FormulaRule
 from openpyxl.utils import get_column_letter
 from openpyxl.worksheet.table import Table, TableStyleInfo
+
+from ..taxonomy import (
+    adoption_stage,
+    classify_record,
+    infer_maturity,
+    load_technology_taxonomy,
+    matched_modules,
+)
 
 
 DETAIL_HEADERS = [
@@ -106,6 +115,9 @@ def _write_xlsx(path: Path, source_rows: list[dict[str, Any]], detail_rows: list
     detail = workbook.active
     detail.title = "情报明细"
     summary = workbook.create_sheet("厂商趋势")
+    classification = workbook.create_sheet("前沿技术分类")
+    evolution = workbook.create_sheet("技术演进沙盘")
+    profiles = workbook.create_sheet("主体战略画像")
     notes = workbook.create_sheet("说明与口径")
 
     detail.append(DETAIL_HEADERS)
@@ -137,6 +149,11 @@ def _write_xlsx(path: Path, source_rows: list[dict[str, Any]], detail_rows: list
             ]
         )
     _style_summary_sheet(summary)
+
+    classified = _technology_classification_rows(source_rows)
+    _write_classification_sheet(classification, classified)
+    _write_evolution_sheet(evolution, classified)
+    _write_profile_sheet(profiles, source_rows, classified)
 
     notes_rows = [
         ["字段", "说明"],
@@ -227,6 +244,179 @@ def _style_notes_sheet(sheet: Any) -> None:
             cell.alignment = Alignment(vertical="top", wrap_text=True)
             cell.border = light_border
         sheet.row_dimensions[row[0].row].height = 36
+
+
+CLASSIFICATION_HEADERS = [
+    "信息源类型", "主体", "发言人/来源", "职位", "日期", "一级技术分类", "技术模块/命中词",
+    "是否主分类", "证据摘要", "趋势/主张", "成熟度 1-5", "成熟度说明", "采用阶段", "证据等级",
+    "置信度", "时间窗口", "官方链接", "内容基础", "归因/证据状态", "分析模型",
+]
+
+
+def _technology_classification_rows(source_rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    output: list[dict[str, Any]] = []
+    for item in source_rows:
+        statements = item.get("attributed_statements_json") or []
+        people = item.get("people_json") or []
+        speaker_names = list(dict.fromkeys(str(value.get("speaker", "")).strip() for value in statements if str(value.get("speaker", "")).strip()))
+        role_by_name = {str(person.get("name", "")): str(person.get("role", "")) for person in people}
+        source_name = "、".join(speaker_names) or str(item.get("source_name", ""))
+        source_kind = "企业高管" if speaker_names else "厂商官方来源"
+        role = "、".join(role_by_name.get(name, "待核验") for name in speaker_names)
+        categories = classify_record(item, max_categories=3)
+        if not categories:
+            categories = [{"id": "other", "name": "其他前沿技术与应用", "module_terms": ["应用与交叉方向"], "matched_keywords": []}]
+        maturity, maturity_label = infer_maturity(item)
+        evidence = next((str(value.get("evidence", "")).strip() for value in statements if str(value.get("evidence", "")).strip()), "")
+        if not evidence:
+            evidence = next((str(value).strip() for value in item.get("core_points_json") or [] if str(value).strip()), str(item.get("title", "")))
+        text = " ".join([str(item.get("title", "")), _signal_tags(item.get("technical_signals_json") or []), evidence, str(item.get("trend_summary", ""))])
+        for index, category in enumerate(categories):
+            output.append(
+                {
+                    "source_kind": source_kind,
+                    "subject": str(item.get("company_name", "")),
+                    "source_name": source_name,
+                    "role": role,
+                    "date": item.get("published_at"),
+                    "category_id": category["id"],
+                    "category": category["name"],
+                    "module": "、".join(category.get("matched_keywords", [])[:4]) or "、".join(matched_modules(category, text)),
+                    "primary": index == 0,
+                    "evidence": evidence,
+                    "trend": str(item.get("trend_summary", "")),
+                    "maturity": maturity,
+                    "maturity_label": maturity_label,
+                    "adoption": adoption_stage(item, maturity),
+                    "evidence_level": str(item.get("evidence_level", "")),
+                    "confidence": item.get("confidence"),
+                    "time_window": str(item.get("time_window", "")),
+                    "url": str(item.get("url", "")),
+                    "content_basis": str(item.get("source_type", "")),
+                    "evidence_status": str(item.get("attribution_status", "")) + (" / 证据通过" if item.get("grounding_passed") else " / 待复核"),
+                    "model": " / ".join(value for value in [item.get("analysis_method"), item.get("model")] if value),
+                    "product_focus": category.get("product_focus", ""),
+                }
+            )
+    return output
+
+
+def _write_classification_sheet(sheet: Any, rows: list[dict[str, Any]]) -> None:
+    sheet.append(CLASSIFICATION_HEADERS)
+    for item in rows:
+        published = item["date"]
+        try:
+            published = date.fromisoformat(published) if published else None
+        except ValueError:
+            pass
+        sheet.append([
+            item["source_kind"], item["subject"], item["source_name"], item["role"], published,
+            item["category"], item["module"], "是" if item["primary"] else "否", item["evidence"], item["trend"],
+            item["maturity"], item["maturity_label"], item["adoption"], item["evidence_level"], item["confidence"],
+            item["time_window"], item["url"], item["content_basis"], item["evidence_status"], item["model"],
+        ])
+    widths = [16, 18, 22, 22, 12, 24, 28, 12, 52, 60, 12, 20, 20, 18, 12, 18, 48, 18, 24, 28]
+    _style_new_analysis_sheet(sheet, widths, "TechnologyClassificationTable", 82)
+    for row in sheet.iter_rows(min_row=2):
+        row[4].number_format = "yyyy-mm-dd"
+        row[14].number_format = "0.0%"
+        if row[16].value:
+            row[16].hyperlink = str(row[16].value)
+            row[16].style = "Hyperlink"
+
+
+def _write_evolution_sheet(sheet: Any, rows: list[dict[str, Any]]) -> None:
+    headers = ["前沿技术", "核心模块/演进方向", "技术状态", "采用阶段", "信号数", "主体数", "代表主体", "代表证据", "未来可观察信号", "产品/战略影响", "证据等级", "平均置信度", "主要来源"]
+    sheet.append(headers)
+    taxonomy = {item["id"]: item for item in load_technology_taxonomy()}
+    grouped: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for item in rows:
+        grouped[item["category_id"]].append(item)
+    for category_id, items in sorted(grouped.items(), key=lambda pair: next((index for index, value in enumerate(load_technology_taxonomy()) if value["id"] == pair[0]), 999)):
+        category = taxonomy.get(category_id, {"name": "其他前沿技术与应用", "product_focus": "建议人工复核并补充分类规则。"})
+        ranked = sorted(items, key=lambda value: (float(value.get("confidence") or 0.0), int(value["maturity"]), value["primary"]), reverse=True)
+        confidences = [float(item["confidence"]) for item in items if item.get("confidence") is not None]
+        subjects = list(dict.fromkeys(item["subject"] for item in ranked))
+        modules = [name for name, _ in Counter(part for item in items for part in str(item["module"]).split("、") if part).most_common(5)]
+        adoption = " / ".join(name for name, _ in Counter(item["adoption"] for item in items).most_common(2))
+        avg_maturity = round(sum(int(item["maturity"]) for item in items) / len(items))
+        sheet.append([
+            category["name"], "、".join(modules), f"{avg_maturity}级：{ranked[0]['maturity_label']}（最高信号）", adoption,
+            len(items), len(set(subjects)), "、".join(subjects[:8]),
+            "\n".join(f"{item['subject']}：{item['evidence'][:180]}" for item in ranked[:3]),
+            "\n".join([item["trend"] for item in ranked if item["trend"]][:2]) or "关注正式模型、数据集、评测或产品发布。",
+            category.get("product_focus", ""),
+            " / ".join(name for name, _ in Counter(item["evidence_level"] for item in items if item["evidence_level"]).most_common(2)),
+            sum(confidences) / len(confidences) if confidences else None,
+            "\n".join(dict.fromkeys(item["url"] for item in ranked[:4] if item["url"])),
+        ])
+    _style_new_analysis_sheet(sheet, [24, 34, 24, 24, 10, 10, 48, 72, 72, 64, 20, 14, 56], "TechnologyEvolutionTable", 108)
+    for row in sheet.iter_rows(min_row=2):
+        row[11].number_format = "0.0%"
+        if row[12].value:
+            row[12].hyperlink = str(row[12].value).splitlines()[0]
+            row[12].style = "Hyperlink"
+
+
+def _write_profile_sheet(sheet: Any, source_rows: list[dict[str, Any]], classified: list[dict[str, Any]]) -> None:
+    headers = ["主体", "类型", "核心定位", "研究路线", "产品/应用信号", "组织/资本/基础设施", "关键行动", "未来重点", "领先指标", "风险/反向信号", "证据等级", "平均置信度", "主要来源"]
+    sheet.append(headers)
+    grouped_source: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    grouped_classified: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for item in source_rows:
+        grouped_source[str(item.get("company_name", ""))].append(item)
+    for item in classified:
+        if item["primary"]:
+            grouped_classified[item["subject"]].append(item)
+    for subject in sorted(grouped_source):
+        source_items = grouped_source[subject]
+        class_items = grouped_classified[subject]
+        categories = [name for name, _ in Counter(item["category"] for item in class_items).most_common(4)]
+        signals_text = " ".join(str(item.get("core_points_json") or "") for item in source_items)
+        product_points = [str(point) for item in source_items for point in item.get("core_points_json") or [] if re.search(r"产品|应用|平台|服务|用户|客户|API|App|部署|上线", str(point), re.I)]
+        infra_points = [str(point) for item in source_items for point in item.get("core_points_json") or [] if re.search(r"资本|投资|组织|部门|芯片|算力|服务器|数据中心|基础设施|cloud|GPU|XPU", str(point), re.I)]
+        representative = _representative_model_signal(source_items)
+        directions = representative.get("trend_directions_json") or []
+        indicators = [str((value.get("quantitative_outlook") or {}).get("observable_metric", "")) for value in directions if isinstance(value, dict)]
+        falsifiers = [str(item) for value in directions if isinstance(value, dict) for item in (value.get("quantitative_outlook") or {}).get("falsifiers", [])]
+        confidences = [float(item["confidence"]) for item in source_items if item.get("confidence") is not None]
+        full_stack = {"LLM架构与语言能力", "Agent与工具使用", "训练推理效率与基础设施"}.issubset(set(categories))
+        positioning = "基础模型、Agent与基础设施协同推进" if full_stack else f"重点围绕{'、'.join(categories[:3])}形成技术组合"
+        sheet.append([
+            subject, "企业/高管", positioning, "\n".join(categories),
+            "\n".join(dict.fromkeys(product_points[:3])) or "现有材料未形成明确的产品/应用信号。",
+            "\n".join(dict.fromkeys(infra_points[:3])) or "现有材料未形成可核验的组织、资本或基础设施动作信号。",
+            "\n".join(f"{item.get('published_at') or '日期待核验'}：{item.get('title', '')}" for item in sorted(source_items, key=lambda value: str(value.get("published_at") or ""), reverse=True)[:3]),
+            str(representative.get("trend_summary", "现有材料不足以形成主体级趋势判断。")),
+            "\n".join(value for value in indicators if value) or f"关注{'、'.join(categories[:3])}方向的正式发布、评测或产品落地。",
+            "\n".join(value for value in falsifiers if value) or "若后续正式发布、产品采用或评测结果未延续当前信号，应下调判断。",
+            str(representative.get("evidence_level", "")), sum(confidences) / len(confidences) if confidences else None,
+            "\n".join(dict.fromkeys(str(item.get("url", "")) for item in source_items[:4] if item.get("url"))),
+        ])
+    _style_new_analysis_sheet(sheet, [20, 14, 34, 34, 64, 64, 58, 72, 54, 54, 18, 14, 56], "EntityStrategyProfileTable", 108)
+    for row in sheet.iter_rows(min_row=2):
+        row[11].number_format = "0.0%"
+        if row[12].value:
+            row[12].hyperlink = str(row[12].value).splitlines()[0]
+            row[12].style = "Hyperlink"
+
+
+def _style_new_analysis_sheet(sheet: Any, widths: list[int], table_name: str, row_height: int) -> None:
+    _style_header(sheet, len(widths))
+    sheet.freeze_panes = "A2"
+    sheet.auto_filter.ref = sheet.dimensions
+    for index, width in enumerate(widths, 1):
+        sheet.column_dimensions[get_column_letter(index)].width = width
+    for row in sheet.iter_rows(min_row=2):
+        for cell in row:
+            cell.font = Font(name="Arial", size=10, color="1F2937")
+            cell.alignment = Alignment(vertical="top", wrap_text=True)
+            cell.border = Border(bottom=Side(style="hair", color="D9E2F3"))
+        sheet.row_dimensions[row[0].row].height = row_height
+    if sheet.max_row >= 2:
+        table = Table(displayName=table_name, ref=f"A1:{get_column_letter(len(widths))}{sheet.max_row}")
+        table.tableStyleInfo = TableStyleInfo(name="TableStyleMedium2", showRowStripes=True)
+        sheet.add_table(table)
 
 
 def _write_csv(path: Path, rows: list[list[Any]]) -> None:

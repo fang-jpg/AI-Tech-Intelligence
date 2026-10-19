@@ -2,6 +2,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import ExcelJS from "exceljs";
 import { DATASET_PATH, ROOT, readJson, toEntities } from "./lib.mjs";
+import { buildEvolutionRows, buildStrategicProfiles, normalizeClassificationRecords } from "./technology_intelligence.mjs";
 
 const OUTPUT_DIR = path.join(ROOT, "outputs", "高校研究机构智能情报_20260922");
 const OUTPUT_PATH = path.join(OUTPUT_DIR, "高校研究机构_AI技术情报量化研判_20260922.xlsx");
@@ -75,9 +76,9 @@ function addDataRow(sheet, columns, values, height = 72) {
   return row;
 }
 
-function setLink(cell, url) {
+function setLink(cell, url, text = url) {
   if (!url) return;
-  cell.value = { text: url, hyperlink: url, tooltip: url };
+  cell.value = { text, hyperlink: url, tooltip: url };
   cell.font = { name: "Microsoft YaHei", size: 9, color: { argb: "0563C1" }, underline: true };
 }
 
@@ -109,12 +110,33 @@ const sourceColumns = [
 ];
 const sourceSheet = setupSheet("来源明细", "官方来源明细", "304 条去重来源；搜索摘录用于发现与初步研判，不等同于完整网页正文。", sourceColumns);
 let sourceCount = 0;
+const technologySourceRecords = [];
 for (const entity of entities) {
   for (const source of search.entities[entity.id]?.results ?? []) {
     const basis = source.discovery_method.startsWith("Registry baseline") ? "注册表基线" : "官方搜索摘录";
     const row = addDataRow(sourceSheet, sourceColumns, [entity.name, entity.entity_type === "institution" ? "机构" : "个人", source.title, source.url, source.published_date ?? "", source.discovery_method, basis, source.content], 74);
     setLink(row.getCell(4), source.url);
     if (basis === "注册表基线") row.eachCell((cell) => { cell.fill = { type: "pattern", pattern: "solid", fgColor: { argb: colors.yellow } }; });
+    const outlook = analysis.outlooks[entity.id];
+    technologySourceRecords.push({
+      sourceKind: entity.entity_type === "institution" ? "高校/研究机构" : "研究者/技术发言人",
+      subject: entity.name,
+      sourceName: entity.name,
+      role: entity.entity_type === "institution" ? "高校 / 研究机构" : "研究者 / 技术公共发声者",
+      date: source.published_date ?? "",
+      title: source.title,
+      url: source.url,
+      tags: "",
+      evidence: source.content,
+      statement: "",
+      trend: outlook.trend_hypothesis,
+      evidenceLevel: outlook.evidence_level,
+      confidence: outlook.probability_midpoint_pct / 100,
+      timeWindow: `${outlook.horizon_months_low}-${outlook.horizon_months_high}个月`,
+      contentBasis: basis,
+      evidenceStatus: basis === "注册表基线" ? "待补充近期正文" : "摘要级证据",
+      model: outlook.analysis_model,
+    });
     sourceCount += 1;
   }
 }
@@ -228,6 +250,55 @@ for (const values of noteRows) addDataRow(notes, notesColumns, values, 52);
 notes.getColumn(1).eachCell((cell, rowNumber) => {
   if (rowNumber >= 5) cell.fill = { type: "pattern", pattern: "solid", fgColor: { argb: colors.blue } };
 });
+
+const classificationRows = normalizeClassificationRecords(technologySourceRecords);
+const classificationColumns = [
+  { key: "kind", header: "信息源类型", width: 18 }, { key: "subject", header: "主体", width: 28 },
+  { key: "source", header: "发言人/来源", width: 26 }, { key: "role", header: "职位", width: 24 },
+  { key: "date", header: "日期", width: 14 }, { key: "category", header: "一级技术分类", width: 26 },
+  { key: "module", header: "技术模块/命中词", width: 32 }, { key: "primary", header: "是否主分类", width: 12 },
+  { key: "evidence", header: "证据摘要", width: 62 }, { key: "trend", header: "趋势/主张", width: 68 },
+  { key: "maturity", header: "成熟度 1-5", width: 12 }, { key: "maturityLabel", header: "成熟度说明", width: 22 },
+  { key: "adoption", header: "采用阶段", width: 22 }, { key: "level", header: "证据等级", width: 18 },
+  { key: "confidence", header: "置信度", width: 12, format: "0%" }, { key: "window", header: "时间窗口", width: 22 },
+  { key: "url", header: "官方链接", width: 56 }, { key: "basis", header: "内容基础", width: 20 },
+  { key: "status", header: "归因/证据状态", width: 28 }, { key: "model", header: "分析模型", width: 24 },
+];
+const classificationSheet = setupSheet("前沿技术分类", "高校研究机构与研究者前沿技术分类", `按统一技术分类展开 ${technologySourceRecords.length} 条材料；一条材料可映射至最多 3 个技术方向。`, classificationColumns);
+for (const item of classificationRows) {
+  const row = addDataRow(classificationSheet, classificationColumns, [item.sourceKind, item.subject, item.sourceName, item.role, item.date, item.category, item.module, item.isPrimary ? "是" : "否", item.evidence, item.trend, item.maturityStage, item.maturityLabel, item.adoptionStage, item.evidenceLevel, item.confidence, item.timeWindow, item.url, item.contentBasis, item.evidenceStatus, item.model], 96);
+  setLink(row.getCell(17), item.url);
+}
+
+const evolutionColumns = [
+  { key: "category", header: "前沿技术", width: 26 }, { key: "modules", header: "核心模块/演进方向", width: 36 },
+  { key: "status", header: "技术状态", width: 34 }, { key: "adoption", header: "采用阶段", width: 24 },
+  { key: "signals", header: "信号数", width: 10 }, { key: "subjects", header: "主体数", width: 10 },
+  { key: "institutions", header: "代表高校/机构", width: 48 }, { key: "executives", header: "代表厂商/发言人", width: 28 },
+  { key: "evidence", header: "代表证据", width: 76 }, { key: "next", header: "未来可观察变化", width: 76 },
+  { key: "impact", header: "产品/战略影响", width: 68 }, { key: "level", header: "证据等级", width: 22 },
+  { key: "confidence", header: "平均置信度", width: 14, format: "0%" }, { key: "urls", header: "主要来源", width: 58 },
+];
+const evolutionSheet = setupSheet("技术演进沙盘", "前沿技术演进沙盘", "按技术方向汇总代表主体、成熟度、采用状态、证据、未来观察项与产品影响。", evolutionColumns);
+for (const item of buildEvolutionRows(classificationRows)) {
+  const row = addDataRow(evolutionSheet, evolutionColumns, [item.category, item.modules, item.status, item.adoption, item.signalCount, item.subjectCount, item.institutionExamples, item.executiveExamples, item.representativeEvidence, item.nextSignals, item.productImpact, item.evidenceLevel, item.confidence, item.urls], 120);
+  setLink(row.getCell(14), item.urls.split("\n")[0], item.urls);
+}
+
+const profileColumns = [
+  { key: "subject", header: "主体", width: 28 }, { key: "type", header: "类型", width: 16 },
+  { key: "position", header: "核心定位", width: 38 }, { key: "research", header: "研究路线", width: 52 },
+  { key: "products", header: "产品/应用信号", width: 68 }, { key: "infra", header: "组织/资本/基础设施", width: 68 },
+  { key: "actions", header: "关键行动", width: 64 }, { key: "outlook", header: "未来重点", width: 76 },
+  { key: "indicators", header: "领先指标", width: 60 }, { key: "risks", header: "风险/反向信号", width: 56 },
+  { key: "level", header: "证据等级", width: 20 }, { key: "confidence", header: "平均置信度", width: 14, format: "0%" },
+  { key: "urls", header: "主要来源", width: 58 },
+];
+const profileSheet = setupSheet("主体战略画像", "主体战略画像", "展示证据较丰富的高校、研究机构与研究者，区分研究路线、应用信号、资源动作、领先指标和风险。", profileColumns);
+for (const item of buildStrategicProfiles(classificationRows)) {
+  const row = addDataRow(profileSheet, profileColumns, [item.subject, item.sourceKind, item.positioning, item.research, item.products, item.organizationInfra, item.keyActions, item.outlook, item.leadingIndicators, item.risks, item.evidenceLevel, item.confidence, item.urls], 126);
+  setLink(row.getCell(13), item.urls.split("\n")[0], item.urls);
+}
 
 await workbook.xlsx.writeFile(OUTPUT_PATH);
 

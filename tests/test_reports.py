@@ -32,8 +32,11 @@ def test_report_exports_expected_workbook(tmp_path) -> None:
     ]
     outputs = export_reports(rows, tmp_path)
     workbook = load_workbook(outputs["xlsx"], data_only=False)
-    assert workbook.sheetnames == ["情报明细", "厂商趋势", "说明与口径"]
+    assert workbook.sheetnames == ["情报明细", "厂商趋势", "前沿技术分类", "技术演进沙盘", "主体战略画像", "说明与口径"]
     assert workbook["情报明细"]["A2"].value == "OpenAI"
     assert workbook["情报明细"]["G2"].hyperlink.target == "https://openai.com/index/test"
+    assert workbook["前沿技术分类"]["F2"].value == "Agent与工具使用"
+    assert workbook["技术演进沙盘"]["A2"].value == "Agent与工具使用"
+    assert workbook["主体战略画像"]["A2"].value == "OpenAI"
     assert outputs["csv"].exists()
     assert outputs["markdown"].exists()

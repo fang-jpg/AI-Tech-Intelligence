@@ -18,9 +18,15 @@ for (const name of ["高管发言", "情报明细", "厂商趋势"]) {
 
 const detail = after.getWorksheet("高校研究机构情报");
 const trends = after.getWorksheet("高校趋势汇总");
-if (!detail || !trends) throw new Error("Academic sheets missing");
+const classification = after.getWorksheet("前沿技术分类");
+const evolution = after.getWorksheet("技术演进沙盘");
+const profiles = after.getWorksheet("主体战略画像");
+if (!detail || !trends || !classification || !evolution || !profiles) throw new Error("Academic or frontier-analysis sheets missing");
 if (detail.rowCount !== 308 || detail.columnCount !== 20) throw new Error(`Academic detail dimensions: ${detail.rowCount}x${detail.columnCount}`);
 if (trends.rowCount !== 103 || trends.columnCount !== 8) throw new Error(`Academic trend dimensions: ${trends.rowCount}x${trends.columnCount}`);
+if (classification.columnCount !== 20 || classification.rowCount < 334) throw new Error(`Technology classification dimensions: ${classification.rowCount}x${classification.columnCount}`);
+if (evolution.columnCount !== 14 || evolution.rowCount < 14) throw new Error(`Technology evolution dimensions: ${evolution.rowCount}x${evolution.columnCount}`);
+if (profiles.columnCount !== 13 || profiles.rowCount < 20) throw new Error(`Strategy profile dimensions: ${profiles.rowCount}x${profiles.columnCount}`);
 
 const headers = detail.getRow(4).values.slice(1);
 const expectedHeaders = ["模型厂商", "高管/来源", "职位", "日期", "来源类型", "原文标题", "官方链接", "检索方式", "内容基础", "核心观点", "技术标签", "AI未来模型动向分析", "证据等级", "置信度", "时间窗口", "来源等级", "是否官方", "归因状态", "证据校验", "分析模型"];
@@ -48,6 +54,17 @@ for (const sheet of after.worksheets) {
 
 const summaryData = await readJson(path.join(ROOT, "data", "academic_source_summaries_20260923.json"));
 const exactTrendDuplicates = trendTexts.length - new Set(trendTexts).size;
+const requiredCategories = ["LLM架构与语言能力", "多模态理解与生成", "世界模型与仿真", "具身智能与机器人", "训练范式：预训练", "训练范式：后训练"];
+const actualCategories = new Set();
+let classificationLinks = 0;
+for (let rowNumber = 5; rowNumber <= classification.rowCount; rowNumber += 1) {
+  actualCategories.add(String(classification.getRow(rowNumber).getCell(6).value ?? ""));
+  if (classification.getRow(rowNumber).getCell(17).value?.hyperlink) classificationLinks += 1;
+}
+for (const category of requiredCategories) {
+  if (!actualCategories.has(category)) throw new Error(`Required technology category missing: ${category}`);
+}
+if (classificationLinks < 300) throw new Error(`Expected at least 300 classified source links, got ${classificationLinks}`);
 if (linkCount !== 304) throw new Error(`Expected 304 links, got ${linkCount}`);
 if (nonblankTrends !== 99) throw new Error(`Expected 99 nonblank trends, got ${nonblankTrends}`);
 if (exactTrendDuplicates !== 0) throw new Error(`Duplicate trend texts: ${exactTrendDuplicates}`);
@@ -56,4 +73,4 @@ if (summaryData.metrics.fallback_summaries !== 0) throw new Error(`Fallback sour
 if (formulaErrors.length) throw new Error(`Formula errors: ${formulaErrors.join(", ")}`);
 
 const stat = await fs.stat(OUTPUT_PATH);
-console.log(JSON.stringify({ output: OUTPUT_PATH, bytes: stat.size, sheets: after.worksheets.map((sheet) => ({ name: sheet.name, rows: sheet.rowCount, columns: sheet.columnCount })), academicLinks: linkCount, nonblankTrends, exactTrendDuplicates, exactDuplicateSummaries: summaryData.metrics.exact_duplicate_summaries, fallbackSummaries: summaryData.metrics.fallback_summaries, formulaErrors: formulaErrors.length }, null, 2));
+console.log(JSON.stringify({ output: OUTPUT_PATH, bytes: stat.size, sheets: after.worksheets.map((sheet) => ({ name: sheet.name, rows: sheet.rowCount, columns: sheet.columnCount })), academicLinks: linkCount, classificationLinks, technologyCategories: actualCategories.size, nonblankTrends, exactTrendDuplicates, exactDuplicateSummaries: summaryData.metrics.exact_duplicate_summaries, fallbackSummaries: summaryData.metrics.fallback_summaries, formulaErrors: formulaErrors.length }, null, 2));
